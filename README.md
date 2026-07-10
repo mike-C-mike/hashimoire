@@ -1,90 +1,140 @@
-# hashimoire
+# Hashimoire
 
-A practical, field-tested reference for DFIR and defensive security work: tool install notes, repeatable workflows, artifact paths, and the commands I actually use (not a copy of `--help` output).
+**Hashimoire** is a practical DFIR and defensive security field reference for tool notes, playbooks, artifact paths, snippets, detections, templates, scripts, and repeatable workflows.
 
-## What this is
+It is not meant to be a polished textbook or a copy of tool `--help` output. It is a working knowledge base for the commands, procedures, reminders, and documentation habits that are useful when time matters.
 
-This repo is my living field tome/grimoire for:
-- DFIR triage and evidence handling habits
+The name is intentionally a little weird.
+
+A grimoire is a book of collected knowledge, formulas, instructions, and working notes. Hashimoire applies that idea to digital forensics and defensive security: hashes, artifacts, commands, triage notes, tool references, detections, templates, and field-tested reminders.
+
+## What This Is
+
+Hashimoire is a living reference for authorized defensive work, including:
+
+- DFIR triage notes
+- Evidence handling habits
 - Tool installation and usage notes
-- Common command patterns (Nmap, awk, PowerShell, hashing, etc.)
-- Detection and hunting queries (SIEM-focused)
-- Defensive OSINT and exposure checking
-- Templates and checklists that keep work consistent
+- Common command patterns
+- Hashing references
+- Windows, Linux, and macOS notes
+- Detection and hunting queries
+- SIEM-focused tuning notes
+- Defensive OSINT and exposure checks
+- Templates and checklists
+- Repeatable workflows
+- Scripts and small helpers
 
-## What this is not
+The goal is to build something practical enough to use, not something that only looks impressive in a README.
 
-- Not a hacking tutorial.
-- Not exploit development.
-- Not stealth, evasion, persistence, credential theft, or “how to break in” guidance.
-- Not case-specific content. No sensitive details, no client data, no internal systems.
+## What This Is Not
 
-If something feels like it could be used primarily to harm people, it does not belong here.
+Hashimoire is not a hacking tutorial.
 
-## How to use this repo
+It is not:
 
-- Start with **Snippets** for quick “I forgot the flags” refreshers.
-- Use **Playbooks** when you need repeatable workflows under time pressure.
-- Use **Docs** for deeper notes, installs, gotchas, and artifact references.
-- Use **Detections** for SIEM queries and tuning notes.
+- exploit development
+- credential theft
+- stealth guidance
+- evasion guidance
+- persistence guidance
+- unauthorized access guidance
+- “how to break in” material
+- case-specific or sensitive content
 
-### Tagging conventions (used in pages)
+This repo does not contain client data, internal system details, confidential case information, protected personal information, or anything that would be inappropriate to publish.
 
-Most pages include quick tags near the top:
+The working rule is simple:
 
-- **Use case:** triage | hunting | validation | response
-- **Environment:** windows | linux | macos | cloud
-- **Risk:** safe | caution
+> If a note would primarily help someone harm people, bypass authorization, misuse access, or evade accountability, it does not belong here.
 
-“Caution” means: double-check scope, permissions, and impact before running.
+This project is for authorized, legal, ethical, defensive work.
 
-## Contents
+## Core Principles
 
-- [Repo structure](#repo-structure)
-- [Quick start](#quick-start)
-- [Quality bar](#quality-bar)
-- [Contributing](#contributing)
-- [License](#license)
-- [Disclaimer](#disclaimer)
+Hashimoire follows a few simple rules:
 
-## Repo structure
+- Practical beats exhaustive.
+- Notes should explain why a step matters, not just what to type.
+- Commands should include context, assumptions, and expected output where possible.
+- Evidence-related workflows should include documentation considerations.
+- Dangerous techniques are framed defensively or excluded.
+- Templates should make work more consistent, not create paperwork theater.
+- If a workflow affects evidence, the documentation path matters as much as the tool output.
+
+## How to Use This Repo
+
+Use the repo by task type:
+
+- Start with **snippets** for quick command refreshers.
+- Use **playbooks** for repeatable workflows under time pressure.
+- Use **docs** for deeper notes, install steps, gotchas, and artifact references.
+- Use **detections** for hunting logic, SIEM queries, and tuning notes.
+- Use **templates** for repeatable documentation and review checklists.
+- Use **scripts** for small helpers that reduce repetitive work.
+
+## Repo Structure
+
 ```text
-/
+hashimoire/
 ├─ docs/
+│  ├─ evidence-workflows/
+│  ├─ hashing/
 │  ├─ tools/
-│  │  ├─ volatility/
-│  │  ├─ ftk-imager/
-│  │  └─ ...
 │  ├─ windows/
 │  ├─ linux/
-│  └─ ...
+│  ├─ macos/
+│  ├─ mobile/
+│  ├─ networking/
+│  ├─ storage/
+│  └─ reporting/
+│
 ├─ playbooks/
 │  ├─ triage/
-│  ├─ collection/
-│  └─ ...
+│  ├─ acquisition/
+│  ├─ suspicious-email/
+│  ├─ endpoint-review/
+│  ├─ account-compromise/
+│  ├─ lost-device/
+│  └─ evidence-handoff/
+│
 ├─ snippets/
-│  ├─ nmap.md
-│  ├─ awk.md
-│  ├─ powershell.md
-│  ├─ hashing.md
-│  └─ ...
+│  ├─ powershell/
+│  ├─ bash/
+│  ├─ python/
+│  ├─ sqlite/
+│  ├─ yara/
+│  ├─ sigma/
+│  └─ kql/
+│
 ├─ detections/
+│  ├─ sigma/
+│  ├─ yara/
+│  ├─ kql/
 │  ├─ splunk/
-│  ├─ sentinel/
-│  ├─ elastic/
-│  └─ ...
+│  └─ notes/
+│
 ├─ osint/
-│  ├─ exposure-checks.md
-│  └─ ...
+│  ├─ exposure-checks/
+│  ├─ username-checks/
+│  ├─ domain-checks/
+│  ├─ metadata-checks/
+│  └─ safety-notes/
+│
 ├─ templates/
-│  ├─ case-notes-template.md
-│  ├─ chain-of-custody-template.md
-│  └─ ...
-└─ scripts/
-   ├─ windows/
-   └─ linux/
-
-```
-## Disclaimer
-
-This content is provided for authorized, legal, and ethical defensive use only. You are responsible for complying with your organization’s policies and all applicable laws. Always verify scope and permissions before collecting data or running commands.
+│  ├─ acquisition/
+│  ├─ chain-of-custody/
+│  ├─ reporting/
+│  ├─ intake/
+│  └─ review-checklists/
+│
+├─ scripts/
+│  ├─ hash-manifests/
+│  ├─ folder-setup/
+│  ├─ file-inventory/
+│  └─ log-parsing/
+│
+└─ lab-notes/
+   ├─ tool-installs/
+   ├─ test-data/
+   └─ validation-notes/
