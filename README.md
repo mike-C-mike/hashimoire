@@ -138,3 +138,8 @@ hashimoire/
    ├─ tool-installs/
    ├─ test-data/
    └─ validation-notes/
+
+## Start here: acquisition and live-response reference
+
+- [Acquisition playbooks](playbooks/acquisition/README.md) — collection sequence, field bag, software readiness and lab follow-on.
+- [Windows collection snippets](snippets/powershell/README.md) — small, reusable PowerShell command references, with scope and output cautions.

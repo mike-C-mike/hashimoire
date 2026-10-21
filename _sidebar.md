@@ -1,0 +1,31 @@
+- **START HERE**
+  - [Home](/)
+  - [About Hashimoire](/README.md)
+  - [Visual style](/docs/visual-style.md)
+- **FIELD PLAYBOOKS**
+  - [Acquisition hub](/playbooks/acquisition/README.md)
+  - [Rapid evidence collection](/playbooks/acquisition/0-rapid-evidence-collection.md)
+  - [Collection bag checklist](/playbooks/acquisition/2-collection-bag-checklist.md)
+  - [Collection software](/playbooks/acquisition/3-collection-software-checklist.md)
+  - [Field-to-lab tool matrix](/playbooks/acquisition/4-field-to-lab-tool-matrix.md)
+  - [Visual field reference](/playbooks/acquisition/5-visual-field-reference.md)
+  - [Phishing investigation](/playbooks/suspicious-email/phishing-email-investigation.md)
+- **WINDOWS QUICK COMMANDS**
+  - [Snippets index](/snippets/powershell/README.md)
+  - [System identity & time](/snippets/powershell/system-identity-time.md)
+  - [Processes & services](/snippets/powershell/processes-services.md)
+  - [Network state](/snippets/powershell/network-state.md)
+  - [Users & sessions](/snippets/powershell/users-sessions.md)
+  - [Export event logs](/snippets/powershell/event-log-export.md)
+  - [SHA-256 evidence hashes](/snippets/powershell/sha256-evidence.md)
+- **TOOL REFERENCE**
+  - [Tools index](/docs/tools/README.md)
+  - [FTK Imager from USB](/docs/tools/ftk/ftk-imager-usb-runtime.md)
+  - [Volatility installation](/docs/tools/volatility/install-on-kali.md)
+  - [Volatility commands](/docs/tools/volatility/useful-commands.md)
+  - [Hashing reference](/docs/hashing/README.md)
+- **OSINT & EXPOSURE**
+  - [OSINT index](/osint/README.md)
+  - [Domain exposure review](/osint/domain-checks/domain-exposure-review.md)
+  - [Username review](/osint/username-checks/username-review-workflow.md)
+  - [Metadata review](/osint/metadata-checks/document-image-metadata-review.md)

@@ -8,6 +8,8 @@
 
 ---
 
+**Operational companion:** [Field-to-Lab Tool Matrix](4-field-to-lab-tool-matrix.md) — concrete utility choices, official project links, where to stage binaries, and which lab tools can examine the output. For the step-by-step collection sequence, use [Rapid Evidence Collection](0-rapid-evidence-collection.md).
+
 ## Purpose
 
 This checklist identifies specific software categories, recommended utilities, and practical alternatives that should be staged before conducting rapid evidence collection.
