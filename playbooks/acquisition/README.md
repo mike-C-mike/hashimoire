@@ -12,3 +12,5 @@ Authorized live-response, evidence collection, preparation, and handoff referenc
 | [Windows quick-command snippets](../../snippets/powershell/README.md) | Reusable commands |
 
 Directory name corrected from `aquisition` to `acquisition`. External bookmarks to the former spelling need updating.
+
+- [Visual field reference](5-visual-field-reference.md) — editable GitHub diagrams for collection and lab handoff.
