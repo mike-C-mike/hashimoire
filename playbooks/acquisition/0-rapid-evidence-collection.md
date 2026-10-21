@@ -102,6 +102,8 @@ On encrypted systems, powering off may remove practical access to an unlocked vo
 - [Field-to-lab tool matrix](4-field-to-lab-tool-matrix.md)
 - [Acquisition prep and deployment notes](1-live-acquisition-playbook.md)
 
+See also: [Visual field reference — collection and handoff diagrams](5-visual-field-reference.md).
+
 ## Windows quick-command references
 
 Use these focused snippets alongside the documented order of volatility, not as a substitute for memory capture:
