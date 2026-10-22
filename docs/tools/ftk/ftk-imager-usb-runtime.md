@@ -1,90 +1,59 @@
----
-title: "Run FTK Imager from a USB Flash Drive"
-slug: "ftk-imager-usb-runtime"
-category: "tools"
-tool: "FTK Imager"
-use_case: ["triage", "collection"]
-environment: ["windows"]
-risk: "caution"
-last_reviewed: "2026-03-03"
----
+# FTK Imager — Prepare and Validate USB Runtime
 
-# Run FTK Imager from a USB Flash Drive
+**Use case:** Windows evidence preview | logical / physical acquisition  
+**Environment:** approved Windows collector or forensic lab  
+**Risk:** caution  
+**Reviewed:** October 2026
 
-This guide shows how to set up **FTK Imager** to run from a USB flash drive on a Windows machine. This is a **runtime** setup (portable execution), not a bootable forensic environment.
+> **Portability is not guaranteed.** Copying an installed program directory to USB may work for some versions/configurations, but that does not prove the application and its dependencies will run correctly on all Windows machines or comply with the software license. Validate on representative systems before relying on it.
 
-## What you need
+## Objective
 
-- A USB flash drive (dedicated to DFIR use is ideal)
-- A Windows computer to perform the initial setup
-- FTK Imager installed on that setup computer
-- Admin rights on the setup computer (to access the install directory and system files)
+Prepare an authorized, tested FTK Imager runtime for quick field deployment. Keep the tool USB **separate** from acquisition destination media. Do not turn an untested portable copy into your only imaging method.
 
-## Goal
+## Preparation on a clean setup workstation
 
-You will copy the FTK Imager installation folder to a USB drive so you can run FTK Imager on other Windows machines without installing it again.
+1. Download the approved FTK Imager version from the [official Exterro product page](https://www.exterro.com/digital-forensics-software/ftk-imager). Review license/use terms and documentation.
+2. Install it on a **lab setup computer**, not the source evidence device.
+3. Record the installation version and executable SHA-256.
+4. If the vendor/package permits a portable or folder-copy workflow, copy the required program files to a dedicated tool USB, e.g. `X:\Tools\FTKImager\`.
+5. **Do not indiscriminately copy Windows system DLL families** from `System32` to a field USB. Runtime libraries must match architecture and versions, and redistributable packages may be subject to licensing. Follow vendor and Microsoft-supported deployment methods.
+6. Keep a second validated tool set or a lab-based acquisition alternative available.
 
-## Setup steps
+## Test on a representative non-evidence computer
 
-### 1) Install FTK Imager on a setup machine
+- [ ] Confirm the application starts without an installation dialog.
+- [ ] Confirm it identifies a known test device or sample data source.
+- [ ] Test a small logical/physical acquisition with approved settings.
+- [ ] Confirm output directory is correct and **not on the source**.
+- [ ] Confirm the acquisition completes with expected size, metadata and hash/verification report.
+- [ ] Open the output in a separate forensic viewer or image mounting tool.
+- [ ] Record OS build, dependencies, elevation, errors, product build and date tested.
 
-On a machine **other than the system you want to image**, install FTK Imager normally.
+## Field capture considerations
 
-### 2) Plug in the USB drive
+1. Confirm authority, scope and evidence identifiers before starting.
+2. Record original state and storage mappings, especially encryption state and mounted volumes.
+3. Use the **appropriate write blocker for supported powered-off media**; software launching from USB does not itself block writes to the source.
+4. For live acquisition, document unavoidable host changes and what source was accessible/unlocked.
+5. Write output to approved dedicated evidence storage; monitor errors, expected data size and verification results.
+6. Transfer to lab, validate the image and record custody.
 
-Insert the USB drive you want to use for your portable FTK Imager setup.
+## Expected output and meaning
 
-### 3) Copy the FTK Imager program folder to USB
+You may obtain a forensic image (depending on format/settings), acquisition logs, calculated hash values and evidence/item metadata. A successful tool message indicates the software reports completion—**not** that the source was free of prior modification, that all inaccessible data was collected, or that the format is readable by every parser.
 
-Copy the entire **FTK Imager installation folder** to the USB drive.
+## Common failure points
 
-Common default paths:
+- Architecture/runtime mismatch or missing redistributables.
+- Corporate application-control, EDR or admin privilege restrictions.
+- Destination media full, wrong file system or a path silently pointing at the evidence source.
+- Live encrypted volume whose accessibility changes after reboot.
+- Incomplete hash/verification notes.
 
-- `C:\Program Files\AccessData\FTK Imager`
-- `C:\Program Files (x86)\AccessData\FTK Imager`
+## References
 
-Place the copied folder somewhere sensible on the USB, for example:
+- [Exterro — FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager)
+- [Field-to-lab tool matrix](../../../playbooks/acquisition/4-field-to-lab-tool-matrix.md)
 
-- `X:\Tools\FTKImager\`
-
-(Replace `X:` with your USB drive letter.)
-
-### 4) Copy required MFC runtime files (64-bit FTK Imager)
-
-For **64-bit** versions of FTK Imager (version **3.4.3 and higher**), you may need additional Microsoft Foundation Class runtime files.
-
-On the setup machine, open:
-
-- `C:\Windows\System32\`
-
-Find and copy these file families:
-
-- `mfc100*`
-- `mfc110*`
-- `mfc120*`
-- `mfc140*`
-
-Copy them to one of the following locations on the USB:
-
-- Preferred: the same folder as the FTK Imager executable (for example `X:\Tools\FTKImager\`)
-- Alternate: the root of the USB drive (for example `X:\`)
-
-## Verification
-
-On a different Windows machine:
-
-1. Plug in the USB drive.
-2. Browse to your FTK Imager folder.
-3. Launch the FTK Imager executable.
-
-If FTK Imager fails to start, re-check that the MFC files were copied correctly and are accessible in the same folder as the executable.
-
-## Notes and cautions
-
-- **Scope and authorization:** Only image systems and media you are authorized to collect.
-- **Minimize writes:** When collecting evidence, aim to reduce changes on the target system. Running tools from USB can help, but execution still creates artifacts on the host (prefetch, recent files, etc.).
-- **USB hygiene:** Keep this USB dedicated to DFIR work and avoid mixing it with personal files.
-
-## Change log
-
-- 2026-03-03: Initial version
+[Tool index](../README.md)
