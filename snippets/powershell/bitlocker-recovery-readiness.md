@@ -50,6 +50,38 @@ manage-bde -protectors -get C:
 
 The output displays an existing 48-digit recovery password **only if** a matching protector exists and you have sufficient access. It does not create a recovery password or guarantee decryption. A device using TPM protection may have a key escrowed in Microsoft Entra ID or Active Directory instead; correlate the recovery protector ID using your approved escrow workflow.
 
+## Example output — synthetic and redacted
+
+Example `Get-BitLockerVolume` summary:
+
+```text
+MountPoint VolumeStatus   ProtectionStatus LockStatus EncryptionPercentage
+---------- -------------- ---------------- ---------- --------------------
+C:         FullyEncrypted On               Unlocked   100
+D:         FullyDecrypted Off              Unlocked   0
+```
+
+### What this tells you
+
+- **C:** `FullyEncrypted` means the volume's encryption conversion is complete. `Unlocked` means Windows can currently access it; **it does not guarantee the same offline access after shutdown**.
+- **ProtectionStatus:** whether BitLocker protectors are currently enforcing protection. Protection being *Off* can include a suspended state; don't mistake it for a drive being unencrypted.
+- **D:** `FullyDecrypted` is a different condition from an encrypted but unlocked volume.
+
+Example protector inventory:
+
+```text
+KeyProtectorType KeyProtectorId
+---------------- --------------------------------------
+Tpm              {11111111-2222-3333-4444-555555555555}
+RecoveryPassword {aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}
+```
+
+The **RecoveryPassword protector ID** helps match a recovery record held in approved escrow. The recovery-password command may return a **48-digit numeric secret**; that value is intentionally *not shown in this public example*. An ID alone is **not a decryption key**.
+
+### Field interpretation
+
+The useful decision is not simply "BitLocker enabled?" It is **"Can the forensic laboratory access this volume after we power it down?"** Record state, verify an authorized recovery path with the examiner, and preserve the relevant access material securely.
+
 ## 4. Preservation and handoff
 
 - Record case ID, device/volume identity, time with timezone, volume state, tool/command and matching protector ID.
