@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "description": "Hashimoire section registry. Only published groups and published items are rendered in _sidebar.md; planned and drafting entries are not public navigation.",
+  "visible_status": "published",
+  "sections": [
+    {
+      "id": "start-here",
+      "title": "START HERE",
+      "status": "published",
+      "items": [
+        {
+          "label": "Home",
+          "path": "/",
+          "status": "published"
+        },
+        {
+          "label": "Field Collector",
+          "path": "/collector/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Forensic Examiner",
+          "path": "/examiner/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Save to phone home screen",
+          "path": "/docs/mobile-home-screen.md",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "field-collector",
+      "title": "FIELD COLLECTOR",
+      "status": "published",
+      "items": [
+        {
+          "label": "Collector guide hub",
+          "path": "/collector/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Smartphone / tablet",
+          "path": "/collector/mobile-device-collection.md",
+          "status": "published"
+        },
+        {
+          "label": "Computer / laptop",
+          "path": "/collector/computer-collection.md",
+          "status": "published"
+        },
+        {
+          "label": "Evidence handoff",
+          "path": "/collector/evidence-handoff.md",
+          "status": "published"
+        },
+        {
+          "label": "Smartphone decision tree",
+          "path": "/collector/mobile-power-state-decision-tree.md",
+          "status": "planned"
+        },
+        {
+          "label": "Removable media and USB collection",
+          "path": "/collector/removable-media.md",
+          "status": "planned"
+        },
+        {
+          "label": "Video / CCTV evidence preservation",
+          "path": "/collector/video-preservation.md",
+          "status": "planned"
+        },
+        {
+          "label": "Scene photography & documentation",
+          "path": "/collector/scene-documentation.md",
+          "status": "planned"
+        },
+        {
+          "label": "Damaged device handling",
+          "path": "/collector/damaged-devices.md",
+          "status": "planned"
+        },
+        {
+          "label": "Cloud and account preservation requests",
+          "path": "/collector/cloud-preservation.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "forensic-examiner",
+      "title": "FORENSIC EXAMINER",
+      "status": "published",
+      "items": [
+        {
+          "label": "Examiner toolkit",
+          "path": "/examiner/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Acquisition hub",
+          "path": "/playbooks/acquisition/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Rapid evidence collection",
+          "path": "/playbooks/acquisition/0-rapid-evidence-collection.md",
+          "status": "published"
+        },
+        {
+          "label": "Collection bag checklist",
+          "path": "/playbooks/acquisition/2-collection-bag-checklist.md",
+          "status": "published"
+        },
+        {
+          "label": "Collection software",
+          "path": "/playbooks/acquisition/3-collection-software-checklist.md",
+          "status": "published"
+        },
+        {
+          "label": "Field-to-lab tool matrix",
+          "path": "/playbooks/acquisition/4-field-to-lab-tool-matrix.md",
+          "status": "published"
+        },
+        {
+          "label": "Visual field reference",
+          "path": "/playbooks/acquisition/5-visual-field-reference.md",
+          "status": "published"
+        },
+        {
+          "label": "Phishing investigation",
+          "path": "/playbooks/suspicious-email/phishing-email-investigation.md",
+          "status": "published"
+        },
+        {
+          "label": "Mobile forensics hub",
+          "path": "/docs/mobile/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Windows artifact investigation hub",
+          "path": "/docs/windows/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Evidence validation hub",
+          "path": "/docs/verification/README.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "windows-forensic-commands",
+      "title": "WINDOWS FORENSIC COMMANDS",
+      "status": "published",
+      "items": [
+        {
+          "label": "All Windows snippets",
+          "path": "/snippets/powershell/README.md",
+          "status": "published"
+        },
+        {
+          "label": "BitLocker recovery readiness",
+          "path": "/snippets/powershell/bitlocker-recovery-readiness.md",
+          "status": "published"
+        },
+        {
+          "label": "Disk and volume layout",
+          "path": "/snippets/powershell/disk-volume-layout.md",
+          "status": "published"
+        },
+        {
+          "label": "Volume Shadow Copies",
+          "path": "/snippets/powershell/volume-shadow-copies.md",
+          "status": "published"
+        },
+        {
+          "label": "USB storage history",
+          "path": "/snippets/powershell/usb-storage-history.md",
+          "status": "published"
+        },
+        {
+          "label": "PowerShell command history",
+          "path": "/snippets/powershell/powershell-command-history.md",
+          "status": "published"
+        },
+        {
+          "label": "Windows event IDs",
+          "path": "/snippets/powershell/windows-event-triage.md",
+          "status": "published"
+        },
+        {
+          "label": "Registry hive preservation",
+          "path": "/snippets/powershell/registry-hive-preservation.md",
+          "status": "published"
+        },
+        {
+          "label": "SHA-256 evidence hashes",
+          "path": "/snippets/powershell/sha256-evidence.md",
+          "status": "published"
+        },
+        {
+          "label": "Prefetch investigation",
+          "path": "/snippets/powershell/prefetch.md",
+          "status": "planned"
+        },
+        {
+          "label": "SRUM investigation",
+          "path": "/snippets/powershell/srum.md",
+          "status": "planned"
+        },
+        {
+          "label": "Amcache and ShimCache",
+          "path": "/snippets/powershell/amcache-shimcache.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "tool-reference",
+      "title": "TOOL REFERENCE",
+      "status": "published",
+      "items": [
+        {
+          "label": "Tools index",
+          "path": "/docs/tools/README.md",
+          "status": "published"
+        },
+        {
+          "label": "FTK Imager from USB",
+          "path": "/docs/tools/ftk/ftk-imager-usb-runtime.md",
+          "status": "published"
+        },
+        {
+          "label": "Volatility installation",
+          "path": "/docs/tools/volatility/install-on-kali.md",
+          "status": "published"
+        },
+        {
+          "label": "Volatility commands",
+          "path": "/docs/tools/volatility/useful-commands.md",
+          "status": "published"
+        },
+        {
+          "label": "Hashing reference",
+          "path": "/docs/hashing/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Cellebrite notes",
+          "path": "/docs/tools/cellebrite/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Magnet AXIOM notes",
+          "path": "/docs/tools/axiom/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Belkasoft RAM capture",
+          "path": "/docs/tools/belkasoft/ram-capturer.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "osint-exposure",
+      "title": "OSINT & EXPOSURE",
+      "status": "published",
+      "items": [
+        {
+          "label": "OSINT index",
+          "path": "/osint/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Domain exposure review",
+          "path": "/osint/domain-checks/domain-exposure-review.md",
+          "status": "published"
+        },
+        {
+          "label": "Username review",
+          "path": "/osint/username-checks/username-review-workflow.md",
+          "status": "published"
+        },
+        {
+          "label": "Metadata review",
+          "path": "/osint/metadata-checks/document-image-metadata-review.md",
+          "status": "published"
+        },
+        {
+          "label": "Email header analysis",
+          "path": "/osint/email-headers/README.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "ABOUT",
+      "status": "published",
+      "items": [
+        {
+          "label": "About Hashimoire",
+          "path": "/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Visual style",
+          "path": "/docs/visual-style.md",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "mobile-forensics",
+      "title": "MOBILE DEVICE FORENSICS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "iOS forensic acquisition",
+          "path": "/docs/mobile/ios/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "iOS artifact interpretation",
+          "path": "/docs/mobile/ios/artifacts.md",
+          "status": "planned"
+        },
+        {
+          "label": "Android forensic acquisition",
+          "path": "/docs/mobile/android/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "Android artifact interpretation",
+          "path": "/docs/mobile/android/artifacts.md",
+          "status": "planned"
+        },
+        {
+          "label": "Mobile extraction verification",
+          "path": "/docs/mobile/validation.md",
+          "status": "planned"
+        },
+        {
+          "label": "App evidence and messaging",
+          "path": "/docs/mobile/apps/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Mobile examination reporting",
+          "path": "/docs/mobile/reporting.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "windows-artifacts",
+      "title": "WINDOWS ARTIFACTS & TIMELINES",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Windows artifact map",
+          "path": "/docs/windows/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Registry forensics",
+          "path": "/docs/windows/registry.md",
+          "status": "planned"
+        },
+        {
+          "label": "Execution artifacts",
+          "path": "/docs/windows/execution.md",
+          "status": "planned"
+        },
+        {
+          "label": "Browser and user activity",
+          "path": "/docs/windows/browser.md",
+          "status": "planned"
+        },
+        {
+          "label": "Filesystem and $MFT",
+          "path": "/docs/windows/filesystems.md",
+          "status": "planned"
+        },
+        {
+          "label": "Windows timeline building",
+          "path": "/docs/windows/timelines.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "macos-forensics",
+      "title": "MACOS FORENSICS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "macOS acquisition and encryption",
+          "path": "/docs/macos/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "APFS and snapshots",
+          "path": "/docs/macos/apfs.md",
+          "status": "planned"
+        },
+        {
+          "label": "Unified logs and user activity",
+          "path": "/docs/macos/unified-logs.md",
+          "status": "planned"
+        },
+        {
+          "label": "TCC and persistence artifacts",
+          "path": "/docs/macos/persistence.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "linux-forensics",
+      "title": "LINUX FORENSICS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Linux live response",
+          "path": "/docs/linux/live-response.md",
+          "status": "planned"
+        },
+        {
+          "label": "Filesystem and logs",
+          "path": "/docs/linux/filesystems-logs.md",
+          "status": "planned"
+        },
+        {
+          "label": "Sessions and user activity",
+          "path": "/docs/linux/user-activity.md",
+          "status": "planned"
+        },
+        {
+          "label": "Linux persistence review",
+          "path": "/docs/linux/persistence.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "memory-forensics",
+      "title": "MEMORY FORENSICS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Memory acquisition by OS",
+          "path": "/docs/memory/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "Volatility 3 analysis workflow",
+          "path": "/docs/memory/volatility.md",
+          "status": "planned"
+        },
+        {
+          "label": "Memory artifact interpretation",
+          "path": "/docs/memory/artifacts.md",
+          "status": "planned"
+        },
+        {
+          "label": "Memory validation",
+          "path": "/docs/memory/validation.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "storage-filesystems",
+      "title": "STORAGE & REMOVABLE MEDIA",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Write blocking and acquisition",
+          "path": "/docs/storage/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "NTFS and exFAT",
+          "path": "/docs/storage/windows-filesystems.md",
+          "status": "planned"
+        },
+        {
+          "label": "USB and external device timelines",
+          "path": "/docs/storage/external-devices.md",
+          "status": "planned"
+        },
+        {
+          "label": "Encryption and recovery access",
+          "path": "/docs/storage/encryption.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "cloud-identity",
+      "title": "CLOUD, ACCOUNTS & IDENTITY",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Microsoft 365 and Entra",
+          "path": "/docs/cloud/microsoft365.md",
+          "status": "planned"
+        },
+        {
+          "label": "Google Workspace",
+          "path": "/docs/cloud/google-workspace.md",
+          "status": "planned"
+        },
+        {
+          "label": "Cloud preservation and exports",
+          "path": "/docs/cloud/preservation.md",
+          "status": "planned"
+        },
+        {
+          "label": "Authentication / identity timelines",
+          "path": "/docs/cloud/identity.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "network-email",
+      "title": "NETWORK, EMAIL & LOGS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Network evidence collection",
+          "path": "/docs/network/acquisition.md",
+          "status": "planned"
+        },
+        {
+          "label": "PCAP and flow analysis",
+          "path": "/docs/network/pcap.md",
+          "status": "planned"
+        },
+        {
+          "label": "Email headers and phishing",
+          "path": "/docs/email/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Proxy, DNS and VPN evidence",
+          "path": "/docs/network/log-sources.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "video-multimedia",
+      "title": "VIDEO & MULTIMEDIA EVIDENCE",
+      "status": "planned",
+      "items": [
+        {
+          "label": "CCTV preservation and exports",
+          "path": "/docs/video/cctv-preservation.md",
+          "status": "planned"
+        },
+        {
+          "label": "Video integrity and metadata",
+          "path": "/docs/video/integrity.md",
+          "status": "planned"
+        },
+        {
+          "label": "Audio and image metadata",
+          "path": "/docs/video/audio-image.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "specialized-devices",
+      "title": "SPECIALIZED DEVICES",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Vehicle and infotainment systems",
+          "path": "/docs/specialized/vehicles.md",
+          "status": "planned"
+        },
+        {
+          "label": "IoT and smart devices",
+          "path": "/docs/specialized/iot.md",
+          "status": "planned"
+        },
+        {
+          "label": "Wearables and paired devices",
+          "path": "/docs/specialized/wearables.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "detections-response",
+      "title": "DETECTIONS & INCIDENT RESPONSE",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Suspicious endpoint triage",
+          "path": "/playbooks/endpoint-review/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Account compromise",
+          "path": "/playbooks/account-compromise/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Sigma / KQL / SIEM rules",
+          "path": "/detections/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Containment and recovery",
+          "path": "/playbooks/incident-response/README.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "reports-evidence",
+      "title": "EVIDENCE, REPORTING & TEMPLATES",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Chain-of-custody templates",
+          "path": "/templates/chain-of-custody/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Acquisition documentation",
+          "path": "/templates/acquisition/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Examiner reports",
+          "path": "/templates/reporting/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Artifact validation in court",
+          "path": "/docs/verification/court-artifacts.md",
+          "status": "planned"
+        },
+        {
+          "label": "Quality review checklists",
+          "path": "/templates/review-checklists/README.md",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "training-labs",
+      "title": "TRAINING & VALIDATION LABS",
+      "status": "planned",
+      "items": [
+        {
+          "label": "Validated training datasets",
+          "path": "/lab-notes/test-data/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Tool validation results",
+          "path": "/lab-notes/validation-notes/README.md",
+          "status": "planned"
+        },
+        {
+          "label": "Practice investigations",
+          "path": "/lab-notes/scenarios/README.md",
+          "status": "planned"
+        }
+      ]
+    }
+  ]
+}

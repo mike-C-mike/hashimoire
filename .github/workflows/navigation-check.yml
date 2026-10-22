@@ -1,0 +1,33 @@
+name: Validate Hashimoire Navigation
+
+on:
+  pull_request:
+    paths:
+      - "site/navigation.json"
+      - "_sidebar.md"
+      - "scripts/generate_sidebar.py"
+      - ".github/workflows/navigation-check.yml"
+      - "collector/**"
+      - "examiner/**"
+      - "docs/**"
+      - "playbooks/**"
+      - "snippets/**"
+  push:
+    branches: [main]
+    paths:
+      - "site/navigation.json"
+      - "_sidebar.md"
+      - "scripts/generate_sidebar.py"
+      - ".github/workflows/navigation-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate publication gates and sidebar links
+        run: python3 scripts/generate_sidebar.py --check

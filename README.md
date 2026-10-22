@@ -73,71 +73,39 @@ Use the repo by task type:
 - Use **templates** for repeatable documentation and review checklists.
 - Use **scripts** for small helpers that reduce repetitive work.
 
-## Repo Structure
+## Repository Structure: Today and Tomorrow
+
+Hashimoire uses **two audience entry points** backed by a shared, evolving reference library.
 
 ```text
 hashimoire/
-├─ docs/
-│  ├─ evidence-workflows/
-│  ├─ hashing/
-│  ├─ tools/
-│  ├─ windows/
-│  ├─ linux/
-│  ├─ macos/
-│  ├─ mobile/
-│  ├─ networking/
-│  ├─ storage/
-│  └─ reporting/
-│
-├─ playbooks/
-│  ├─ triage/
+├─ home.md                       # Site entry point: choose a role
+├─ collector/                    # Fast field preservation and handoff
+├─ examiner/                     # Examiner start page
+├─ playbooks/                    # Repeatable procedures and decision flows
 │  ├─ acquisition/
-│  ├─ suspicious-email/
-│  ├─ endpoint-review/
-│  ├─ account-compromise/
-│  ├─ lost-device/
-│  └─ evidence-handoff/
-│
-├─ snippets/
-│  ├─ powershell/
-│  ├─ bash/
-│  ├─ python/
-│  ├─ sqlite/
-│  ├─ yara/
-│  ├─ sigma/
-│  └─ kql/
-│
-├─ detections/
-│  ├─ sigma/
-│  ├─ yara/
-│  ├─ kql/
-│  ├─ splunk/
-│  └─ notes/
-│
-├─ osint/
-│  ├─ exposure-checks/
-│  ├─ username-checks/
-│  ├─ domain-checks/
-│  ├─ metadata-checks/
-│  └─ safety-notes/
-│
-├─ templates/
-│  ├─ acquisition/
-│  ├─ chain-of-custody/
-│  ├─ reporting/
-│  ├─ intake/
-│  └─ review-checklists/
-│
-├─ scripts/
-│  ├─ hash-manifests/
-│  ├─ folder-setup/
-│  ├─ file-inventory/
-│  └─ log-parsing/
-│
-└─ lab-notes/
-   ├─ tool-installs/
-   ├─ test-data/
-   └─ validation-notes/
+│  └─ suspicious-email/
+├─ snippets/powershell/          # Windows forensic commands and sample output
+├─ docs/                         # Tool notes, hashing and deeper explanations
+├─ osint/                        # Defensive OSINT and exposure checks
+├─ site/navigation.json          # Published + planned/hideable menu registry
+├─ scripts/generate_sidebar.py   # Sidebar publisher with link validation
+├─ planning/                     # Architecture, content gates, phased roadmap
+└─ _sidebar.md                   # Generated, published-only Docsify navigation
+```
+
+Future sections (including **mobile examiner, Windows artifact deep dives, macOS, Linux, memory, cloud, networks, video, reporting and training**) are reserved in the [navigation registry](site/navigation.json) but intentionally **hidden until a useful body of reviewed content is ready**.
+
+See the [Information Architecture v1](planning/ARCHITECTURE.md) and [depth-first roadmap](planning/ROADMAP.md) for the planned headings, writing standards and release order.
+
+To publish a finished page, update its status in `site/navigation.json`, then regenerate `_sidebar.md` with:
+
+```bash
+python scripts/generate_sidebar.py
+python scripts/generate_sidebar.py --check
+```
+
+The published website never shows empty future categories. **Hidden from navigation does not mean private** in a public repository.
 
 ## Start here: acquisition and live-response reference
 
