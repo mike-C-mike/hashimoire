@@ -56,11 +56,6 @@
           "status": "published"
         },
         {
-          "label": "Smartphone decision tree",
-          "path": "/collector/mobile-power-state-decision-tree.md",
-          "status": "planned"
-        },
-        {
           "label": "Removable media and USB collection",
           "path": "/collector/removable-media.md",
           "status": "planned"
