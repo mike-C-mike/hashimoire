@@ -30,6 +30,20 @@ Get-ChildItem -LiteralPath $Out -Filter '*.hiv' |
 
 User-profile registry artifacts (`NTUSER.DAT`, `UsrClass.dat`) and transaction logs require an **additional approved acquisition workflow**; `reg save` alone is not a complete registry collection.
 
+## Example output — synthetic acquisition
+
+```text
+E:\\CASE-EXAMPLE\\registry\\SYSTEM.hiv
+E:\\CASE-EXAMPLE\\registry\\SOFTWARE.hiv
+```
+
+### What the files are
+
+- **SYSTEM.hiv:** a logical snapshot of machine-level configuration including service/control-set and device-enumeration data.
+- **SOFTWARE.hiv:** a logical snapshot of OS and application configuration.
+- The returned **SHA-256 hashes** establish a reference for the collected snapshots, but not for the underlying registry at other points in time.
+- These are **not text exports**; review them using a registry parser or a forensic suite in the lab. The output doesn't include user hives or all transaction logs.
+
 ## Cautions
 
 - This writes acquired files to the designated destination. Confirm `E:\` is not the source volume before running.
