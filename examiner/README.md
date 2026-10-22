@@ -15,6 +15,8 @@
   <a class="hash-card" href="#/playbooks/suspicious-email/phishing-email-investigation.md"><span class="hash-card-icon" aria-hidden="true">✉</span><strong>Phishing investigation</strong><span>User reporting, evidence preservation, header limitations, scope, and containment.</span><em>Open playbook →</em></a>
 </div>
 
+**Critical before shutdown:** [BitLocker volume state and existing recovery password reference](../snippets/powershell/bitlocker-recovery-readiness.md). Protect any recovery credential in approved key storage.
+
 ## Frequently used references
 
 - [Collection software checklist](../playbooks/acquisition/3-collection-software-checklist.md)
