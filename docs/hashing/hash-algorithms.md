@@ -1,108 +1,40 @@
+# Hash Algorithms — Choosing a Forensic Digest
 
----
+**Use case:** acquisition verification | file integrity | compatibility  
+**Risk:** safe
 
-## `docs/hashing/hash-algorithms.md`
+| Algorithm | Digest length | Forensic position |
+| --- | --- | --- |
+| MD5 | 128 bits / 32 hex digits | Common in older evidence/hash-set workflows; collision-weak. |
+| SHA-1 | 160 bits / 40 hex digits | Legacy interoperability; collision-weak. |
+| SHA-256 | 256 bits / 64 hex digits | Strong general-purpose modern default. |
+| SHA-512 | 512 bits / 128 hex digits | Valid SHA-2 option; use when supported or required. |
 
-```markdown
-# Hash Algorithms
+## Practical guidance
 
-## Purpose
+**Use SHA-256 as the default** for newly calculated forensic integrity values, provided acquisition tooling and policy permit it. Document any required legacy MD5/SHA-1 values as compatibility hashes rather than claiming they are stronger than SHA-256.
 
-This note summarizes common hash algorithms used in digital forensics and defensive security workflows.
+A SHA-256 match demonstrates very high confidence that the **same bytes** were hashed twice. It is not a source-authentication proof or substitute for case documentation.
 
-It is not a cryptography deep dive. The goal is practical decision support for documentation, acquisition, verification, and review.
+### Why MD5/SHA-1 are treated differently
 
-## Common Algorithms
+Researchers demonstrated practical collision attacks against these algorithms. That matters particularly where adversarial manipulation is plausible. A historical MD5 value may still be useful for comparison with a legacy report or tool hash set, but use a modern hash alongside it where supported.
 
-Common hashing algorithms include:
+## Example using PowerShell
 
-- MD5
-- SHA-1
-- SHA-256
-- SHA-512
+```powershell
+Get-FileHash -LiteralPath 'E:\CASE-EXAMPLE\memory.raw' -Algorithm SHA256
+```
 
-Older workflows and tools may still use MD5 or SHA-1. Modern workflows should prefer stronger SHA-2 or SHA-3 family algorithms when available and appropriate.
+**Expected output fields:** Algorithm, Hash and Path. The hash applies to that image file's bytes. Changing even a small portion of the file is expected to change a secure digest.
 
-## MD5
+## Hashing a collection
 
-MD5 produces a 128-bit hash.
+There is no universal hash for "a folder" unless the workflow defines a byte representation or manifest method. For a file-set manifest, record each relative path, file size and individual digest; preserve the manifest and the original directory context. If files are added/removed, the manifest must be recomputed.
 
-It is:
+## References
 
-- fast
-- widely supported
-- common in older forensic workflows
-- still present in legacy reports and hash sets
-- useful for some compatibility purposes
+- [NIST FIPS 180-4 — Secure Hash Standard](https://csrc.nist.gov/pubs/fips/180-4/upd1/final)
+- [NIST SP 800-131A Rev. 2 — Algorithm transitions](https://csrc.nist.gov/pubs/sp/800/131/a/r2/final)
 
-MD5 also has known collision weaknesses.
-
-A collision means two different inputs can produce the same hash value. MD5 collisions have been publicly demonstrated, and MD5 should not be treated as the preferred modern integrity algorithm when adversarial manipulation is a realistic concern.
-
-That does not mean every historical MD5 value is useless. MD5 may still appear in legacy workflows, old reports, or existing hash sets. It can still help detect accidental changes in many routine contexts.
-
-The limitation should be understood and documented.
-
-## SHA-1
-
-SHA-1 produces a 160-bit hash.
-
-It is stronger than MD5 historically, but it also has known collision weaknesses and is being phased out across modern security practice.
-
-SHA-1 may still appear in:
-
-- older forensic tools
-- historical reports
-- existing file reputation systems
-- legacy hash sets
-- older acquisition workflows
-
-Current workflows should move toward SHA-2 or SHA-3 family algorithms where possible.
-
-## SHA-256
-
-SHA-256 is part of the SHA-2 family and produces a 256-bit hash.
-
-It is commonly preferred in modern forensic and security workflows because it provides stronger collision resistance than MD5 or SHA-1.
-
-SHA-256 is a strong default choice for:
-
-- forensic image verification
-- export verification
-- file integrity documentation
-- evidence transfer documentation
-- malware sample identification
-- modern defensive security workflows
-
-The tradeoff is time. Hashing large devices, images, exports, or datasets with SHA-256 can take noticeable time depending on:
-
-- data size
-- storage speed
-- tool behavior
-- whether multiple hashes are being calculated
-- whether the workflow is read-limited or write-limited
-
-The time cost is usually worth it where stronger integrity documentation matters.
-
-## SHA-512
-
-SHA-512 is also part of the SHA-2 family and produces a 512-bit hash.
-
-It may be used in some security and forensic contexts, but SHA-256 is often the more common practical default for broad compatibility and documentation.
-
-SHA-512 may be useful when:
-
-- the tool already supports it
-- the workflow requires it
-- policy requires it
-- stronger SHA-2 output is desired
-- compatibility is not a concern
-
-## Practical Algorithm Guidance
-
-Use stronger algorithms where possible.
-
-Practical default:
-
-```text
-Prefer SHA-256 for modern integrity documentation.
+[Hash basics](hash-basics.md) · [Documentation](hash-documentation.md)
