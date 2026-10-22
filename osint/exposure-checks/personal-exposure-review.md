@@ -1,127 +1,86 @@
+# Personal & Organization Exposure Review
 
-```markdown
-<!-- osint/exposure-checks/README.md -->
+**Use case:** self-audit | authorized organization exposure | public information reduction  
+**Risk:** caution
 
-# Exposure Checks
+> This is a **consensual risk-reduction** workflow, not a way to investigate someone's private life. Do not construct dossiers, target minors, contact unrelated people, or bypass privacy settings.
 
-This folder contains defensive exposure-check workflows.
+## 1. Agree on the objective
 
-An exposure check is a structured review of what information is publicly visible about a person, organization, project, domain, or online identity.
+A meaningful question is specific: *Can someone find the project owner's private phone number on public pages?* or *Does our organization's public site unnecessarily reveal employee personal contact details?*
 
-The goal is to understand what can be found, what risk it creates, and what can be reduced.
+```text
+Subject/organization and permission:
+Exactly what exposure to assess:
+Public sources allowed:
+What will NOT be searched or retained:
+Reviewer and date/time:
+How findings will be shared and deleted:
+```
 
-## Purpose
+## 2. Check the smallest useful set of public sources
 
-Exposure checks help answer:
+- Owner's **verified** public profiles and professional/organization website.
+- Ordinary public search engine results for the owner's **approved** public name/brand.
+- Files that the owner or organization publishes publicly, when in scope.
+- Public contact pages and outdated listings the owner already knows about.
 
-- What information is publicly visible?
-- Could public information support unwanted contact, impersonation, harassment, scams, or social engineering?
-- Are old pages, public profiles, or documents creating unnecessary risk?
-- What should be removed, reduced, corrected, or monitored?
-- What practical steps would reduce exposure?
+Avoid accessing commercial people-search dumps, data brokers, leaked credential collections, or restricted systems unless an explicitly authorized and lawful workflow calls for them.
 
-## Appropriate Use Cases
+## 3. Document *the exposure*, not a directory of personal data
 
-Appropriate uses include:
+| Finding | Why it matters | Useful response |
+| --- | --- | --- |
+| Unnecessary personal phone displayed | Unwanted contact/social engineering | Remove or replace with managed contact channel |
+| Document exposes author/internal path | Unintended organizational detail | Publish sanitized copy after review |
+| Public post shows location routines | Safety/privacy concern | Remove or limit audience |
+| Stale employer/account link | Confusion or impersonation risk | Update verified profile/website |
 
-- reviewing your own public footprint
-- helping a family member understand online exposure
-- reviewing a professional profile before a job search
-- reviewing a project before launch
-- checking whether a school, nonprofit, or business website exposes too much
-- identifying impersonation indicators
-- cleaning up public contact information
+**Example (fictional):**
 
-## Out of Scope
-
-Do not use this folder for:
-
-- doxxing
-- stalking
-- harassment
-- relationship surveillance
-- collecting private details without a legitimate purpose
-- targeting minors
-- bypassing privacy settings
-- accessing private accounts
-- creating dossiers for harm
-
-## Folder Contents
-
-- `personal-exposure-review.md`  
-  A detailed workflow for reviewing public personal exposure and documenting practical cleanup steps.
-
-## Core Rule
-
-An exposure check should reduce risk.
-
-It should not collect information simply because it is available.
-
-"Full Name"
-"Full Name" "City"
-"Full Name" "Employer"
-"Full Name" "School"
-"Full Name" "email"
-"Full Name" "phone"
-"Full Name" filetype:pdf
-"Full Name" filetype:doc
-"Full Name" site:example.com
-
-Platform:
-Profile URL:
-Display name:
-Username:
-Public contact details:
-Location details:
-Employer/school details:
-Family or relationship exposure:
-Images with location clues:
-Links to other accounts:
-Risk notes:
-Recommended changes:
-
+```text
 Finding ID: EXP-001
-Finding title: Public image reveals school and pickup location
-Source: Public social media post
-Date/time accessed: 2026-07-10 14:22 CST
-Risk: Moderate
-Why it matters: The image links a child to a specific school and pickup location.
-Recommended action: Remove image or crop/blur school logo and location clues.
+Source: public project contact page
+Observation: personal mobile listed instead of published support line
+Risk: unwanted direct contact
+Evidence retained: URL, UTC check time, limited screenshot reference
+Suggested action: replace with organization-managed contact method
+Priority: owner-confirmed cleanup
+Status: awaiting change
+```
 
-Title:
-Subject:
-Reviewer:
-Date:
-Purpose:
-Scope:
+Avoid repeating sensitive values in the report. Store any required evidence in controlled systems and use redacted summaries.
 
-Summary:
-[Plain-language summary]
+## 4. Prioritize and remediate
 
-Key Findings:
-1.
-2.
-3.
+1. **Urgent:** active personal safety exposure or information placing a person at immediate risk — use appropriate organizational escalation.
+2. **High:** access-enabling details or direct contact and location information with credible misuse potential.
+3. **Moderate:** unnecessary linkage of personal/professional accounts, old public documents, and contact clutter.
+4. **Low:** public information that the owner intentionally publishes and that creates little additional risk.
 
-Risk Rating:
-Low / Moderate / High / Critical
+Use owner-controlled editing, official removal requests, and platform reporting. Confirm the owner wants the change; some public information is intentionally available.
 
-Detailed Findings:
-Finding ID:
-Title:
-Source:
-Observed:
-Risk:
-Recommended action:
-Status:
+## 5. Verify the result
 
-Limitations:
-[What was not checked or could not be verified]
+- Confirm the original URL or profile reflects the approved correction.
+- Remember search caches and third-party indexes may remain stale.
+- Record what was changed, by whom, when, and what **remains unresolved**.
+- Recheck only the in-scope items; do not expand investigation without approval.
 
-Recommended Next Steps:
-1.
-2.
-3.
+## Evidence and retention
 
-Retention:
-[What notes/files/screenshots were retained and why]
+```text
+Objective/permission:
+Finding and directly observed URL:
+Observation time (UTC):
+Impact and rationale:
+Owner decision/action:
+Verification time/result:
+Retained notes/files:
+Planned removal or retention date:
+Limits and open questions:
+```
+
+**Avoid overclaiming:** one result does not prove a person's identity; a removed page can still be indexed or archived. The aim is reducing exposure rather than claiming the internet has forgotten it.
+
+[OSINT home](../README.md) · [Exposure category](README.md) · [Safety limits](../safety-notes/osint-safety-boundaries.md)
