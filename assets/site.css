@@ -310,3 +310,78 @@ body .markdown-section .hash-hero h1 * {
   .hash-hero-art { max-width: 330px; }
   .hash-hero-art img { max-height: 170px; }
 }
+
+
+/* Collapsible role/tool groups in the Docsify sidebar.
+   Only the top-level group links collapse; site search remains available. */
+.sidebar-nav > ul > li.hash-fold-group {
+  position: relative;
+  margin: 6px 0 4px;
+}
+.sidebar .sidebar-nav .hash-fold-toggle {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 30px;
+  margin: 0 3px 0 0;
+  padding: 0;
+  color: #a6f57a;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.sidebar .sidebar-nav .hash-fold-toggle::before {
+  content: "▸";
+  font-size: 19px;
+  line-height: 1;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform .15s ease;
+}
+.sidebar .sidebar-nav .hash-fold-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+.sidebar .sidebar-nav .hash-fold-toggle:hover,
+.sidebar .sidebar-nav .hash-fold-toggle:focus-visible {
+  color: #d1ff9e;
+  background: #203425;
+  border-color: #54844a;
+  outline-offset: 2px;
+}
+.sidebar .sidebar-nav li.hash-fold-group > strong,
+.sidebar .sidebar-nav li.hash-fold-group > p {
+  color: #a4df8d !important;
+  font-size: .76rem;
+  letter-spacing: .075em;
+}
+.sidebar .sidebar-nav li.hash-fold-group > strong.hash-fold-heading {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 3px;
+  border-radius: 4px;
+}
+.sidebar .sidebar-nav li.hash-fold-group > strong.hash-fold-heading:focus-visible {
+  outline: 2px solid #a6f57a;
+}
+.sidebar .sidebar-nav li.hash-fold-group > ul[hidden],
+.sidebar .sidebar-nav li.hash-fold-group.hash-fold-closed > ul {
+  display: none !important;
+}
+.sidebar .sidebar-nav li.hash-fold-group > ul:not([hidden]) {
+  margin: 3px 0 10px 13px;
+  border-left: 1px solid rgba(164, 223, 141, .2);
+}
+.sidebar .sidebar-nav li.hash-fold-group > ul > li {
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .sidebar .sidebar-nav .hash-fold-toggle {
+    width: 38px;
+    height: 38px;
+  }
+}

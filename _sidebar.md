@@ -17,13 +17,15 @@
   - [Field-to-lab tool matrix](/playbooks/acquisition/4-field-to-lab-tool-matrix.md)
   - [Visual field reference](/playbooks/acquisition/5-visual-field-reference.md)
   - [Phishing investigation](/playbooks/suspicious-email/phishing-email-investigation.md)
-- **WINDOWS QUICK COMMANDS**
-  - [Snippets index](/snippets/powershell/README.md)
-  - [System identity & time](/snippets/powershell/system-identity-time.md)
-  - [Processes & services](/snippets/powershell/processes-services.md)
-  - [Network state](/snippets/powershell/network-state.md)
-  - [Users & sessions](/snippets/powershell/users-sessions.md)
-  - [Export event logs](/snippets/powershell/event-log-export.md)
+- **WINDOWS FORENSIC COMMANDS**
+  - [All Windows snippets](/snippets/powershell/README.md)
+  - [BitLocker recovery readiness](/snippets/powershell/bitlocker-recovery-readiness.md)
+  - [Disk and volume layout](/snippets/powershell/disk-volume-layout.md)
+  - [Volume Shadow Copies](/snippets/powershell/volume-shadow-copies.md)
+  - [USB storage history](/snippets/powershell/usb-storage-history.md)
+  - [PowerShell command history](/snippets/powershell/powershell-command-history.md)
+  - [Windows event IDs](/snippets/powershell/windows-event-triage.md)
+  - [Registry hive preservation](/snippets/powershell/registry-hive-preservation.md)
   - [SHA-256 evidence hashes](/snippets/powershell/sha256-evidence.md)
 - **TOOL REFERENCE**
   - [Tools index](/docs/tools/README.md)
