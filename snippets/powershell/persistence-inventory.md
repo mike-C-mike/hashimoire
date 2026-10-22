@@ -41,6 +41,22 @@ Get-ChildItem "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup" -Forc
 Get-ChildItem "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Startup" -Force -ErrorAction SilentlyContinue
 ```
 
+## Example output — synthetic task inventory
+
+```text
+TaskPath                     TaskName                State
+--------                     --------                -----
+\\Microsoft\\Windows\\Demo\\      ExampleTask             Ready
+\\                            LabMaintenance          Ready
+```
+
+### How to interpret it
+
+- **TaskPath / TaskName** identify the scheduled-task registration to collect or review.
+- **State `Ready`** means the task is available to run—not that it has ever executed successfully.
+- **Actions** and **Triggers** describe what is configured to execute and when. Review the task definition, author/context, file hash, and relevant event records.
+- Scheduled tasks are also used for legitimate OS maintenance. A name or unusual path alone is not a maliciousness conclusion.
+
 ## Cautions
 
 - `HKCU` and `$env:APPDATA` represent the **collector's current account**, not every system user.
