@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "site" / "navigation.json"
 SIDEBAR = ROOT / "_sidebar.md"
 STATUSES = {"planned", "drafting", "ready", "published"}
-HEADER_PATTERN = re.compile(r"^[A-Z0-9 &/\-]+$")
+HEADER_PATTERN = re.compile(r"^[A-Z0-9 ,&/\-]+$")
 NO_MARKDOWN = re.compile(r"[\[\]\r\n]")
 
 
