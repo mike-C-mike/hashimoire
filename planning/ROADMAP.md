@@ -21,6 +21,17 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 
 **Exit:** Navigation structure decided; new sections can be planned invisibly and promoted safely.
 
+## Maintenance gate — repair existing content before expanding (current)
+
+- [x] Identify the empty OSINT index and malformed published workflows.
+- [x] Rebuild existing OSINT domain, username, metadata, exposure and safety references rather than adding categories.
+- [x] Repair truncated hashing and Volatility Markdown and refresh tool-install guidance.
+- [ ] Run and clear automated published-content audit across the existing repository.
+- [ ] Review live Docsify rendering and OSINT route navigation on mobile and desktop.
+- [ ] Only resume collector depth work after published destinations are usable.
+
+**Scope decision:** offline support is intentionally deferred; a phone home-screen shortcut is sufficient for the current release.
+
 ## Pass 1 — Field Collector: mobile evidence (first content depth pass)
 
 **Current development:** Full in-page power-state decision guide for collector use is being reviewed. It consolidates off, on/locked, on/unlocked, uncertain state, damaged devices, RF isolation, and handoff **without adding another click-through page**. This is a real-depth improvement to a published guide, not a new navigation stub.
