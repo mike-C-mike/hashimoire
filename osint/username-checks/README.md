@@ -1,51 +1,23 @@
+# Username Checks — Public Presence
 
-```markdown
-<!-- osint/username-checks/README.md -->
+**Purpose:** Review authorized usernames, organization handles or impersonation claims using public sources while avoiding speculative identity attribution.
 
-# Username Checks
+**[Open the Username Review Workflow →](username-review-workflow.md)**
 
-This folder contains defensive username and account presence review notes.
+## The key distinction
 
-Username checks can help identify where a handle, alias, brand name, project name, or impersonation target appears across public platforms.
+The same handle appearing on two platforms can be a lead, but it does **not** prove both accounts share an owner. Stronger supporting evidence may include verified links from a known official website or confirmation from the account owner.
 
-## Purpose
+## Quick checklist
 
-Username checks help answer:
+- [ ] Confirm the subject or organization has authorized the review.
+- [ ] Start from a **known official handle**, not an unverified profile.
+- [ ] Search a narrow set of public results.
+- [ ] Record exact public URLs and time of observation.
+- [ ] Classify candidate accounts as confirmed/likely/possible/unrelated.
+- [ ] Report impersonation concerns through appropriate official channels.
+- [ ] Minimize retention of personal details and avoid contacting subjects.
 
-- Where is this username publicly used?
-- Is this handle tied to multiple accounts?
-- Are there impersonation or lookalike accounts?
-- Is a project or brand name already in use?
-- Does a username expose more personal information than expected?
-- Are old accounts still public?
-- Does username reuse connect personal, professional, and private identities?
+The expected outcome is a **short, confidence-qualified** set of findings that support a decision.
 
-## Appropriate Use Cases
-
-Appropriate uses include:
-
-- reviewing your own username exposure
-- checking a project name before public launch
-- identifying abandoned accounts you control
-- checking for impersonation
-- helping a family member understand public handle reuse
-- reviewing whether a child or teen is using the same handle across platforms
-
-## Out of Scope
-
-Do not use username checks for:
-
-- stalking
-- harassment
-- doxxing
-- targeting private individuals
-- relationship surveillance
-- bypassing privacy controls
-- password reset probing
-- credential attacks
-- account takeover
-
-## Folder Contents
-
-- `username-review-workflow.md`  
-  A detailed workflow for public username review, account inventory, impersonation indicators, and risk documentation.
+[OSINT home](../README.md) · [Safety boundaries](../safety-notes/osint-safety-boundaries.md)
