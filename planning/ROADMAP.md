@@ -23,6 +23,10 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 
 ## Pass 1 — Field Collector: mobile evidence (first content depth pass)
 
+**Current development:** Full in-page power-state decision guide for collector use is being reviewed. It consolidates off, on/locked, on/unlocked, uncertain state, damaged devices, RF isolation, and handoff **without adding another click-through page**. This is a real-depth improvement to a published guide, not a new navigation stub.
+
+
+
 - On/off, locked/unlocked and visible state: first-contact decisions.
 - Photographs and scene documentation; what *not* to touch.
 - Network isolation and RF containment options, failure modes and battery tradeoffs.

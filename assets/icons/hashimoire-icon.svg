@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t d">
+  <title id="t">Hashimoire app icon</title>
+  <desc id="d">Gold H monogram framed in emerald over obsidian, inspired by the Hashimoire grimoire</desc>
+  <rect width="512" height="512" fill="#0b0f0b"/>
+  <rect x="62" y="54" width="388" height="404" rx="76" fill="#14241a"/>
+  <rect x="86" y="78" width="340" height="356" rx="60" fill="none" stroke="#78a65d" stroke-width="8"/>
+  <path d="M161 154h49v75h92v-75h49v204h-49v-78h-92v78h-49z" fill="#c8b88a"/>
+  <path d="M128 383h256" stroke="#78a65d" stroke-width="9" stroke-linecap="round"/>
+  <path d="M256 111l12 14-12 14-12-14z" fill="#c8b88a"/>
+</svg>

@@ -8,6 +8,31 @@ The name is intentionally a little weird.
 
 A grimoire is a book of collected knowledge, formulas, instructions, and working notes. Hashimoire applies that idea to digital forensics and defensive security: hashes, artifacts, commands, triage notes, tool references, detections, templates, and field-tested reminders.
 
+## The Live Reference
+
+**Website:** [Hashimoire on GitHub Pages](https://mike-C-mike.github.io/hashimoire/)
+
+Hashimoire has two useful starting points backed by the same Markdown repository:
+
+- **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
+- **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
+
+### Current content focus
+
+**Field Collector comes first.** The goal is to help an authorized officer preserve evidence correctly within the first minutes of an encounter. The mobile phone guide now emphasizes what to do when a device is **off, on and locked, on and unlocked, apparently asleep, or damaged**. This section will deepen before unrelated platform categories are published.
+
+### Publishing standard: immediate value, not empty pages
+
+A new page or navigation section is published only when it supports a real decision or task and has enough validated substance to be used. At minimum, it should provide **action, rationale, risks/limitations, documentation and a clear next step**, with official references where relevant.
+
+The future navigation taxonomy is recorded in [site/navigation.json](site/navigation.json) and intentionally hides unpublished areas. Read the [architecture](planning/ARCHITECTURE.md) and [roadmap](planning/ROADMAP.md) before restructuring sections.
+
+**Maintenance rule:** Every substantive content pass also reviews and updates this README's **current focus**, related links, and roadmap progress. Don't let the README describe a repository that no longer exists.
+
+### Phone home-screen icon
+
+The site provides a dedicated **emerald-and-gold Hashimoire icon** with iOS touch icon and Android web-app manifest variants. See [Save Hashimoire to a phone home screen](docs/mobile-home-screen.md). A shortcut still needs an internet connection; this is **not yet an offline PWA**.
+
 ## What This Is
 
 Hashimoire is a living reference for authorized defensive work, including:

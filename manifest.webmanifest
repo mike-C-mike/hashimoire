@@ -10,9 +10,43 @@
   "theme_color": "#14241a",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0f0b'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='43' font-family='Georgia' fill='%23c8b88a'%3EH%3C/text%3E%3C/svg%3E",
+      "src": "assets/icons/hashimoire-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/hashimoire-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/hashimoire-icon.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Field Collector",
+      "short_name": "Collector",
+      "description": "Device preservation and evidence handoff guides",
+      "url": "./#/collector/README.md",
+      "icons": [
+        {
+          "src": "assets/icons/hashimoire-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Forensic Examiner",
+      "short_name": "Examiner",
+      "description": "Commands, acquisition and forensic analysis guides",
+      "url": "./#/examiner/README.md"
     }
   ]
 }

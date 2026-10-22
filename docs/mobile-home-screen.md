@@ -25,6 +25,12 @@ Open the [Field Collector guide](../collector/README.md) **first**, then save th
 3. Choose **Add to Home screen** or **Install app** (the label depends on Chrome/device).
 4. Confirm the name **Hashimoire**.
 
+## Recognizing the Hashimoire icon
+
+The home-screen shortcut now has a dedicated **gold H monogram inside an emerald-edged obsidian tile**. iOS uses an Apple touch icon; Android and other supported browsers can use the PNG assets listed in the web manifest. The icon does not indicate that guides are cached offline.
+
+**Already saved an older shortcut?** Some phones keep the old icon in their home-screen cache. Remove the existing home-screen shortcut and add Hashimoire again after the site update has deployed. Restarting a browser may also help.
+
 ## Operational limits
 
 - **Internet connection required.** This version uses an online Markdown renderer and external JavaScript dependencies. A home-screen shortcut is **not** a guaranteed offline reference.
