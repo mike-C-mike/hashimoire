@@ -120,3 +120,54 @@ a:hover { color: var(--gold); }
   outline: 2px solid var(--sidebar-neon-bright);
   outline-offset: 3px;
 }
+
+/* Unified Hashimoire headings: muted neon emerald, rather than the Docsify blue.
+   Strong selectors cover Docsify's default Vue theme on desktop and mobile. */
+:root {
+  --heading-emerald: #a4df8d;
+  --heading-emerald-soft: #93cc7f;
+}
+.markdown-section h1:not(.hash-hero h1),
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6,
+.markdown-section h1 a,
+.markdown-section h2 a,
+.markdown-section h3 a,
+.markdown-section h4 a,
+.markdown-section h5 a,
+.markdown-section h6 a {
+  color: var(--heading-emerald) !important;
+}
+.markdown-section h1:not(.hash-hero h1) {
+  text-shadow: 0 0 14px rgba(125, 220, 100, .14);
+}
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  color: var(--heading-emerald-soft) !important;
+}
+.markdown-section h2 { border-bottom-color: #345238; }
+/* Theme the opening hero title while keeping gold accents on the eyebrow and badges. */
+.markdown-section .hash-hero h1 {
+  color: #b2e99a !important;
+  text-shadow: 0 0 18px rgba(151, 255, 105, .17);
+}
+/* Section labels in Docsify's generated sidebar may be <p>, <strong>, or nested markup. */
+.sidebar .sidebar-nav > ul > li > p,
+.sidebar .sidebar-nav > ul > li > p strong,
+.sidebar .sidebar-nav > ul > li > strong,
+.sidebar .sidebar-nav li > p,
+.sidebar .sidebar-nav li > p strong,
+.sidebar .sidebar-nav li > strong {
+  color: var(--heading-emerald) !important;
+}
+/* Ensure browser focus remains obvious for keyboard and assistive users. */
+.markdown-section a:focus-visible,
+.sidebar a:focus-visible {
+  outline: 2px solid var(--heading-emerald);
+  outline-offset: 3px;
+}
