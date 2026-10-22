@@ -29,6 +29,22 @@ Get-WinEvent -ListLog 'Microsoft-Windows-Windows Defender/Operational' |
   Select-Object LogName, IsEnabled, RecordCount, MaximumSizeInBytes
 ```
 
+## Example output — synthetic lab system
+
+```text
+AMServiceEnabled           : True
+AntivirusEnabled           : True
+RealTimeProtectionEnabled  : True
+AntivirusSignatureLastUpdated : 10/21/2026 08:22:41
+```
+
+### What these fields mean
+
+- **AMServiceEnabled:** Defender's antimalware service reports that it is enabled; check whether protection is active or in passive mode.
+- **RealTimeProtectionEnabled:** the currently reported state of real-time protection, not proof that threats have been blocked historically.
+- **AntivirusSignatureLastUpdated:** signature freshness, which can help explain why a detection was or wasn't available at a particular time.
+- For a suspected intrusion, compare relevant threat detection entries and their **InitialDetectionTime** against event logs and EDR telemetry. Detection isn't proof of successful payload execution.
+
 ## Cautions
 
 - Defender may be inactive or managed in passive mode on machines using other protection software.
