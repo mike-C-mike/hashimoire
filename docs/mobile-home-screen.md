@@ -6,6 +6,10 @@
 
 Hashimoire is a website that can be opened from a phone home-screen icon, giving field collectors a one-tap path to current published guidance without installing an app-store package.
 
+## Recommended for field personnel
+
+Open the [Field Collector guide](../collector/README.md) **first**, then save that page to your home screen. This gives collectors direct access to the device-preservation guides rather than starting at the examiner's technical reference. The regular Hashimoire home screen shortcut is also available.
+
 ## iPhone / iPad — Safari
 
 1. Open [Hashimoire](https://mike-C-mike.github.io/hashimoire/) in **Safari**.
