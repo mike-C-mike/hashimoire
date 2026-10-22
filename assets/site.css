@@ -87,3 +87,36 @@ a:hover { color: var(--gold); }
 @media (max-width: 700px) {
   .github-corner svg { width: 42px !important; height: 42px !important; }
 }
+
+/* Hashimoire sidebar: luminous book-green navigation over the dark forest background.
+   Docsify's default Vue theme has more-specific link rules, so override them here. */
+:root {
+  --sidebar-neon: #a6f57a;
+  --sidebar-neon-bright: #d1ff9e;
+}
+.sidebar .sidebar-nav ul li > a,
+.sidebar .sidebar-nav ul li > a:visited {
+  color: var(--sidebar-neon) !important;
+  opacity: 1;
+  text-shadow: 0 0 6px rgba(125, 255, 90, .18);
+  transition: color .16s ease, text-shadow .16s ease;
+}
+.sidebar .sidebar-nav ul li > a:hover,
+.sidebar .sidebar-nav ul li.active > a,
+.sidebar .sidebar-nav ul li > a:focus-visible {
+  color: var(--sidebar-neon-bright) !important;
+  text-shadow: 0 0 7px rgba(151, 255, 105, .56), 0 0 16px rgba(151, 255, 105, .22);
+  border-right-color: var(--sidebar-neon) !important;
+}
+.sidebar .sidebar-nav > ul > li > strong,
+.sidebar .sidebar-nav > ul > li > p > strong {
+  color: var(--sidebar-neon-bright) !important;
+  font-size: .76rem;
+  font-weight: 750;
+  letter-spacing: .085em;
+  text-shadow: 0 0 8px rgba(151, 255, 105, .25);
+}
+.sidebar .sidebar-nav ul li > a:focus-visible {
+  outline: 2px solid var(--sidebar-neon-bright);
+  outline-offset: 3px;
+}
