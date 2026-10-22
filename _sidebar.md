@@ -2,6 +2,7 @@
   - [Home](/)
   - [About Hashimoire](/README.md)
   - [Visual style](/docs/visual-style.md)
+  - [Save to phone home screen](/docs/mobile-home-screen.md)
 - **FIELD PLAYBOOKS**
   - [Acquisition hub](/playbooks/acquisition/README.md)
   - [Rapid evidence collection](/playbooks/acquisition/0-rapid-evidence-collection.md)
