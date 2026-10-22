@@ -40,6 +40,9 @@
 
 ## Ready for the field
 
+**Using a phone in the field?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. An internet connection is still required.
+
+
 - [Rapid evidence collection: live to dead-box](playbooks/acquisition/0-rapid-evidence-collection.md)
 - [Collection bag checklist](playbooks/acquisition/2-collection-bag-checklist.md)
 - [Field-to-lab software matrix](playbooks/acquisition/4-field-to-lab-tool-matrix.md)
