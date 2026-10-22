@@ -21,6 +21,21 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 
 **Field Collector comes first.** The goal is to help an authorized officer preserve evidence correctly within the first minutes of an encounter. The mobile phone guide now emphasizes what to do when a device is **off, on and locked, on and unlocked, apparently asleep, or damaged**. This section will deepen before unrelated platform categories are published.
 
+### Current maintenance focus: published-content repairs
+
+Before extending navigation or creating another subject category, Hashimoire is auditing **all existing published pages** for empty content, malformed Markdown, broken local links and low-value placeholders. The first confirmed failure was the empty OSINT landing page; its existing workflows have been rebuilt as complete, scoped references. The hashing, memory-tool and general tool pages are also receiving cleanup.
+
+The content gate now includes a repository audit:
+
+```bash
+python3 scripts/generate_sidebar.py --check
+python3 scripts/audit_published_docs.py
+```
+
+The first validates publication status/navigation. The second inspects current published Markdown for empty pages, unclosed code fences, missing titles and broken internal routes. Both run in GitHub Actions for relevant documentation changes.
+
+**No new sections until existing links lead somewhere useful.** The next development focus remains Field Collector, but quality repairs take precedence.
+
 ### Publishing standard: immediate value, not empty pages
 
 A new page or navigation section is published only when it supports a real decision or task and has enough validated substance to be used. At minimum, it should provide **action, rationale, risks/limitations, documentation and a clear next step**, with official references where relevant.
