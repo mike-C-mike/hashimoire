@@ -171,3 +171,43 @@ a:hover { color: var(--gold); }
   outline: 2px solid var(--heading-emerald);
   outline-offset: 3px;
 }
+
+/* FIX: Docsify wraps heading text in .anchor > span. Some theme rules
+   color the inner span blue, even if h1/h2 are green. Override the
+   rendered heading text itself on every documentation page. */
+body .markdown-section h1,
+body .markdown-section h2,
+body .markdown-section h3,
+body .markdown-section h4,
+body .markdown-section h5,
+body .markdown-section h6,
+body .markdown-section h1 .anchor,
+body .markdown-section h2 .anchor,
+body .markdown-section h3 .anchor,
+body .markdown-section h4 .anchor,
+body .markdown-section h5 .anchor,
+body .markdown-section h6 .anchor,
+body .markdown-section h1 .anchor span,
+body .markdown-section h2 .anchor span,
+body .markdown-section h3 .anchor span,
+body .markdown-section h4 .anchor span,
+body .markdown-section h5 .anchor span,
+body .markdown-section h6 .anchor span,
+body .markdown-section h1 > a > span,
+body .markdown-section h2 > a > span,
+body .markdown-section h3 > a > span,
+body .markdown-section h4 > a > span,
+body .markdown-section h5 > a > span,
+body .markdown-section h6 > a > span {
+  color: #a4df8d !important;
+}
+body .markdown-section h3 .anchor span,
+body .markdown-section h4 .anchor span,
+body .markdown-section h5 .anchor span,
+body .markdown-section h6 .anchor span {
+  color: #93cc7f !important;
+}
+body .markdown-section .hash-hero h1,
+body .markdown-section .hash-hero h1 * {
+  color: #b2e99a !important;
+}
