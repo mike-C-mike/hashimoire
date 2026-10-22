@@ -1,45 +1,24 @@
+# Metadata Checks — Documents & Images
 
-```markdown
-<!-- osint/metadata-checks/README.md -->
+**Purpose:** Determine what document and image metadata is present and whether any of it should be redacted **on an authorized publication copy**, without changing the original evidence.
 
-# Metadata Checks
+**[Open the Document & Image Metadata Review →](document-image-metadata-review.md)**
 
-This folder contains defensive notes for reviewing metadata in documents, images, exports, and other files.
+## Typical questions
 
-Metadata can reveal useful context, but it can also expose information that was not intended for publication.
+- Does a JPEG or HEIC image claim GPS coordinates or capture time?
+- Does a PDF contain author/producer metadata?
+- Does an Office document reveal unnecessary staff names or template-origin information?
+- Do metadata timestamps conflict with a known device clock?
 
-## Purpose
+## Quick local inspection
 
-Metadata checks help answer:
+```bash
+exiftool -G1 -s submitted-photo.jpg
+```
 
-- Does this file contain hidden author information?
-- Does this image include GPS coordinates?
-- Does this document reveal usernames or internal paths?
-- Does this spreadsheet contain hidden sheets?
-- Does this PDF include comments or revision history?
-- Does this file expose software, device, or organization details?
-- Should metadata be removed before publication or sharing?
+**Interpretation:** Metadata values are stored claims, not independent proof of authorship or location. Review a copy and document the tool version, observed fields and limitations.
 
-## Appropriate Use Cases
+**Evidence warning:** Preserve the original. Metadata removal for a public release is a **separate** procedure and changes the file hash.
 
-Appropriate uses include:
-
-- reviewing your own files before publishing
-- checking organization documents before public release
-- reviewing images before posting online
-- checking exported reports before handoff
-- reviewing shared templates
-- identifying avoidable exposure in public files
-
-## Evidence Warning
-
-Metadata may be evidence.
-
-Do not casually strip metadata from original evidence, forensic images, exports, or working copies.
-
-Sanitization is appropriate for public release or controlled sharing when authorized. Original evidence should be preserved according to policy.
-
-## Folder Contents
-
-- `document-image-metadata-review.md`  
-  A detailed workflow for reviewing metadata in documents, images, PDFs, spreadsheets, archives, and forensic/security exports.
+[OSINT home](../README.md) · [Hashing](../../docs/hashing/README.md)

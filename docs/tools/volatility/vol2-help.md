@@ -11,7 +11,9 @@ last_reviewed: "2026-03-03"
 
 # Volatility 2 Help Output (`vol.py --help`)
 
-This page captures the raw `vol.py --help` output for Volatility 2.6.1 for quick reference.
+This is a **legacy snapshot** of `vol.py --help` from Volatility 2.6.1, preserved for reproduction of older workflows. It is **not** the recommended current memory-analysis tool. New investigations should use [Volatility 3](useful-commands.md) in a validated lab environment.
+
+**How to read it:** `--profile` selects the old operating-system memory profile; `-f` supplies the image path; plugin names such as `pslist` and `netscan` refer to Volatility **2** plugins and do not necessarily match Volatility 3 command names. This text is reference output, not an invitation to execute the whole block.
 
 ```text
 vol.py --help
@@ -175,3 +177,7 @@ Options:
                 wintree         Print Z-Order Desktop Windows Tree
                 wndscan         Pool scanner for window stations
                 yarascan        Scan process or kernel memory with Yara signatures
+
+```
+
+[Tool index](../README.md) · [Volatility 3 installation](install-on-kali.md)

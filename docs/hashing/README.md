@@ -1,51 +1,36 @@
-# Hashing
+# Hashing — Evidence Integrity
 
-Hashing is one of the core integrity tools in digital forensics and defensive security.
+**Use case:** acquisition | copy verification | export transfer | reporting  
+**Audience:** collectors and examiners
 
-A hash can help show whether a file, image, export, or dataset changed between two points in time. It can support acquisition verification, working copy validation, export review, malware triage, file identification, and handoff documentation.
+Hashing answers a precise question: **were the bytes in this item the same when checked at two different stages?** It does not prove authenticity, attribution, acquisition completeness or lawful custody.
 
-A hash does not prove everything.
+## Start with the right reference
 
-It does not prove who created a file. It does not prove a file is true. It does not prove an acquisition was complete. It does not replace chain of custody. It is a scoped integrity check, and its value depends on documenting what was hashed, when, how, with what tool, and why.
+| Need | Page | What you get |
+| --- | --- | --- |
+| Understand what a hash proves | [Hash basics](hash-basics.md) | A worked acquisition-to-transfer example and limitations |
+| Choose or interpret MD5/SHA-1/SHA-256 | [Hash algorithms](hash-algorithms.md) | Strength, compatibility and forensic use cases |
+| Produce a defensible hash record | [Hash documentation](hash-documentation.md) | Practical fields, repeat verification and example notes |
+| Run the command on Windows | [PowerShell SHA-256](../../snippets/powershell/sha256-evidence.md) | Copy-ready commands, output and lab meaning |
 
-## Contents
+## Fast Windows example
 
-- [Hash Basics](hash-basics.md)
-- [Hash Algorithms](hash-algorithms.md)
-- [Hash Documentation](hash-documentation.md)
+```powershell
+Get-FileHash -LiteralPath 'E:\CASE-EXAMPLE\evidence-export.zip' -Algorithm SHA256 |
+    Format-List Algorithm, Hash, Path
+```
 
-## Common Uses
+**Expected:** algorithm, a 64-character SHA-256 hexadecimal digest and the file path. Re-running on an unchanged copy should produce the same digest.
 
-Hashing is commonly used to:
+**Important:** A command that hashes a *logical export* does not automatically prove a *source disk* was completely and accurately acquired. Record precisely what object was hashed.
 
-- verify a forensic image after acquisition
-- compare a copy against a source
-- confirm that an export has not changed
-- identify known files
-- support malware or suspicious file triage
-- document evidence transfers
-- detect accidental corruption
-- support repeatable review
+## Core field documentation
 
-## What to Document
+Record case/item ID, source and output names, acquisition method, original hash (if available), verification hash, algorithm, tool/version, date/time with timezone, operator and handling/custody events.
 
-When using a hash in an evidence or security workflow, document:
+## Interpretation
 
-- what was hashed
-- where it was located
-- when it was hashed
-- who performed the hashing
-- what tool or command was used
-- what algorithm was used
-- the resulting hash value
-- what the hash is meant to prove
-- any limitations or exceptions
+A hash match supports byte equality to very high confidence for the tested objects, but must be interpreted with the method used, acquisition logs, scope and errors. Hash values are not timestamps or digital signatures.
 
-## Practical Rule
-
-A hash is strongest when the scope is clear.
-
-Bad documentation:
-
-```text
-Hash verified.
+[Acquisition playbook](../../playbooks/acquisition/0-rapid-evidence-collection.md)

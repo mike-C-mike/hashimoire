@@ -1,79 +1,28 @@
-<!-- osint/domain-checks/README.md -->
+# Domain Checks — Public-Facing Exposure
 
-# Domain Checks
+**Purpose:** Review an authorized domain's public DNS, email authentication, public web footprint and impersonation exposure without testing private systems.
 
-This folder contains defensive domain and website exposure review notes.
+## Start the review
 
-Domain checks help identify public-facing configuration, ownership signals, DNS records, mail security posture, exposed public documents, stale subdomains, impersonation risk, and other public information that may create security, privacy, or trust issues.
+**[Open the complete Domain Exposure Review →](domain-exposure-review.md)**
 
-This is not a penetration testing folder.
+You will learn how to:
 
-The focus is public, passive, authorized review.
+1. Set the exact authorized domain and permitted methods.
+2. Query common DNS records with `Resolve-DnsName` or `dig`.
+3. Recognize public MX, SPF, DMARC and CAA records and their limits.
+4. Compare public records with the owner's intended service inventory.
+5. Record an observation, supporting timestamp and concrete remediation question.
 
-## Purpose
+### A quick example
 
-Domain checks help answer questions like:
+```powershell
+Resolve-DnsName example.org -Type MX
+Resolve-DnsName _dmarc.example.org -Type TXT
+```
 
-- What public DNS records exist for this domain?
-- Are old or unused records still visible?
-- Are mail security records configured?
-- Are unnecessary subdomains exposed?
-- Are public documents revealing too much?
-- Are website pages exposing avoidable contact, staff, or technical information?
-- Are there lookalike domains that could support phishing or impersonation?
-- Does the domain support trust and verification?
+**What it establishes:** what DNS data a resolver returned at collection time. It does **not** prove that mail service is secure or that all published endpoints are still in use.
 
-## Appropriate Use Cases
+**Output:** a scoped inventory and owner-confirmed action list, not a vulnerability-scan report.
 
-Appropriate use cases include:
-
-- reviewing your own website
-- checking a project domain before launch
-- reviewing a small business or nonprofit domain
-- checking basic email authentication posture
-- identifying stale DNS records
-- reviewing public website exposure
-- checking for obvious impersonation or lookalike domains
-- documenting external footprint for an authorized security review
-
-## Out of Scope
-
-Do not use this folder for:
-
-- unauthorized scanning
-- exploitation
-- brute forcing
-- bypassing authentication
-- accessing restricted paths
-- vulnerability exploitation
-- credential testing
-- phishing
-- harassment
-- targeting unrelated domains
-
-If the domain owner has not authorized the review, keep the work limited to ordinary public visibility checks.
-
-## Folder Contents
-
-- `domain-exposure-review.md`  
-  A detailed workflow for reviewing public DNS, mail security records, website exposure, public documents, subdomains, and lookalike domain risk.
-
-## Documentation Standard
-
-For each domain review, capture:
-
-```text
-Domain:
-Organization/project:
-Reviewer:
-Authorized by:
-Date:
-Purpose:
-In scope:
-Out of scope:
-Allowed methods:
-Disallowed methods:
-Summary:
-Findings:
-Recommended actions:
-Limitations:
+[OSINT home](../README.md) · [Safety boundaries](../safety-notes/osint-safety-boundaries.md)

@@ -1,76 +1,67 @@
+# Hash Documentation — Field and Lab Template
 
----
+**Use case:** acquisition | verification | evidence transfer  
+**Risk:** caution
 
-## `docs/hashing/hash-documentation.md`
+## Record the object and context
 
-```markdown
-# Hash Documentation
-
-## Purpose
-
-This note provides a practical checklist for documenting hash values in digital evidence and defensive security workflows.
-
-A hash value is only useful if someone can understand what it applies to.
-
-## Core Documentation Fields
-
-When documenting a hash, capture:
+The hash value alone is not a defensible record. Document *which bytes* were tested, *how* they were obtained, and whether the comparison was source-to-image, copy-to-copy or export-to-export.
 
 ```text
-Item identifier:
-Item description:
-Source path or location:
-Output path or location:
+Case/incident reference:
+Evidence item ID:
+Source object/device and identifiers:
+Acquired object/file path:
+Acquisition/collection tool and version:
+Hash tool and version:
 Hash algorithm:
-Hash value:
-Tool or command used:
-Tool version:
-Date and time calculated:
-Person calculating hash:
-Purpose of hash:
-Verification result:
-Notes or limitations:
+Original/source hash if available:
+Acquired image/export hash:
+Verification hash and comparison result:
+Collector/examiner:
+Start and completion dates/times with offsets:
+Storage destination and access restrictions:
+Errors, excluded data or acquisition limitations:
+Chain-of-custody/transfer record:
+```
 
+## Worked example — synthetic
 
-Evidence-Oriented Example
-
-Item identifier: Item001
-Item description: Forensic image of submitted USB drive
-Source evidence: USB drive, evidence tag PD-2026-001
-Output file: Item001.E01
+```text
+Item: LAB-001 (fictional)
+Source: submitted USB flash drive — sealed Item 001
+Acquired output: Item001.E01
+Tool: validated imaging utility (version recorded in case worksheet)
 Hash algorithm: SHA-256
-Hash value: [hash value]
-Tool used: [tool name/version]
-Date/time calculated: 2026-07-10 14:32 CST
-Calculated by: [name/initials]
-Purpose: Verify forensic image after acquisition
-Verification result: Image verified successfully
-Notes: Source device returned to evidence storage after acquisition
+Acquisition verification: reported successful, source/acquisition hashes match
+Time completed: 2026-10-21 15:30 -05:00
+Custodian: Examiner A
+Notes: verification applies to acquired logical/physical scope stated in tool report
+```
 
-Export-Oriented Example
+**Important:** Some forensic image formats include metadata/container details. Hashes shown in an image's internal verification record may be computed over source data and differ from a direct SHA-256 hash of the entire `.E01` container file. **Document exactly which digest and scope you're comparing**, not merely "hash matched."
 
-Item identifier: Export001
-Item description: ZIP export of selected files for investigator review
-Source: Working copy derived from Item001.E01
-Output file: Export001_selected-files.zip
-Hash algorithm: SHA-256
-Hash value: [hash value]
-Tool used: Get-FileHash / PowerShell
-Date/time calculated: 2026-07-10 15:04 CST
-Calculated by: [name/initials]
-Purpose: Document integrity of review export before handoff
-Verification result: Hash recorded before transfer
-Notes: Hash applies to ZIP export only, not to the original device or full forensic image
+## Transfer verification
 
-Transfer-Oriented Example
+1. Preserve the original acquisition/hash log.
+2. Copy the evidence using approved storage and access controls.
+3. Recalculate an appropriate hash of the same object after transfer.
+4. Compare like with like (same algorithm, same bytes and hash scope).
+5. Document success, failure, errors and custody details.
 
-Item identifier: Export001
-Item description: ZIP export transferred to review storage
-Original SHA-256: [original hash]
-Post-transfer SHA-256: [post-transfer hash]
-Tool used: Get-FileHash / PowerShell
-Date/time verified: 2026-07-10 15:42 CST
-Verified by: [name/initials]
-Purpose: Confirm export did not change during transfer
-Verification result: Hash values matched
-Notes: Transfer completed to approved review location
+If digests differ, don't overwrite the original or erase the log. Record the discrepancy and investigate file completeness, container/hash scope and transfer errors.
+
+## Windows quick check
+
+```powershell
+Get-FileHash -LiteralPath 'E:\CASE-EXAMPLE\export.zip' -Algorithm SHA256 |
+  Format-List Algorithm, Hash, Path
+```
+
+## Reporting language
+
+**Useful:** "The SHA-256 digest of the acquired export file matched the digest recalculated after transfer; the values and timestamps are preserved in the collection log."
+
+**Too broad:** "The hash proves the original device was never changed."
+
+[Hashing home](README.md) · [Windows hashing snippet](../../snippets/powershell/sha256-evidence.md)

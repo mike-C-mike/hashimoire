@@ -1,30 +1,19 @@
+# OSINT Safety & Documentation
 
-```markdown
-<!-- osint/safety-notes/README.md -->
+**Purpose:** Apply authorization, minimization, non-engagement, and evidence integrity before public-source review.
 
-# Safety Notes
+**[Open OSINT Safety Boundaries →](osint-safety-boundaries.md)**
 
-This folder contains OSINT safety boundaries, ethical rules, and documentation guidance.
+## Decision before each review
 
-OSINT can reduce risk when it is scoped and defensive. It can create harm when it becomes invasive, excessive, personal, or disconnected from a legitimate purpose.
+- **Authority:** Is this self-review, organization-authorized, or another legitimate and properly scoped investigation?
+- **Necessity:** What precise question will collection answer?
+- **Methods:** Can ordinary public browsing and offline inspection answer it without interacting with a subject?
+- **Safety:** Could the search expose a minor, reveal private information, or create new risk?
+- **Handling:** Where will notes go, who can see them, and when will they be deleted?
 
-## Purpose
+**Stop and escalate** if the work requires credentials, private group access, deceptive contact, or unapproved collection of sensitive personal data.
 
-Safety notes help define:
+The output should distinguish **what was observed**, **what was inferred**, and **what remains unknown**.
 
-- what belongs in Hashimoire
-- what should be excluded
-- how to minimize harm
-- how to document public information responsibly
-- when to stop
-- when to escalate
-- how to separate facts from assumptions
-
-## Folder Contents
-
-- `osint-safety-boundaries.md`  
-  A detailed safety guide for defensive OSINT work.
-
-## Core Rule
-
-Defensive OSINT should reduce risk, not create it.
+[OSINT home](../README.md)

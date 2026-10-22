@@ -1,76 +1,78 @@
----
-title: "Volatility 2 and 3 Install (Kali/Debian)"
-slug: "volatility-install-kali"
-category: "tools"
-tool: "Volatility"
-use_case: ["triage", "analysis"]
-environment: ["linux"]
-risk: "caution"
-last_reviewed: "2026-03-03"
----
+# Install Volatility 3 on Kali / Debian
 
-# Volatility 2 and 3 Install (Kali/Debian)
+**Use case:** lab-side memory analysis | installation and verification  
+**Environment:** Kali, Debian and compatible Linux  
+**Risk:** caution  
+**Reviewed:** October 2026
 
-This page captures a practical install workflow for **Volatility 2 (Python 2.7)** and **Volatility 3 (Python 3)** on Kali/Debian-based systems.
+> **Current default: Volatility 3.** Volatility 2 depends on end-of-life Python 2 and is treated here as a **legacy, isolated lab-only** compatibility option, not the general install path.
 
-## Notes and cautions
+## Preconditions
 
-- Volatility 2 depends on **Python 2.7**, which is end-of-life. Use it only when you specifically need Vol2 plugins/workflows.
-- Prefer Volatility 3 for most modern work.
-- Run installs on a dedicated analysis VM when possible.
+Use a lab workstation or disposable VM, not the evidence source. Have an appropriate supported Python 3 environment, network access for package installation, enough disk space for symbol downloads/cache, and a separate read-only master memory image with hashed working copy.
 
----
-
-## Volatility 2 install
-
-### 1) Install system dependencies
+## 1. Install Volatility 3 in a virtual environment
 
 ```bash
-sudo apt install -y build-essential git libdistorm3-dev yara libraw1394-11 libcapstone-dev capstone-tool tzdata
-sudo apt install -y python2 python2.7-dev libpython2-dev
-sudo apt install -y curl
-2) Install pip for Python 2.7
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
-sudo python2 get-pip.py
-3) Install Python packages
-sudo python2 -m pip install -U setuptools wheel
-python2 -m pip install -U distorm3 yara pycrypto pillow openpyxl ujson pytz ipython capstone
-sudo python2 -m pip install yara
-4) Create YARA library symlink (if needed)
-sudo ln -s /usr/local/lib/python2.7/dist-packages/usr/lib/libyara.so /usr/lib/libyara.so
-5) Install Volatility 2 from GitHub
-python2 -m pip install -U git+https://github.com/volatilityfoundation/volatility.git
-Volatility 3 install
-1) Install system dependencies
-sudo apt install -y python3 python3-dev libpython3-dev python3-pip python3-setuptools python3-wheel
-2) Install Python packages
-python3 -m pip install -U distorm3 yara pycrypto pillow openpyxl ujson pytz ipython capstone
-3) Install Volatility 3 from GitHub
-python3 -m pip install -U git+https://github.com/volatilityfoundation/volatility3.git
-Add vol.py and related commands to your PATH
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip
 
-These steps make it easier to run Volatility commands by ensuring ~/.local/bin is on your PATH.
+python3 -m venv ~/venvs/volatility3
+source ~/venvs/volatility3/bin/activate
+python -m pip install --upgrade pip
+python -m pip install volatility3
+```
 
-Replace username with your actual username.
+The version available through PyPI changes; pin and record the **tested release** for case work. The environment stays separate from Kali's system Python.
 
-bash (default on many systems)
-echo 'export PATH=/home/username/.local/bin:$PATH' >> ~/.bashrc
-. ~/.bashrc
-fish
-mkdir -p ~/.config/fish
-echo 'set -x PATH /home/username/.local/bin $PATH' >> ~/.config/fish/config.fish
-. ~/.config/fish/config.fish
-ksh or sh
-echo 'export PATH=/home/username/.local/bin:$PATH' >> ~/.profile
-. ~/.profile
-zsh
-echo 'export PATH=/home/username/.local/bin:$PATH' >> ~/.zshrc
-. ~/.zshrc
-Quick verification (optional)
+## 2. Confirm the executable and dependencies
 
-After install, confirm you can import the modules:
+```bash
+vol -h
+python -m pip show volatility3
+```
 
-python2 -c "import volatility; print('Volatility2 import OK')"
-python3 -c "import volatility3; print('Volatility3 import OK')"
+If `vol` is not found, confirm the virtual environment is activated and the installation completed. Do not mix a virtual-environment install with system-wide `sudo pip` upgrades.
 
-If imports fail, re-check package installs and whether your environment is using the expected Python version.
+## 3. Test with a **synthetic or approved** Windows memory sample
+
+```bash
+vol -f /path/to/approved-sample.raw windows.info
+vol -f /path/to/approved-sample.raw windows.pslist
+vol -f /path/to/approved-sample.raw windows.pstree
+```
+
+`windows.info` confirms that the framework can interpret key details of the Windows sample, not that every plugin will work. `pslist` enumerates linked process objects and `pstree` organizes parent relationships. For forensic interpretation, cross-check findings with disk and event-log artifacts.
+
+## 4. Symbols and network constraints
+
+Windows symbol data may be downloaded and cached as required. Linux and macOS image examination needs appropriate matching symbols and additional setup; do not assume that working Windows analysis means automatic support for every other OS.
+
+If the lab is isolated from the internet, obtain validated symbol packs and dependencies **ahead of time** using the project's documented procedure, and record the versions/files used.
+
+## 5. Record a validation result
+
+```text
+Tool: Volatility 3
+Python and OS version:
+Installation source/version:
+Lab test image ID and original SHA-256:
+Command run and completion time:
+Result or error:
+Symbol source/cache:
+Validated by:
+```
+
+## Legacy Volatility 2 (only when required)
+
+Volatility 2 is historically useful for particular old plugins and images, but Python 2.7 and its dependencies are unsupported and unsafe to install into a normal analysis environment. Use a specifically isolated legacy VM with frozen dependencies and documented, prevalidated tools; avoid copying old unverified setup commands or reaching unknown mirrors.
+
+For legacy CLI syntax see [the archived Volatility 2 help output](vol2-help.md). For modern work prefer the commands in [Volatility 3 high-value workflow](useful-commands.md).
+
+## References
+
+- [Volatility 3 official repository and current installation instructions](https://github.com/volatilityfoundation/volatility3)
+- [Volatility 3 PyPI package](https://pypi.org/project/volatility3/)
+- [Volatility 3 documentation](https://volatility3.readthedocs.io/)
+
+[Tool index](../README.md) · [Volatility commands](useful-commands.md)
