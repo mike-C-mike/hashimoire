@@ -80,3 +80,10 @@ a:hover { color: var(--gold); }
  .markdown-section pre { font-size: .85rem; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+
+/* Keep the GitHub repository link compact instead of letting its SVG fill the viewport. */
+.github-corner { position: fixed; top: 0; right: 0; z-index: 55; }
+.github-corner svg { display: block; width: 58px !important; height: 58px !important; max-width: 58px; max-height: 58px; }
+@media (max-width: 700px) {
+  .github-corner svg { width: 42px !important; height: 42px !important; }
+}
