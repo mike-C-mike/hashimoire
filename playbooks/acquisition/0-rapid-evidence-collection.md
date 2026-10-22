@@ -104,6 +104,8 @@ On encrypted systems, powering off may remove practical access to an unlocked vo
 
 See also: [Visual field reference — collection and handoff diagrams](5-visual-field-reference.md).
 
+**Before an encrypted system is powered down:** use the [BitLocker recovery readiness reference](../../snippets/powershell/bitlocker-recovery-readiness.md) to record volume/protector state and follow approved key-storage procedures. Also record [physical disk and volume layout](../../snippets/powershell/disk-volume-layout.md).
+
 ## Windows quick-command references
 
 Use these focused snippets alongside the documented order of volatility, not as a substitute for memory capture:
