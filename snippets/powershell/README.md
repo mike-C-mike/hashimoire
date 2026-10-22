@@ -6,6 +6,14 @@
 
 **Field rule:** Document the untouched system first. Only execute commands within authorized scope, preferably after confirming volatility and containment priorities. Even read-only commands leave traces on live systems. Unless a snippet explicitly says otherwise, commands only **query** state; exports write to the **approved external evidence destination**.
 
+## How to read a snippet
+
+Each command reference includes the command, an **invented example output**, and an explanation of what the fields mean to an examiner. When useful, the page also shows how to correlate an artifact with another source and what the output **cannot prove**.
+
+**Start with this worked intrusion example:** [Running processes, PIDs, PPIDs, and a sample process tree](processes-services.md), then [match an owning PID to a live network connection](network-state.md). Both pages use the same fictitious PID **6128** to demonstrate correlation and why timestamps matter.
+
+> **Example outputs are illustrative, not real forensic evidence.** Layout, available fields and administrative permissions vary by Windows version and configuration.
+
 ## 1. Preserve access before powering down
 
 | Priority | Command reference | Why it matters |
