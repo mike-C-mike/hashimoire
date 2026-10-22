@@ -30,6 +30,20 @@ Get-ChildItem -Path 'C:\Users\*\AppData\Roaming\Microsoft\Windows\PowerShell\PSR
   Select-Object FullName, Length, LastWriteTimeUtc
 ```
 
+## Example output — synthetic lab scenario
+
+```text
+Get-Process
+Get-Service
+Get-NetTCPConnection
+```
+
+### What this shows
+
+Each line is an example of a command recorded in the **interactive PSReadLine history for the current user profile**. It generally does **not** contain an inherent timestamp, cannot prove command success, and does not reliably cover non-interactive scripts or other users.
+
+In an intrusion investigation, treat a command string as a **lead to correlate** with PowerShell Operational logs, process-creation data, authentication context, files and memory artifacts—not proof of who typed it or when.
+
 ## Important caveats
 
 - Only interactive sessions with PSReadLine recording enabled are represented. Script and non-interactive execution may not appear.
