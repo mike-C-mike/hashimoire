@@ -41,6 +41,24 @@ Get-WinEvent -FilterHashtable @{
   Select-Object TimeCreated, Id, Message
 ```
 
+## Example output — synthetic lab scenario
+
+```text
+TimeCreated             Id    ProviderName
+-----------             --    ------------
+2026-10-21 10:03:02    4688  Microsoft-Windows-Security-Auditing
+2026-10-21 10:02:55    4624  Microsoft-Windows-Security-Auditing
+2026-10-21 10:06:41    1102  Microsoft-Windows-Eventlog
+```
+
+### What it could mean
+
+- **4624:** a logon succeeded; examine account, logon type and source. It does **not** always represent someone physically signing in.
+- **4688:** a process was created, *if that audit subcategory was enabled*. The full event may record process and parent IDs; command-line detail requires additional configuration.
+- **1102:** a Security audit log was cleared. This deserves context and corroboration rather than an automatic malicious classification.
+
+**Intrusion example:** If an Event 4688 records process ID **6128** running PowerShell at 10:03:02, and a captured connection shows **OwningProcess 6128** at approximately the same time, the two sources may describe the same executing process. Confirm process IDs' representation (Windows event fields can use hexadecimal), clocks, session, parent, command line and EDR. **Event timestamps and the fact that a process existed are separate questions from what the process actually did.**
+
 ## Cautions
 
 - `Get-Date` uses **target system time**; record clock offset separately.
