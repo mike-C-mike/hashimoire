@@ -6,6 +6,8 @@ on:
       - "site/navigation.json"
       - "_sidebar.md"
       - "scripts/generate_sidebar.py"
+      - "scripts/audit_published_docs.py"
+      - "scripts/audit_published_docs.py"
       - ".github/workflows/navigation-check.yml"
       - "collector/**"
       - "examiner/**"
@@ -31,3 +33,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate publication gates and sidebar links
         run: python3 scripts/generate_sidebar.py --check
+      - name: Audit published pages, code fences and internal links
+        run: python3 scripts/audit_published_docs.py
