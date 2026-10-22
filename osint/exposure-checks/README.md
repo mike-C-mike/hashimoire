@@ -1,58 +1,24 @@
+# Exposure Checks — Reduce Public Risk
 
-```markdown
-<!-- osint/exposure-checks/README.md -->
+**Purpose:** Help an individual or organization review *their own* public footprint with consent, minimize unnecessary exposure, and document useful corrections.
 
-# Exposure Checks
+**[Open Personal & Organization Exposure Review →](personal-exposure-review.md)**
 
-This folder contains defensive exposure-check workflows.
+## In practice
 
-An exposure check is a structured review of what information is publicly visible about a person, organization, project, domain, or online identity.
+Start with one question rather than gathering everything about a person:
 
-The goal is to understand what can be found, what risk it creates, and what can be reduced.
+> Does our public project contact page unnecessarily display a staff member's personal phone number?
 
-## Purpose
+Document the public URL, collection time, exposure category, owner authorization, and an actionable cleanup recommendation. Avoid copying the entire phone number into your finding unless genuinely necessary and authorized.
 
-Exposure checks help answer:
+## Appropriate outcomes
 
-- What information is publicly visible?
-- Could public information support unwanted contact, impersonation, harassment, scams, or social engineering?
-- Are old pages, public profiles, or documents creating unnecessary risk?
-- What should be removed, reduced, corrected, or monitored?
-- What practical steps would reduce exposure?
+- Change public contact methods to managed channels.
+- Remove unnecessary location clues from an owner-controlled post.
+- Sanitize publication copies of documents while preserving originals when needed.
+- Record remaining search-cache or third-party indexing limitations.
 
-## Appropriate Use Cases
+This is **not** a dossier-building or private account investigation guide.
 
-Appropriate uses include:
-
-- reviewing your own public footprint
-- helping a family member understand online exposure
-- reviewing a professional profile before a job search
-- reviewing a project before launch
-- checking whether a school, nonprofit, or business website exposes too much
-- identifying impersonation indicators
-- cleaning up public contact information
-
-## Out of Scope
-
-Do not use this folder for:
-
-- doxxing
-- stalking
-- harassment
-- relationship surveillance
-- collecting private details without a legitimate purpose
-- targeting minors
-- bypassing privacy settings
-- accessing private accounts
-- creating dossiers for harm
-
-## Folder Contents
-
-- `personal-exposure-review.md`  
-  A detailed workflow for reviewing public personal exposure and documenting practical cleanup steps.
-
-## Core Rule
-
-An exposure check should reduce risk.
-
-It should not collect information simply because it is available.
+[OSINT home](../README.md) · [Safety boundaries](../safety-notes/osint-safety-boundaries.md)
