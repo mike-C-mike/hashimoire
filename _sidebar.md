@@ -1,9 +1,15 @@
 - **START HERE**
   - [Home](/)
-  - [About Hashimoire](/README.md)
-  - [Visual style](/docs/visual-style.md)
+  - [Field Collector](/collector/README.md)
+  - [Forensic Examiner](/examiner/README.md)
   - [Save to phone home screen](/docs/mobile-home-screen.md)
-- **FIELD PLAYBOOKS**
+- **FIELD COLLECTOR**
+  - [Collector guide hub](/collector/README.md)
+  - [Smartphone / tablet](/collector/mobile-device-collection.md)
+  - [Computer / laptop](/collector/computer-collection.md)
+  - [Evidence handoff](/collector/evidence-handoff.md)
+- **FORENSIC EXAMINER**
+  - [Examiner toolkit](/examiner/README.md)
   - [Acquisition hub](/playbooks/acquisition/README.md)
   - [Rapid evidence collection](/playbooks/acquisition/0-rapid-evidence-collection.md)
   - [Collection bag checklist](/playbooks/acquisition/2-collection-bag-checklist.md)
@@ -30,3 +36,6 @@
   - [Domain exposure review](/osint/domain-checks/domain-exposure-review.md)
   - [Username review](/osint/username-checks/username-review-workflow.md)
   - [Metadata review](/osint/metadata-checks/document-image-metadata-review.md)
+- **ABOUT**
+  - [About Hashimoire](/README.md)
+  - [Visual style](/docs/visual-style.md)
