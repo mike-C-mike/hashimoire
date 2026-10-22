@@ -6,6 +6,20 @@
 
 > **For authorized collectors and first responders.** These quick references are intended to protect evidence at the scene, **not** to replace agency SOP, specialized training, legal authority, or instructions from the digital forensic examiner.
 
+## Immediate decision: someone just handed you a phone
+
+**Start with the actual condition of the device.** One page covers the decision flow without sending officers through multiple shallow subpages.
+
+**[Open the Smartphone & Tablet Field Preservation Guide →](mobile-device-collection.md)**
+
+- **Powered off?** Leave it off; do not charge just to identify.
+- **Powered on and unlocked?** Photograph without exploring, preserve the current state under approved procedures, and contact the examiner **urgently**.
+- **Powered on and locked?** Avoid rebooting or guessing codes; coordinate authorized isolation and transfer.
+- **Wet, hot, swollen, or damaged?** Prioritize safety and trained specialist handling.
+- **Not sure whether it's on?** Document what you see; don't experiment with buttons.
+
+> **Field value comes first.** These guides should resolve an immediate preservation decision, explain what **not** to do, and make the examiner handoff easier. This section grows only when new material is genuinely useful.
+
 ## Choose the device or task
 
 <div class="hash-cards">
