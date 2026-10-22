@@ -33,6 +33,23 @@ if (Test-Path -LiteralPath $Downloads) {
 }
 ```
 
+## Example output — synthetic lab profile
+
+```text
+Name                           LastWriteTimeUtc          Length
+----                           ----------------          ------
+Report Draft.lnk               2026-10-21 14:08:17Z
+9b9cdc69c1c24e2b.automaticDestinations-ms
+                               2026-10-21 14:11:02Z       4096
+```
+
+### Interpretation
+
+- **`.lnk`** files are Windows shortcuts that may contain target paths and metadata about a file or volume.
+- **`.automaticDestinations-ms`** files are Jump List artifacts used by Windows and applications to represent recent or pinned activity.
+- **LastWriteTimeUtc** is a filesystem timestamp for the artifact file, **not necessarily** the exact time a referenced document was opened.
+- Correlate parsed target/entry timestamps with other sources before attributing file access or movement to a person.
+
 ## Cautions
 
 - These examples inspect the **current account**. Other users, redirected folders, OneDrive, and browsers may use different locations.
