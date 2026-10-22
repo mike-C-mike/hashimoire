@@ -41,6 +41,22 @@ Get-Volume |
 
 Device descriptions and instance identifiers, USB/USBSTOR registry enumeration, current volumes and drive letters.
 
+## Example output — synthetic lab scenario
+
+```text
+FriendlyName                        InstanceId                                      Status
+------------                        ----------                                      ------
+USB Mass Storage Device             USBSTOR\\DISK&VEN_EXAMPLE&PROD_STORAGE\\DEMO001  Unknown
+Generic Internal NVMe Drive         SCSI\\DISK&VEN_NVME&PROD_EXAMPLE\\000000        OK
+```
+
+### How an examiner uses it
+
+- **FriendlyName** describes the enumerated device and may not uniquely identify an individual drive.
+- **InstanceId** carries device/bus identity information and is useful for comparing with other registry and event-log artifacts; manufacturer/product labels are **not proof** of who possessed the device.
+- **Status** reflects current Plug-and-Play state, not whether the device was present at a specific incident time.
+- Compare with device installation logs, mount records, relevant timestamps, and the collection timeline. A USB record alone does **not** establish that a file was copied.
+
 ## Forensic interpretation cautions
 
 - The `USB` class includes many device types; `USBSTOR` is not a comprehensive record of all external media (e.g. UASP devices).
