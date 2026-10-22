@@ -28,6 +28,23 @@ Get-CimInstance Win32_DiskDrive |
   Select-Object Index, Model, SerialNumber, InterfaceType, PNPDeviceID, Size
 ```
 
+## Example output — synthetic lab scenario
+
+```text
+Number FriendlyName             BusType PartitionStyle Size
+------ ------------             ------- -------------- ----
+0      Example NVMe SSD         NVMe    GPT            512110190592
+1      Example External SSD     USB     GPT            1000204886016
+```
+
+### What an examiner should notice
+
+- **DiskNumber 0:** the example internal disk; number alone can change across boots and device reconfiguration.
+- **DiskNumber 1:** the externally attached example drive; verify **serial number, physical connection and timing** before deciding it's acquisition media rather than the evidence source.
+- **BusType / PartitionStyle:** hints at connection method and partitioning—not a complete volume map.
+- **Size:** reported in **bytes**, not GB. Compare with imaging reports and partitions.
+- Combine `Get-Disk`, `Get-Partition`, `Get-Volume` and external photos; never select a destructive target based on drive letter or number alone.
+
 ## Cautions
 
 - The inventory may include virtual disks, Storage Spaces, removable media, and other logical devices; confirm before interpreting.
