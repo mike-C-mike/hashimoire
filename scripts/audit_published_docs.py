@@ -59,7 +59,7 @@ def check_page(path: Path) -> tuple[list[str], list[str]]:
         warnings.append(f"{rel}: short ({len(visible)} characters); review content depth")
 
     has_markdown_h1 = bool(re.search(r"^#\s+\S+", body, re.M))
-    has_html_h1 = path.name == "home.md" and bool(re.search(r"<h1\\b", body, re.I))
+    has_html_h1 = path.name == "home.md" and bool(re.search(r"<h1[ >]", body, re.I))
     if path.name != "_sidebar.md" and not (has_markdown_h1 or has_html_h1):
         issues.append(f"{rel}: missing H1 title")
 
