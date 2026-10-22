@@ -127,7 +127,7 @@ a:hover { color: var(--gold); }
   --heading-emerald: #a4df8d;
   --heading-emerald-soft: #93cc7f;
 }
-.markdown-section h1:not(.hash-hero h1),
+.markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4,
@@ -141,7 +141,7 @@ a:hover { color: var(--gold); }
 .markdown-section h6 a {
   color: var(--heading-emerald) !important;
 }
-.markdown-section h1:not(.hash-hero h1) {
+.markdown-section h1 {
   text-shadow: 0 0 14px rgba(125, 220, 100, .14);
 }
 .markdown-section h3,
