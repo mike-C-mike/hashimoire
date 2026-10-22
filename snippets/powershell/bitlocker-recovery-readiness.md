@@ -39,7 +39,7 @@ manage-bde -status
 ```powershell
 (Get-BitLockerVolume -MountPoint 'C:').KeyProtector |
   Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' } |
-  Select-Object KeyProtectorId, RecoveryPassword
+  Format-List KeyProtectorId, RecoveryPassword
 ```
 
 Built-in alternative (may display other protectors too):
