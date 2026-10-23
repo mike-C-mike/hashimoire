@@ -9,44 +9,49 @@
 
 Every pass should produce **operationally coherent coverage**—not merely ten more one-paragraph pages. Each published page must help answer: *what to do, what output to expect, why it matters, and what to document*.
 
-## Pass 0 — Architecture and quality controls (current)
+## Pass 0 — Architecture and quality controls (established)
 
 - [x] Role selection: Field Collector / Forensic Examiner.
 - [x] Expandable left-hand navigation.
 - [x] Windows forensic snippet foundation and example outputs.
-- [ ] Freeze top-level categories and hidden future-section registry after review.
-- [ ] Validate sidebar generator and link checks in pull requests.
-- [ ] Establish the content quality/promotion checklist.
+- [x] Establish top-level categories and hidden future-section registry.
+- [x] Validate sidebar generator and link checks in pull requests.
+- [x] Establish the content quality/promotion checklist.
 - [ ] Establish last-reviewed metadata conventions without burdensome boilerplate.
 
 **Exit:** Navigation structure decided; new sections can be planned invisibly and promoted safely.
 
-## Maintenance gate — repair existing content before expanding (current)
+## Maintenance gate — repair existing content before expanding (completed structurally)
 
 - [x] Identify the empty OSINT index and malformed published workflows.
 - [x] Rebuild existing OSINT domain, username, metadata, exposure and safety references rather than adding categories.
 - [x] Repair truncated hashing and Volatility Markdown and refresh tool-install guidance.
-- [ ] Run and clear automated published-content audit across the existing repository.
+- [x] Run and clear automated published-content audit across the existing repository (55 Markdown pages, 0 structural errors/warnings in the prior repair pass).
 - [ ] Review live Docsify rendering and OSINT route navigation on mobile and desktop.
-- [ ] Only resume collector depth work after published destinations are usable.
+- [x] Resume Collector depth work after the existing published pages passed the automated structural checks.
 
 **Scope decision:** offline support is intentionally deferred; a phone home-screen shortcut is sufficient for the current release.
 
-## Pass 1 — Field Collector: mobile evidence (first content depth pass)
+## Pass 1 — Field Collector: scene preservation depth (active)
 
-**Current development:** Full in-page power-state decision guide for collector use is being reviewed. It consolidates off, on/locked, on/unlocked, uncertain state, damaged devices, RF isolation, and handoff **without adding another click-through page**. This is a real-depth improvement to a published guide, not a new navigation stub.
+**Published work (October 2026):**
 
+- [x] A full [smartphone/tablet](../collector/mobile-device-collection.md) power-state guide: off, locked, unlocked, uncertain, damaged, isolation and transfer.
+- [x] Deepened [computer/laptop](../collector/computer-collection.md) live-state, encryption and connected-storage decisions.
+- [x] Created [USB/SD/removable media](../collector/removable-media.md) field preservation guidance for loose versus live-attached storage.
+- [x] Created [CCTV/DVR/cloud-video](../collector/video-preservation.md) preservation guidance focused on retention urgency, clock discrepancies, native export and verification.
+- [x] Expanded [evidence packaging/handoff](../collector/evidence-handoff.md) with custody, safety, synthetic examples and examiner-ready reports.
+- [x] Reworked the [Collector hub](../collector/README.md) as a five-situation, one-click decision index.
 
+**Next potential refinements—not automatically new pages:**
 
-- On/off, locked/unlocked and visible state: first-contact decisions.
-- Photographs and scene documentation; what *not* to touch.
-- Network isolation and RF containment options, failure modes and battery tradeoffs.
-- Handling unlocked devices, risks of reboot/power-down and escalation.
-- Charging, damage, overheating, moisture and transport safety.
-- Packaging, power/isolation state, custody and prompt examiner handoff.
-- Short phone-friendly decision tree and 60-second checklist; reviewed against official mobile evidence guidance.
+- [ ] Field test guide readability with officers on common mobile screen sizes and ask where uncertainty remains.
+- [ ] Verify live-site Docsify rendering, preservation checklists, and external references after deployment.
+- [ ] Consider more detailed scene photography only where it solves a repeated real collection problem.
+- [ ] Review vendor-specific CCTV/cloud workflows **only** with current source documentation; leave uncertain capabilities out.
+- [ ] Periodically recheck mobile OS behavior, agency SOP fit and SWGDE guidance.
 
-**Exit:** Field collector can make a defensible initial-preservation decision and get the device to an examiner without needing examiner-level instructions. Publish the first new collector subpages only after review.
+**Exit:** Five common collector tasks lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
 
 ## Pass 2 — Windows Examiner: field-to-lab evidence
 
