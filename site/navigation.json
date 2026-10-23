@@ -51,11 +51,6 @@
           "status": "published"
         },
         {
-          "label": "Evidence handoff",
-          "path": "/collector/evidence-handoff.md",
-          "status": "published"
-        },
-        {
           "label": "USB / SD / removable storage",
           "path": "/collector/removable-media.md",
           "status": "published"
@@ -63,6 +58,11 @@
         {
           "label": "CCTV / DVR / cloud video",
           "path": "/collector/video-preservation.md",
+          "status": "published"
+        },
+        {
+          "label": "Evidence handoff",
+          "path": "/collector/evidence-handoff.md",
           "status": "published"
         },
         {
