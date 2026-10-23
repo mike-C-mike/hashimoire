@@ -56,14 +56,14 @@
           "status": "published"
         },
         {
-          "label": "Removable media and USB collection",
+          "label": "USB / SD / removable storage",
           "path": "/collector/removable-media.md",
-          "status": "planned"
+          "status": "published"
         },
         {
-          "label": "Video / CCTV evidence preservation",
+          "label": "CCTV / DVR / cloud video",
           "path": "/collector/video-preservation.md",
-          "status": "planned"
+          "status": "published"
         },
         {
           "label": "Scene photography & documentation",
