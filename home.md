@@ -68,8 +68,10 @@
 **Using a phone?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. This version still requires an internet connection.
 
 - [Smartphone preservation quick guide](collector/mobile-device-collection.md)
-- [Computer collection quick guide](collector/computer-collection.md)
-- [Evidence packaging and handoff checklist](collector/evidence-handoff.md)
+- [Computer and laptop field preservation](collector/computer-collection.md)
+- [USB, SD card and removable storage collection](collector/removable-media.md)
+- [CCTV, DVR and cloud video preservation](collector/video-preservation.md)
+- [Evidence packaging and examiner handoff checklist](collector/evidence-handoff.md)
 - [Rapid evidence collection: live to dead-box](playbooks/acquisition/0-rapid-evidence-collection.md)
 
 > **Scope:** Hashimoire is a general public reference, not an agency-approved SOP. Follow local law, training, agency policy, and case-specific authority. Do not enter evidence or identifying information into this website.
