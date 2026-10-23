@@ -7,6 +7,8 @@
   - [Collector guide hub](/collector/README.md)
   - [Smartphone / tablet](/collector/mobile-device-collection.md)
   - [Computer / laptop](/collector/computer-collection.md)
+  - [USB / SD / removable storage](/collector/removable-media.md)
+  - [CCTV / DVR / cloud video](/collector/video-preservation.md)
   - [Evidence handoff](/collector/evidence-handoff.md)
 - **FORENSIC EXAMINER**
   - [Examiner toolkit](/examiner/README.md)

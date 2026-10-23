@@ -51,19 +51,19 @@
           "status": "published"
         },
         {
-          "label": "Evidence handoff",
-          "path": "/collector/evidence-handoff.md",
+          "label": "USB / SD / removable storage",
+          "path": "/collector/removable-media.md",
           "status": "published"
         },
         {
-          "label": "Removable media and USB collection",
-          "path": "/collector/removable-media.md",
-          "status": "planned"
+          "label": "CCTV / DVR / cloud video",
+          "path": "/collector/video-preservation.md",
+          "status": "published"
         },
         {
-          "label": "Video / CCTV evidence preservation",
-          "path": "/collector/video-preservation.md",
-          "status": "planned"
+          "label": "Evidence handoff",
+          "path": "/collector/evidence-handoff.md",
+          "status": "published"
         },
         {
           "label": "Scene photography & documentation",

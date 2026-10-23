@@ -17,24 +17,32 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus
+### Current content focus — Collector depth pass (October 23, 2026)
 
-**Field Collector comes first.** The goal is to help an authorized officer preserve evidence correctly within the first minutes of an encounter. The mobile phone guide now emphasizes what to do when a device is **off, on and locked, on and unlocked, apparently asleep, or damaged**. This section will deepen before unrelated platform categories are published.
+**Field Collector remains first.** The role hub now leads directly to five complete scene tasks rather than multiple placeholder stops:
 
-### Current maintenance focus: published-content repairs
+| Collector situation | Complete field reference |
+| --- | --- |
+| A phone is off, locked, unlocked or damaged | [Smartphone and tablet preservation](collector/mobile-device-collection.md) |
+| A computer is on, off, asleep or connected to external storage | [Computer and laptop preservation](collector/computer-collection.md) |
+| A found USB drive, SD card or external disk | [Removable media collection](collector/removable-media.md) |
+| CCTV/DVR or cloud video is at risk of retention overwrite | [Video preservation and export handoff](collector/video-preservation.md) |
+| Evidence is being packaged or transferred | [Packaging, chain of custody and examiner handoff](collector/evidence-handoff.md) |
 
-Before extending navigation or creating another subject category, Hashimoire is auditing **all existing published pages** for empty content, malformed Markdown, broken local links and low-value placeholders. The first confirmed failure was the empty OSINT landing page; its existing workflows have been rebuilt as complete, scoped references. The hashing, memory-tool and general tool pages are also receiving cleanup.
+The new storage and video guides provide immediate decisions, mistakes to avoid, examiner escalation points and a usable handoff template. Existing computer and handoff guides have also been substantially expanded.
 
-The content gate now includes a repository audit:
+### Publishing and maintenance checks
+
+The previous repair sprint rebuilt the empty OSINT index and corrected malformed hashing and tool pages. Before any new pages are linked publicly, run:
 
 ```bash
 python3 scripts/generate_sidebar.py --check
 python3 scripts/audit_published_docs.py
 ```
 
-The first validates publication status/navigation. The second inspects current published Markdown for empty pages, unclosed code fences, missing titles and broken internal routes. Both run in GitHub Actions for relevant documentation changes.
+The first validates publication status and navigation targets. The second checks existing Markdown for empty pages, malformed code fences, missing titles and unresolved local links. GitHub Actions runs both on relevant changes. These are **structural checks**, not a substitute for testing procedures, reviewing official guidance or confirming the live site renders correctly.
 
-**No new sections until existing links lead somewhere useful.** The next development focus remains Field Collector, but quality repairs take precedence.
+**Product constraint:** A one-tap phone home-screen shortcut is sufficient for now; offline access is not a current development priority.
 
 ### Publishing standard: immediate value, not empty pages
 
