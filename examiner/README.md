@@ -28,6 +28,6 @@
 
 ## A shared evidence journey
 
-If an evidence item arrives from a field collector, review the [collector handoff checklist](../collector/evidence-handoff.md) to understand the device's original condition and any interventions.
+If an evidence item arrives from a field collector, review the [collector handoff checklist](../collector/evidence-handoff.md) to understand its original condition, interventions, custody and urgent risks. For storage or video evidence, also review the [removable media preservation guide](../collector/removable-media.md) or [CCTV/cloud-video preservation guide](../collector/video-preservation.md) to understand what the collector was instructed to document.
 
 [← Choose a different role](/)
