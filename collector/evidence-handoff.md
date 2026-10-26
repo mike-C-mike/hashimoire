@@ -7,6 +7,8 @@
 
 > **This page is a handoff decision checklist**, not an agency evidence form or authority to collect beyond your case scope. Physical handling, digital preservation, chain of custody and hazardous-device procedures follow your organization's SOP and the examiner's direction.
 
+> **UNSAFE EVIDENCE HANDOFF:** Never treat a leaking, swollen, smoking or overheated battery as an ordinary sealed-bag exhibit. The [damaged-device guide](damaged-devices.md) identifies required specialist escalation and the need for a qualified transport plan. Alert the receiving property room/lab **before arrival**.
+
 ## Before you leave the scene — 60-second checklist
 
 - [ ] **Identify every item** uniquely and tie it to its original location, photographs and incident authority.
@@ -97,6 +99,7 @@ This is deliberately a **state report**, not an unsupported assessment of file c
 
 - [Interim scene triage and outside-in photography — no CSU or delayed CSU only](scene-documentation.md)
 
+- [Damaged-device response and specialist handoff](damaged-devices.md)
 - [Smartphone and tablet preservation](mobile-device-collection.md)
 - [Computer and laptop preservation](computer-collection.md)
 - [USB, SD card and removable storage collection](removable-media.md)
