@@ -65,5 +65,9 @@ Get-CimInstance Win32_Process -Filter 'ProcessId = 6128' |
   Select-Object ProcessId, ParentProcessId, Name, CreationDate, ExecutablePath, CommandLine
 ```
 
+## Offline follow-up
+
+The [worked Windows process-to-network timeline](../../docs/windows/timelines.md) demonstrates how to reconcile a live PID with **historic Security Event 4688 (hexadecimal PIDs)**, Sysmon ProcessGuid, Prefetch and alternate explanations. Live `Win32_Process` only describes what exists at collection time and is not a historical execution log.
+
 ## Collection cautions
 Command lines can contain credentials, tokens, and personal information—restrict output access. Missing fields can reflect privileges, protected processes, or provider limitations. Queries may cause minor live-state changes. Note whether PowerShell was elevated and use the same collection window as related network/session snapshots.
