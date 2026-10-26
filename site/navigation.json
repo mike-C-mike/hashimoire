@@ -66,6 +66,11 @@
           "status": "published"
         },
         {
+          "label": "Cloud & account preservation",
+          "path": "/collector/cloud-preservation.md",
+          "status": "published"
+        },
+        {
           "label": "Interim scene triage & photography",
           "path": "/collector/scene-documentation.md",
           "status": "published"
@@ -74,11 +79,6 @@
           "label": "Evidence handoff",
           "path": "/collector/evidence-handoff.md",
           "status": "published"
-        },
-        {
-          "label": "Cloud and account preservation requests",
-          "path": "/collector/cloud-preservation.md",
-          "status": "planned"
         }
       ]
     },
