@@ -17,6 +17,7 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [x] Establish top-level categories and hidden future-section registry.
 - [x] Validate sidebar generator and link checks in pull requests.
 - [x] Establish the content quality/promotion checklist.
+- [x] Establish [Evidence/artifact/evidence editorial vocabulary](TERMINOLOGY.md), separating collected submissions from discovered traces and their support for findings; require consideration of disconfirming observations and bias.
 - [ ] Establish last-reviewed metadata conventions without burdensome boilerplate.
 
 **Exit:** Navigation structure decided; new sections can be planned invisibly and promoted safely.
