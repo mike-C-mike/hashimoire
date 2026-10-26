@@ -93,6 +93,11 @@
           "status": "published"
         },
         {
+          "label": "Windows execution & timeline workflow",
+          "path": "/docs/windows/README.md",
+          "status": "published"
+        },
+        {
           "label": "Acquisition hub",
           "path": "/playbooks/acquisition/README.md",
           "status": "published"
@@ -130,11 +135,6 @@
         {
           "label": "Mobile forensics hub",
           "path": "/docs/mobile/README.md",
-          "status": "planned"
-        },
-        {
-          "label": "Windows artifact investigation hub",
-          "path": "/docs/windows/README.md",
           "status": "planned"
         },
         {
@@ -208,6 +208,43 @@
           "label": "Amcache and ShimCache",
           "path": "/snippets/powershell/amcache-shimcache.md",
           "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "windows-artifacts",
+      "title": "WINDOWS ARTIFACTS & TIMELINES",
+      "status": "published",
+      "items": [
+        {
+          "label": "Windows examiner: start here",
+          "path": "/docs/windows/README.md",
+          "status": "published"
+        },
+        {
+          "label": "Registry forensics",
+          "path": "/docs/windows/registry.md",
+          "status": "planned"
+        },
+        {
+          "label": "Execution artifacts (Prefetch, Amcache)",
+          "path": "/docs/windows/execution.md",
+          "status": "published"
+        },
+        {
+          "label": "Browser and user activity",
+          "path": "/docs/windows/browser.md",
+          "status": "planned"
+        },
+        {
+          "label": "Filesystem and $MFT",
+          "path": "/docs/windows/filesystems.md",
+          "status": "planned"
+        },
+        {
+          "label": "Process & intrusion timeline",
+          "path": "/docs/windows/timelines.md",
+          "status": "published"
         }
       ]
     },
@@ -345,43 +382,6 @@
         {
           "label": "Mobile examination reporting",
           "path": "/docs/mobile/reporting.md",
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "windows-artifacts",
-      "title": "WINDOWS ARTIFACTS & TIMELINES",
-      "status": "planned",
-      "items": [
-        {
-          "label": "Windows artifact map",
-          "path": "/docs/windows/README.md",
-          "status": "planned"
-        },
-        {
-          "label": "Registry forensics",
-          "path": "/docs/windows/registry.md",
-          "status": "planned"
-        },
-        {
-          "label": "Execution artifacts",
-          "path": "/docs/windows/execution.md",
-          "status": "planned"
-        },
-        {
-          "label": "Browser and user activity",
-          "path": "/docs/windows/browser.md",
-          "status": "planned"
-        },
-        {
-          "label": "Filesystem and $MFT",
-          "path": "/docs/windows/filesystems.md",
-          "status": "planned"
-        },
-        {
-          "label": "Windows timeline building",
-          "path": "/docs/windows/timelines.md",
           "status": "planned"
         }
       ]
