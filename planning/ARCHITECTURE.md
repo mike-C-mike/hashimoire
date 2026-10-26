@@ -78,10 +78,15 @@ A page can be marked `published` in the registry only after:
 - [ ] Invented examples plainly labeled, with explanations of fields and investigative significance.
 - [ ] Explicit limits: what the artifact/result does *not* establish; relevant clock issues.
 - [ ] Evidence integrity, handling or custody instructions where applicable.
+- [ ] **Published best-practice baseline:** for operational recommendations, consult relevant current published professional/standards-body or government guidance (e.g., SWGDE, ANSI/ASB, NIST, NIJ, USFA/OSHA/PHMSA where safety or transport matters). Attribute technical claims accurately; don't invent citations or imply a best practice is law.
+- [ ] **Source ledger on substantive field procedures:** include document title, **ID/version/date**, publisher, applicable device/task and link to the publisher. State any scope/edition limits and verify whether a newer edition supersedes it.
+- [ ] **Safety hierarchy and conflicts:** record when sources apply to **different device types** or their recommendations differ. Never silently transpose phone wet-handling guidance onto drives, or prioritize forensic access over active safety risks.
 - [ ] Official links/reference material and no case, credential, or protected data.
 - [ ] Internal links and Docsify/mobile display checked.
 - [ ] A meaningful landing page exists before publishing a new **top-level** section.
 - [ ] Any reviewer feedback addressed; version/update date recorded for fast-changing guidance.
+
+**Reference-review protocol:** Before writing, identify the actual current version via the issuing body's website. Use direct, stable publisher links (not PDF files redistributed into this repo); cite sections when material. Include date last checked, whether publication is an approved standard/recommendation rather than a law, and any training/specialist boundary. If source support cannot be verified, keep the item as a question for examiner review rather than a directive.
 
 **Publication protocol:** Draft on feature branch → validate → merge documentation → set status `published` → regenerate sidebar → check → deploy. This is a publishing convention, not an access-control mechanism.
 
