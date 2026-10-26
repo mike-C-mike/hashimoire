@@ -98,7 +98,7 @@ Working-copy analysis outputs, reviewer and report exhibits:
 
 ## Source ledger
 
-- **SWGDE [18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/), Best Practices for Computer Forensic Examinations (Feb 28, 2025):** exam scope, integrity, tool validation, documentation, working-copy examination and sound interpretation. This is a professional best-practice document, **not statute**.
+- **SWGDE [18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/), Best Practices for Computer Forensic Examinations (July 28, 2025):** exam scope, integrity, tool validation, documentation, working-copy examination and sound interpretation. This is a professional best-practice document, **not statute**.
 - **[Microsoft Event 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688):** process-start XML, PID representations and conditional command-line fields.
 - **[Microsoft Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon):** ProcessGuid correlation and configurable network telemetry.
 - **[PECmd](https://github.com/EricZimmerman/PECmd) and [AmcacheParser](https://github.com/EricZimmerman/AmcacheParser):** tool-specific CLI capabilities; confirm actual parser version with `--help`.
