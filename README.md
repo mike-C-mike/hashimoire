@@ -17,7 +17,15 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — cloud and account evidence preservation (October 26, 2026)
+### Current content focus — Windows examiner execution evidence (October 26, 2026)
+
+The **Field Collector foundation remains complete** with eight useful scenario guides. This pass deepens forensic examination rather than adding more collector categories. [Windows Examiner — Execution & Intrusion Timeline](docs/windows/README.md) now provides a question-driven path from a verified acquired Windows image to defensible process/network findings.
+
+**New reviewed pages:** [Prefetch, Amcache and process-creation interpretation](docs/windows/execution.md) and [worked Security 4688 / Sysmon ProcessGuid timeline](docs/windows/timelines.md). These demonstrate **real supported tool commands** with labeled synthetic outputs; show how hexadecimal PIDs, timestamps and log coverage affect conclusions; and distinguish historical execution artifacts from proof of actor identity, malicious intent or exfiltration. The primary professional baseline is [SWGDE 18-F-001-2.0 (Feb 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
+
+Only the completed Windows workflow is published in the **Windows Artifacts & Timelines** category. Registry, browser and filesystem pages remain hidden until substantive, source-reviewed material exists. Continue to test commands and tool versions on actual lab images before case use.
+
+### Completed Field Collector foundation — cloud and account preservation (October 26, 2026)
 
 **Field Collector remains first.** The role hub now leads directly to eight complete field situations rather than multiple placeholder stops:
 

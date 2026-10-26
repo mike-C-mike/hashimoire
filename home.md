@@ -63,6 +63,10 @@
   </a>
 </div>
 
+## Forensic Examiner — new Windows investigation workflow
+
+**[Windows execution evidence and incident timeline](docs/windows/README.md):** Work from a validated acquisition through Prefetch, Amcache, process creation (Security 4688), Sysmon ProcessGuid and network correlation. Includes parser commands, fictional sample output, alternative explanations and careful reporting language.
+
 ## In the field
 
 **Using a phone?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. This version still requires an internet connection.

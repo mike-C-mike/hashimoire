@@ -59,5 +59,9 @@ Get-CimInstance Win32_Process -Filter 'ProcessId = 6128' |
 
 For this **hypothetical** incident, PID **6128** could match the PowerShell process in the [process-tree example](processes-services.md). Its PPID may lead back to an application that launched it. Correlate with firewall/proxy/DNS data, logons, EDR and process creation times. A network socket is not proof of exfiltration, and **PID reuse** means timing is essential.
 
+## Historical connection corroboration
+
+[Windows execution and network timeline](../../docs/windows/timelines.md) explains why `OwningProcess` from a live socket must be interpreted with process creation time and why a previously configured **Sysmon Event 3** can correlate to **Event 1** via ProcessGuid. A connection is not itself proof of data exfiltration.
+
 ## Collection cautions
 Administrator privileges may be needed for complete results. UDP endpoints are not a connection log. DNS caches may be empty; these commands do not prove exfiltration. Record if EDR isolation, VPN changes, or disconnected interfaces occurred before collection.
