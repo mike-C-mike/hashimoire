@@ -21,6 +21,8 @@
 - [ ] For CCTV/cloud evidence: confirm the **actual hold/export status**, retention deadline, camera/time scope and whether files were secured—not just viewed.
 - [ ] Document custody transfer details and tell the examiner what remains urgent or unresolved.
 
+**CLOUD RECORDS ARE DIFFERENT:** Identifying a provider, sending a preservation request, receiving its confirmation and obtaining a production are distinct steps. Record the **actual status** and next legal/technical owner; see [cloud and account preservation](cloud-preservation.md).
+
 ## Match packaging and transport to the evidence
 
 | Item or condition | Packaging/handoff priority | Stop or escalate if |
@@ -28,6 +30,7 @@
 | **Powered-off phone / computer** | Preserve state and physical condition; protect from accidental power-on and damage as agency SOP permits. | Contaminated, wet, swollen or hot battery. |
 | **Powered-on phone / laptop** | Obtain examiner-approved cooling, power, isolation and transport plan; document deviations. | Access state may be lost, remote-wipe risk, unsafe handling. |
 | **USB / memory card / external disk** | Protect contacts/connectors, label individually and associate adapters/cables; keep disconnected. | Attached to a live computer, damaged or encrypted/unlocked. |
+| **Account, cloud file or service-provider record** | Record exact identifiers, request status, provider receipt/confirmation, possible expiration and assigned legal/examiner owner. | Mistaking a preservation request for acquired evidence; using expired download links. |
 | **CCTV / cloud export** | Secure original/natively exported files, related player/sidecars and approved dataset hashes; log export origin. | Viewing link expires, incomplete coverage, missing files, retention window imminent. |
 | **Multiple devices at one scene** | Separate identifiable evidence items; record what was connected or near each other before movement. | Similar items could be confused or mixed. |
 
@@ -96,6 +99,8 @@ This is deliberately a **state report**, not an unsupported assessment of file c
 5. **Urgent follow-ups:** a pending overwrite deadline or inaccessible encryption key is part of the handoff, not a detail to discover days later.
 
 ## Related field guides
+
+- [Cloud/account preservation referrals and legal-process boundaries](cloud-preservation.md)
 
 - [Interim scene triage and outside-in photography — no CSU or delayed CSU only](scene-documentation.md)
 
