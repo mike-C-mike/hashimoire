@@ -8,6 +8,12 @@
 
 > **Start with an investigative question, not a list of artifacts.** This Windows workstream begins with one complete problem: **process execution and network-event correlation**. Additional Windows subject areas (registry deep dives, browser, MFT and broad timelines) remain hidden until they have substantive content. All examples are synthetic; work on verified evidence copies under appropriate authority. [SWGDE 18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
 
+## A disciplined artifact-first investigation
+
+**Evidence** (capital E) is the submitted device or dataset. During examination, we identify individual **artifacts**—process events, Prefetch records, registry entries, connection logs. Those artifacts become **evidence** (lowercase e) *for or against particular hypotheses* when their context, source reliability and limitations are evaluated. A finding must not go further than the support allows.
+
+An allegation may set the **scope**, but it does not set the result. **Do not start with “this was malware” and seek only confirming records.** Test benign explanations, clock errors, PID reuse, missing logs and other contradictory observations. See our [editorial terminology and anti-confirmation-bias guidance](../../planning/TERMINOLOGY.md).
+
 ## Choose your current question
 
 | I need to know… | Open now | Outcome |
