@@ -222,9 +222,14 @@
           "status": "published"
         },
         {
-          "label": "Registry forensics",
+          "label": "Registry examination: UserAssist & BAM",
           "path": "/docs/windows/registry.md",
-          "status": "planned"
+          "status": "published"
+        },
+        {
+          "label": "USB devices, user profiles & files",
+          "path": "/docs/windows/usb-device-history.md",
+          "status": "published"
         },
         {
           "label": "Execution artifacts (Prefetch, Amcache)",
