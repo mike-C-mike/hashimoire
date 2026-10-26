@@ -35,6 +35,8 @@
   - [SHA-256 evidence hashes](/snippets/powershell/sha256-evidence.md)
 - **WINDOWS ARTIFACTS & TIMELINES**
   - [Windows examiner: start here](/docs/windows/README.md)
+  - [Registry examination: UserAssist & BAM](/docs/windows/registry.md)
+  - [USB devices, user profiles & files](/docs/windows/usb-device-history.md)
   - [Execution artifacts (Prefetch, Amcache)](/docs/windows/execution.md)
   - [Process & intrusion timeline](/docs/windows/timelines.md)
 - **TOOL REFERENCE**
