@@ -10,6 +10,7 @@
 ## Before you leave the scene — 60-second checklist
 
 - [ ] **Identify every item** uniquely and tie it to its original location, photographs and incident authority.
+- [ ] If CSU is absent or delayed and interim scene photographs were authorized, retain the **outside-in unmarked series**, later marker/scale views and photograph log; document why the officer performed this work instead of CSU.
 - [ ] Record how it was found: **on/off, locked/unlocked, screen visible, connected/disconnected, attached cables/media**, where applicable.
 - [ ] Record **who made every intervention** (power, network, disconnection, packaging, export, charging, settings) and when, with timezone.
 - [ ] Note whether physical traces (latent prints, DNA, toolmarks) require coordination **before digital examination**.
@@ -93,6 +94,8 @@ This is deliberately a **state report**, not an unsupported assessment of file c
 5. **Urgent follow-ups:** a pending overwrite deadline or inaccessible encryption key is part of the handoff, not a detail to discover days later.
 
 ## Related field guides
+
+- [Interim scene triage and outside-in photography — no CSU or delayed CSU only](scene-documentation.md)
 
 - [Smartphone and tablet preservation](mobile-device-collection.md)
 - [Computer and laptop preservation](computer-collection.md)
