@@ -66,6 +66,10 @@ TimeCreated             Id    ProviderName
 - The absence of events may reflect retention, missing providers, privilege limits, filtering, or disabled auditing.
 - For preservation, export original `.evtx` files before relying on screenshots or excerpts: [event-log export](event-log-export.md).
 
+## Move from triage to forensic interpretation
+
+For a verified **acquired** Security or Sysmon EVTX, use the [Windows worked process/network timeline](../../docs/windows/timelines.md) to extract Event 4688 named XML fields, convert hexadecimal PIDs, and compare configured Sysmon ProcessGuid values. For corroboration with Prefetch and Amcache inventory, see [Windows execution artifacts](../../docs/windows/execution.md). Document whether audit policies were active; truncated query output does not establish a complete history.
+
 ## Official reference
 
 [Microsoft — Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent)  
