@@ -51,6 +51,18 @@ Useful contributions include:
 - improving readability
 - adding evidence-handling considerations
 
+## Terminology and examiner reasoning
+
+Use Hashimoire's [internal writing convention](planning/TERMINOLOGY.md) consistently:
+
+- **Evidence** (capital E): a formally collected/submitted physical item or digital dataset; distinguish the original from forensic images and exports.
+- **artifact**: a discovered digital trace (log record, registry entry, message row, file metadata).
+- **evidence** (lowercase e): the support that observations provide **for or against** a proposition; it is not automatically conclusive proof or criminal wrongdoing.
+
+An investigation begins with a **question and scope, not the conclusion we hope to prove**. Let artifacts suggest hypotheses, then actively search for competing explanations and disconfirming observations. Record inconclusive or exculpatory results without burying them.
+
+These are editorial conventions—not universally prescribed legal definitions. A digital artifact may itself be evidence under accepted legal and scientific usage. Use the correct statutory/agency terminology where required.
+
 ## Quality Bar
 
 A good note should answer as many of these as practical:
