@@ -64,7 +64,7 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 **First depth pass — October 26, 2026:**
 
 - [x] Published a complete [Windows Examiner execution-evidence hub](../docs/windows/README.md), linked to already-published collection and command references.
-- [x] Published [execution evidence: Prefetch, Amcache, Security 4688 and Sysmon](../docs/windows/execution.md) with tested-documented parser options, synthetic outputs, source coverage, provenance, and **what each artifact cannot prove**.
+- [x] Published [execution evidence: Prefetch, Amcache, Security 4688 and Sysmon](../docs/windows/execution.md) with maintainer-documented parser options, synthetic outputs, source coverage, provenance, and **what each artifact cannot prove**.
 - [x] Published a [worked PID-to-network intrusion timeline](../docs/windows/timelines.md), including hexadecimal PID conversion, XML-by-name field parsing, ProcessGuid event correlation, UTC normalization and constrained report wording.
 - [x] Exposed **Windows Artifacts & Timelines** in the sidebar only with these **three genuinely useful pages**. Registry, browser and filesystem topics stay **unpublished and hidden**.
 - [x] Linked deeper examiner pages from existing Windows snippets, Examiner hub and homepage.
