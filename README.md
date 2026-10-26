@@ -17,12 +17,13 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — Collector scene documentation (October 26, 2026)
+### Current content focus — safety-first damaged-device preservation (October 26, 2026)
 
-**Field Collector remains first.** The role hub now leads directly to six complete field situations rather than multiple placeholder stops:
+**Field Collector remains first.** The role hub now leads directly to seven complete field situations rather than multiple placeholder stops:
 
 | Collector situation | Complete field reference |
 | --- | --- |
+| A device is smoking, swollen, wet, crushed, or storage has failed | [Damaged and hazardous digital devices](collector/damaged-devices.md) |
 | A phone is off, locked, unlocked or damaged | [Smartphone and tablet preservation](collector/mobile-device-collection.md) |
 | A computer is on, off, asleep or connected to external storage | [Computer and laptop preservation](collector/computer-collection.md) |
 | A found USB drive, SD card or external disk | [Removable media collection](collector/removable-media.md) |
@@ -31,6 +32,8 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 | CSU unavailable or delayed and the scene risks changing | [Interim scene triage and outside-in photography](collector/scene-documentation.md) |
 
 The Collector reference now also includes a **CSU-limited** interim scene photography guide: perimeter control first, then original-condition overall/midrange/close-up views from outside in, followed by identification markers and appropriately placed scale photographs **only after unmarked images**. This does not replace a specialist CSU examination; it applies to agencies without a CSU or urgent documentation while one is delayed. The storage, video, computer and handoff guides remain available.
+
+**Evidence-first, safety-first exception:** Different SWGDE publications govern wet/damaged **mobile devices** and failed/damaged **storage media**; lithium battery danger overrides normal powered-on evidence preservation. This latest guide includes a dated source ledger and direct publisher references.
 
 ### Publishing and maintenance checks
 
@@ -46,6 +49,8 @@ The first validates publication status and navigation targets. The second checks
 **Product constraint:** A one-tap phone home-screen shortcut is sufficient for now; offline access is not a current development priority.
 
 ### Publishing standard: immediate value, not empty pages
+
+**Source rule:** Operational field articles must be based on verified, published best-practice guidance from the appropriate professional body or government agency, with a title, standard/document number and version/date where applicable, direct publisher link, last-reviewed date, and clear notes about scope or conflicting recommendations. Do not present general recommendations as binding law; agency SOP, safety and case authority still apply.
 
 A new page or navigation section is published only when it supports a real decision or task and has enough validated substance to be used. At minimum, it should provide **action, rationale, risks/limitations, documentation and a clear next step**, with official references where relevant.
 
