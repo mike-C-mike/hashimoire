@@ -72,6 +72,7 @@
 - [Computer and laptop field preservation](collector/computer-collection.md)
 - [USB, SD card and removable storage collection](collector/removable-media.md)
 - [CCTV, DVR and cloud video preservation](collector/video-preservation.md)
+- [Cloud accounts, disappearing posts and provider preservation referrals](collector/cloud-preservation.md)
 - [Interim scene triage and photography (only when CSU unavailable or delayed)](collector/scene-documentation.md)
 - [Evidence packaging and examiner handoff checklist](collector/evidence-handoff.md)
 - [Rapid evidence collection: live to dead-box](playbooks/acquisition/0-rapid-evidence-collection.md)

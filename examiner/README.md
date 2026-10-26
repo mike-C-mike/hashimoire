@@ -26,6 +26,8 @@
 - [Acquisition visual workflow](../playbooks/acquisition/5-visual-field-reference.md)
 - [Defensive OSINT reference](../osint/README.md)
 
+**Cloud evidence referral:** When a cloud account or provider record is reported, the [Field Collector cloud-preservation guide](../collector/cloud-preservation.md) describes the account identifiers, provider/custodian routing, expiry/renewal tracking and preservation status that should accompany the handoff. Actual acquisition and legal process remain examiner/counsel-controlled.
+
 ## A shared evidence journey
 
 If an evidence item arrives from a field collector, review the [collector handoff checklist](../collector/evidence-handoff.md) to understand its original condition, interventions, custody and urgent risks. For storage or video evidence, also review the [removable media preservation guide](../collector/removable-media.md) or [CCTV/cloud-video preservation guide](../collector/video-preservation.md) to understand what the collector was instructed to document.

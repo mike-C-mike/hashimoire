@@ -27,6 +27,8 @@
 | **Body-worn / dash camera system** | Follow the program's evidence management/retention and categorization workflow. | Avoid exporting with personal accounts or ad hoc consumer file shares. |
 | **Cellphone video or social platform clip** | Preserve source identity, posting context and original file or authorized provider export when possible. | A screen recording, repost or downloaded preview may lose metadata/quality. |
 
+> **Cloud vs. video:** An online viewing link is not the same as preserved records, and a provider preservation request is not legal authority to access account content. For provider-held camera records or organization-owned cloud accounts, cross-check the [cloud and account preservation field guide](cloud-preservation.md) and arrange authorized custodian/legal review.
+
 ## 1. Get the *right* footage
 
 **Ask these questions before the export:**

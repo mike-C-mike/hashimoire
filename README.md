@@ -17,9 +17,9 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — safety-first damaged-device preservation (October 26, 2026)
+### Current content focus — cloud and account evidence preservation (October 26, 2026)
 
-**Field Collector remains first.** The role hub now leads directly to seven complete field situations rather than multiple placeholder stops:
+**Field Collector remains first.** The role hub now leads directly to eight complete field situations rather than multiple placeholder stops:
 
 | Collector situation | Complete field reference |
 | --- | --- |
@@ -28,12 +28,15 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 | A computer is on, off, asleep or connected to external storage | [Computer and laptop preservation](collector/computer-collection.md) |
 | A found USB drive, SD card or external disk | [Removable media collection](collector/removable-media.md) |
 | CCTV/DVR or cloud video is at risk of retention overwrite | [Video preservation and export handoff](collector/video-preservation.md) |
+| A social post, cloud file, message or account record may disappear | [Cloud and account first-response preservation](collector/cloud-preservation.md) |
 | Evidence is being packaged or transferred | [Packaging, chain of custody and examiner handoff](collector/evidence-handoff.md) |
 | CSU unavailable or delayed and the scene risks changing | [Interim scene triage and outside-in photography](collector/scene-documentation.md) |
 
 The Collector reference now also includes a **CSU-limited** interim scene photography guide: perimeter control first, then original-condition overall/midrange/close-up views from outside in, followed by identification markers and appropriately placed scale photographs **only after unmarked images**. This does not replace a specialist CSU examination; it applies to agencies without a CSU or urgent documentation while one is delayed. The storage, video, computer and handoff guides remain available.
 
 **Evidence-first, safety-first exception:** Different SWGDE publications govern wet/damaged **mobile devices** and failed/damaged **storage media**; lithium battery danger overrides normal powered-on evidence preservation. This latest guide includes a dated source ledger and direct publisher references.
+
+**Cloud-evidence distinction:** The new Collector article explicitly distinguishes identifying a record, requesting preservation, provider confirmation, legal production and forensic validation. Based on **SWGDE 23-F-004-1.1 (Jan 2025)** and **SWGDE 18-F-002-2.0 (Nov 2025)**, it explains the limited U.S. **18 U.S.C. §2703(f)** preservation period and renewal, avoids unauthorized account access, and directs formal requests to authorized legal/investigative personnel. It includes a source ledger, scope/identity requirements and internal referral worksheet—not a provider-ready legal demand.
 
 ### Publishing and maintenance checks
 

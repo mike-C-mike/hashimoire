@@ -41,9 +41,10 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [x] Created [USB/SD/removable media](../collector/removable-media.md) field preservation guidance for loose versus live-attached storage.
 - [x] Created [CCTV/DVR/cloud-video](../collector/video-preservation.md) preservation guidance focused on retention urgency, clock discrepancies, native export and verification.
 - [x] Expanded [evidence packaging/handoff](../collector/evidence-handoff.md) with custody, safety, synthetic examples and examiner-ready reports.
-- [x] Reworked the [Collector hub](../collector/README.md) as a seven-situation, one-click decision index.
+- [x] Reworked the [Collector hub](../collector/README.md) as a eight-situation, one-click decision index.
 - [x] Added [Interim Scene Triage & Photography](../collector/scene-documentation.md) **only** for departments without CSU or urgent documentation ahead of delayed CSU. Covers safety/perimeter, entry control, outside-in overall/midrange/close-up, original unmarked views, later visible ID markers and properly aligned scales, image integrity and specialist handoff.
 - [x] Added [Damaged & Hazardous Digital Devices](../collector/damaged-devices.md), grounded in SWGDE 14-F-004-1.1 (2016 mobile), 14-F-002-2.0 (2025 storage), 18-F-003-2.0 (2025), USFA/OSHA battery safety and PHMSA transport; clear stop conditions, wet-device scope distinctions and specialist handoff.
+- [x] Built [Cloud & Account Evidence Preservation](../collector/cloud-preservation.md): immediate account/item identifiers, expiring evidence, provider vs. enterprise custodian, 18 U.S.C. §2703(f) preservation vs. production and renewal, emergency legal escalation, internal referral worksheet and examiner verification; references SWGDE 23-F-004-1.1 (2025) and 18-F-002-2.0 (2025).
 
 **Next potential refinements—not automatically new pages:**
 
@@ -51,11 +52,12 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [ ] Verify live-site Docsify rendering, preservation checklists, and external references after deployment.
 - [ ] Have CSU/scene-trained personnel review the interim-photography guide against local SOP, scene safety and marker/scale contamination controls.
 - [ ] Review vendor-specific CCTV/cloud workflows **only** with current source documentation; leave uncertain capabilities out.
+- [ ] Agency counsel/investigator review of the cloud provider preservation/production distinctions and internal referral protocol; verify current provider contact channels when used.
 - [ ] Periodically recheck mobile OS behavior, agency SOP fit and SWGDE guidance.
 - [ ] Have fire/hazmat and damaged-media recovery personnel review the hazardous-device handling article and local evidence-transport SOP.
 - [x] Add a **mandatory current published best-practice source ledger** and scope-conflict check to the [architecture quality gate](ARCHITECTURE.md).
 
-**Exit:** Seven common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
+**Exit:** Eight common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
 
 ## Pass 2 — Windows Examiner: field-to-lab evidence
 

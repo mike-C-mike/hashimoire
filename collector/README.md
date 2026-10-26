@@ -16,6 +16,7 @@
 | **An unlocked phone** | Photograph without navigating; urgently contact examiner to preserve its current access state. | [Smartphone / tablet](mobile-device-collection.md) |
 | **A laptop that's running** | Photograph connections and screen; **do not power down** before examiner-directed decision. | [Computer / laptop](computer-collection.md) |
 | **A found USB or SD card** | If loose, leave disconnected. If attached to live computer, document and **do not remove yet**. | [USB / SD / removable storage](removable-media.md) |
+| **A cloud account, disappearing post or temporary share link may be lost** | Record precise account/item identifiers and time; refer urgent **preservation** through authorized agency channels. | [Cloud & account preservation](cloud-preservation.md) |
 | **Footage about to be overwritten** | Identify custodian, camera IDs, accurate time range and request immediate preservation. | [CCTV / cloud video](video-preservation.md) |
 | **CSU isn't available or the scene will change before arrival** | Secure and control the scene first; only then document systematically from outside in, unmarked before marked, as authorized. | [Interim scene triage & photography](scene-documentation.md) |
 | **You're transferring items to the lab** | Record found state, changes, custody and urgent unresolved questions. | [Evidence packaging & handoff](evidence-handoff.md) |
@@ -29,6 +30,7 @@
   <a class="hash-card" href="#/collector/mobile-device-collection.md"><span class="hash-card-icon" aria-hidden="true">▣</span><strong>Smartphone &amp; Tablet</strong><span>Off, locked, unlocked, uncertain or damaged: preserve power and access state, plan isolation and document handling.</span><em>Open mobile guide →</em></a>
   <a class="hash-card" href="#/collector/computer-collection.md"><span class="hash-card-icon" aria-hidden="true">▤</span><strong>Computer &amp; Laptop</strong><span>Live versus off, encrypted volumes, connected drives, network state and controlled transfer to an examiner.</span><em>Open computer guide →</em></a>
   <a class="hash-card" href="#/collector/removable-media.md"><span class="hash-card-icon" aria-hidden="true">◇</span><strong>USB, SD &amp; Storage</strong><span>Loose versus connected media, why not to plug it in, physical condition and write-blocking limitations.</span><em>Open storage guide →</em></a>
+  <a class="hash-card" href="#/collector/cloud-preservation.md"><span class="hash-card-icon" aria-hidden="true">☁</span><strong>Cloud &amp; Account Evidence</strong><span>Identify disappearing posts, accounts and hosted files; refer time-sensitive preservation without unauthorized account access.</span><em>Open cloud preservation guide →</em></a>
   <a class="hash-card" href="#/collector/video-preservation.md"><span class="hash-card-icon" aria-hidden="true">◉</span><strong>CCTV &amp; Video</strong><span>Stop overwrite, identify cameras and times, request preservation, collect native files and verify the export.</span><em>Open video guide →</em></a>
   <a class="hash-card" href="#/collector/evidence-handoff.md"><span class="hash-card-icon" aria-hidden="true">✦</span><strong>Packaging &amp; Handoff</strong><span>Know what to photograph, how to document interventions, and what to tell the receiving examiner.</span><em>Open handoff checklist →</em></a>
   <a class="hash-card" href="#/collector/scene-documentation.md"><span class="hash-card-icon" aria-hidden="true">◎</span><strong>Interim Scene Triage &amp; Photography</strong><span>Only when CSU is unavailable or delayed: secure the perimeter, photograph outside-in, document unmarked views, then safe marker and scale placement.</span><em>Open interim scene guide →</em></a>
@@ -41,7 +43,7 @@
 3. **Preserve the state when safe.** For an actively hazardous device, personnel safety overrides attempts to preserve power or unlocked access. Don't explore files or apps, guess passwords, power up a device found off, or casually shut down a device found on.
 4. **Document time.** Use an independent date/time/timezone, plus any observed difference from a device or camera-system clock.
 5. **Get help early.** Running encryption, an unlocked phone, live-attached storage, imminent video overwrite or damaged equipment are reasons to contact the relevant specialist.
-6. **Handoff completely.** Record which changes occurred, why, when, and who directed them.
+6. **Handoff completely.** Record which changes occurred, why, when, and who directed them. For cloud records, distinguish **request submitted** from **provider-confirmed preservation** and assign an owner for follow-up.
 
 ## What's the collector–examiner boundary?
 
