@@ -110,3 +110,6 @@ Permissions, impact, limitations, or gotchas.
 ## Documentation Notes
 
 What should be recorded if this is used in an evidence or security workflow.
+```
+
+For analysis pieces, link the [Evidence/artifact/evidence terminology guide](planning/TERMINOLOGY.md) and include a short **alternative explanations / contradictory observations** section when factual interpretation could be contested.
