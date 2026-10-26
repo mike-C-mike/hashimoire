@@ -4,6 +4,8 @@
 **Use case:** preservation | scene decisions | clean examiner handoff  
 **Risk:** caution
 
+> **Scene handling / photography exception:** Our [Interim Scene Triage & Photography guide](scene-documentation.md) is expressly for officers whose department **has no CSU**, or who must document evidence at risk **during an unforeseen delay before CSU arrives**. The default when CSU is available and the scene is stable is to **secure it, control access, and await trained processing**.
+
 > **First preserve, then examine.** This section helps authorized personnel avoid accidental evidence loss while awaiting a qualified examiner. It supplements agency SOP, training, legal authority and hazardous-device procedures. It does **not** authorize opening apps, searching files, bypassing locks or running forensic tools.
 
 ## Someone just handed you a device — choose the situation
@@ -14,6 +16,7 @@
 | **A laptop that's running** | Photograph connections and screen; **do not power down** before examiner-directed decision. | [Computer / laptop](computer-collection.md) |
 | **A found USB or SD card** | If loose, leave disconnected. If attached to live computer, document and **do not remove yet**. | [USB / SD / removable storage](removable-media.md) |
 | **Footage about to be overwritten** | Identify custodian, camera IDs, accurate time range and request immediate preservation. | [CCTV / cloud video](video-preservation.md) |
+| **CSU isn't available or the scene will change before arrival** | Secure and control the scene first; only then document systematically from outside in, unmarked before marked, as authorized. | [Interim scene triage & photography](scene-documentation.md) |
 | **You're transferring items to the lab** | Record found state, changes, custody and urgent unresolved questions. | [Evidence packaging & handoff](evidence-handoff.md) |
 
 **These links lead straight to complete, actionable references—no empty intermediary pages.**
@@ -26,12 +29,13 @@
   <a class="hash-card" href="#/collector/removable-media.md"><span class="hash-card-icon" aria-hidden="true">◇</span><strong>USB, SD &amp; Storage</strong><span>Loose versus connected media, why not to plug it in, physical condition and write-blocking limitations.</span><em>Open storage guide →</em></a>
   <a class="hash-card" href="#/collector/video-preservation.md"><span class="hash-card-icon" aria-hidden="true">◉</span><strong>CCTV &amp; Video</strong><span>Stop overwrite, identify cameras and times, request preservation, collect native files and verify the export.</span><em>Open video guide →</em></a>
   <a class="hash-card" href="#/collector/evidence-handoff.md"><span class="hash-card-icon" aria-hidden="true">✦</span><strong>Packaging &amp; Handoff</strong><span>Know what to photograph, how to document interventions, and what to tell the receiving examiner.</span><em>Open handoff checklist →</em></a>
+  <a class="hash-card" href="#/collector/scene-documentation.md"><span class="hash-card-icon" aria-hidden="true">◎</span><strong>Interim Scene Triage &amp; Photography</strong><span>Only when CSU is unavailable or delayed: secure the perimeter, photograph outside-in, document unmarked views, then safe marker and scale placement.</span><em>Open interim scene guide →</em></a>
 </div>
 
 ## Universal first actions
 
-1. **Authority and safety.** Confirm what may be collected and whether hazardous batteries, biohazards or critical equipment require specialist response.
-2. **Photograph first.** Record original location, visible screen/state, connections, labels and surrounding devices before handling.
+1. **Authority and safety.** Secure and control the scene; confirm what may be collected and whether hazardous batteries, biohazards or critical equipment require specialist response.
+2. **Photograph if appropriate for your role.** When CSU is absent or delayed and interim documentation is authorized, photograph the unaltered scene from outside toward evidence before handling or marker placement. Otherwise preserve the scene for CSU.
 3. **Preserve the state.** Don't explore files or apps, guess passwords, power up a device found off, or casually shut down a device found on.
 4. **Document time.** Use an independent date/time/timezone, plus any observed difference from a device or camera-system clock.
 5. **Get help early.** Running encryption, an unlocked phone, live-attached storage, imminent video overwrite or damaged equipment are reasons to contact the relevant specialist.

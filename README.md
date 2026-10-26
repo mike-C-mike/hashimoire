@@ -17,9 +17,9 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — Collector depth pass (October 23, 2026)
+### Current content focus — Collector scene documentation (October 26, 2026)
 
-**Field Collector remains first.** The role hub now leads directly to five complete scene tasks rather than multiple placeholder stops:
+**Field Collector remains first.** The role hub now leads directly to six complete field situations rather than multiple placeholder stops:
 
 | Collector situation | Complete field reference |
 | --- | --- |
@@ -28,8 +28,9 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 | A found USB drive, SD card or external disk | [Removable media collection](collector/removable-media.md) |
 | CCTV/DVR or cloud video is at risk of retention overwrite | [Video preservation and export handoff](collector/video-preservation.md) |
 | Evidence is being packaged or transferred | [Packaging, chain of custody and examiner handoff](collector/evidence-handoff.md) |
+| CSU unavailable or delayed and the scene risks changing | [Interim scene triage and outside-in photography](collector/scene-documentation.md) |
 
-The new storage and video guides provide immediate decisions, mistakes to avoid, examiner escalation points and a usable handoff template. Existing computer and handoff guides have also been substantially expanded.
+The Collector reference now also includes a **CSU-limited** interim scene photography guide: perimeter control first, then original-condition overall/midrange/close-up views from outside in, followed by identification markers and appropriately placed scale photographs **only after unmarked images**. This does not replace a specialist CSU examination; it applies to agencies without a CSU or urgent documentation while one is delayed. The storage, video, computer and handoff guides remain available.
 
 ### Publishing and maintenance checks
 

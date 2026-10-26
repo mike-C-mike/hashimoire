@@ -9,6 +9,7 @@
   - [Computer / laptop](/collector/computer-collection.md)
   - [USB / SD / removable storage](/collector/removable-media.md)
   - [CCTV / DVR / cloud video](/collector/video-preservation.md)
+  - [Interim scene triage & photography](/collector/scene-documentation.md)
   - [Evidence handoff](/collector/evidence-handoff.md)
 - **FORENSIC EXAMINER**
   - [Examiner toolkit](/examiner/README.md)

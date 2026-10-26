@@ -41,17 +41,18 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [x] Created [USB/SD/removable media](../collector/removable-media.md) field preservation guidance for loose versus live-attached storage.
 - [x] Created [CCTV/DVR/cloud-video](../collector/video-preservation.md) preservation guidance focused on retention urgency, clock discrepancies, native export and verification.
 - [x] Expanded [evidence packaging/handoff](../collector/evidence-handoff.md) with custody, safety, synthetic examples and examiner-ready reports.
-- [x] Reworked the [Collector hub](../collector/README.md) as a five-situation, one-click decision index.
+- [x] Reworked the [Collector hub](../collector/README.md) as a six-situation, one-click decision index.
+- [x] Added [Interim Scene Triage & Photography](../collector/scene-documentation.md) **only** for departments without CSU or urgent documentation ahead of delayed CSU. Covers safety/perimeter, entry control, outside-in overall/midrange/close-up, original unmarked views, later visible ID markers and properly aligned scales, image integrity and specialist handoff.
 
 **Next potential refinements—not automatically new pages:**
 
 - [ ] Field test guide readability with officers on common mobile screen sizes and ask where uncertainty remains.
 - [ ] Verify live-site Docsify rendering, preservation checklists, and external references after deployment.
-- [ ] Consider more detailed scene photography only where it solves a repeated real collection problem.
+- [ ] Have CSU/scene-trained personnel review the interim-photography guide against local SOP, scene safety and marker/scale contamination controls.
 - [ ] Review vendor-specific CCTV/cloud workflows **only** with current source documentation; leave uncertain capabilities out.
 - [ ] Periodically recheck mobile OS behavior, agency SOP fit and SWGDE guidance.
 
-**Exit:** Five common collector tasks lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
+**Exit:** Six common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
 
 ## Pass 2 — Windows Examiner: field-to-lab evidence
 
