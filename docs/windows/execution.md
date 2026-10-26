@@ -137,6 +137,8 @@ For exact process identifiers and comparison, use event XML **named fields**, no
 
 **Interpretation:** `0x17F0` converts to decimal **6128**. `0x0FB8` converts to **4024**. Where genuine provider/clock fields corroborate this, the records support a PowerShell process launched with Word reported as parent and a connection attributed to the same Sysmon process GUID. They **do not** on their own establish maliciousness, successful exfiltration or who caused the execution. The `203.0.113.44` address is reserved for documentation.
 
+**Further artifact context:** Compare [UserAssist and BAM from acquired registry hives](registry.md) when investigating user-associated execution, and use the [USB device examination guide](usb-device-history.md) before drawing conclusions about removable-storage activity. Both explain important absence, LastWrite and account-attribution limits.
+
 ## 5. Build a testable finding, not just an indicator list
 
 1. **Define the hypothesis**: e.g., “A document initiated a scripting process that made an outbound connection.”
