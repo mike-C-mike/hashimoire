@@ -7,6 +7,8 @@
 
 > **Field collector rule:** A drive that looks harmless may contain relevant data, malware, encryption or fragile hardware. **Do not insert found media into a computer to identify its contents.** Document what you see, protect the item's condition and hand it to an examiner. This guide supplements legal authority, training and agency SOP.
 
+> **KNOWN-DAMAGED STORAGE:** SWGDE **14-F-002-2.0 (Mar 4, 2025)** warns that routine imaging or energizing failed/failing media may destroy evidence. Before testing a dropped, wet, fire-exposed or malfunctioning drive, follow the [damaged-media preservation guide](damaged-devices.md) and consult qualified recovery personnel.
+
 ## First 60 seconds
 
 - [ ] Confirm the item's authorized collection scope and physical safety. Photograph **in place** before moving it.
@@ -73,6 +75,7 @@ An examiner may document the device's physical/firmware identifiers, select comp
 
 ## Related guidance and sources
 
+- [Damaged media and hazardous devices](damaged-devices.md).
 - [Computer and laptop collection](computer-collection.md) — live systems and connected drives.
 - [Evidence packaging and handoff](evidence-handoff.md).
 - [SWGDE 18-F-002-2.0 — Best Practices for Digital Evidence Collection](https://www.swgde.org/documents/published-complete-listing/18-f-002-2-0/).

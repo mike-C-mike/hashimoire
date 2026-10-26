@@ -67,6 +67,7 @@
 
 **Using a phone?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. This version still requires an internet connection.
 
+- [Damaged or hazardous digital devices — safety-first field response](collector/damaged-devices.md)
 - [Smartphone preservation quick guide](collector/mobile-device-collection.md)
 - [Computer and laptop field preservation](collector/computer-collection.md)
 - [USB, SD card and removable storage collection](collector/removable-media.md)

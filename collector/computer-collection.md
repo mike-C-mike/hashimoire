@@ -8,6 +8,8 @@
 
 > **A powered-on computer is not the same as a powered-off computer.** Shutting it down may destroy volatile evidence and access to unlocked encryption; touching a live system may also alter evidence. If it is powered on, asleep, or its state is uncertain, **document what you see and consult the examiner/incident lead before changing power or network connections**. Follow legal authority, agency policy and safety priorities.
 
+> **DAMAGE OVERRIDE:** Battery swelling, smoke, unusual heat/odor, leaking fluid or other hazards **override** ordinary live-system power preservation. Do not charge, bag or transport an unsafe device as routine evidence. Follow the [damaged-device response guide](damaged-devices.md) and specialist/safety direction.
+
 ## First 60 seconds
 
 - [ ] Establish authority to collect or preserve the specific machine and related media.
@@ -99,6 +101,7 @@ This sample shows what the **collector saw and did**, not what was found on the 
 
 ## Related guidance and references
 
+- [Damaged and hazardous digital devices](damaged-devices.md).
 - [Removable media collection](removable-media.md).
 - [Evidence packaging and handoff](evidence-handoff.md).
 - [Examiner: rapid evidence collection](../playbooks/acquisition/0-rapid-evidence-collection.md).

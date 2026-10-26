@@ -41,8 +41,9 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [x] Created [USB/SD/removable media](../collector/removable-media.md) field preservation guidance for loose versus live-attached storage.
 - [x] Created [CCTV/DVR/cloud-video](../collector/video-preservation.md) preservation guidance focused on retention urgency, clock discrepancies, native export and verification.
 - [x] Expanded [evidence packaging/handoff](../collector/evidence-handoff.md) with custody, safety, synthetic examples and examiner-ready reports.
-- [x] Reworked the [Collector hub](../collector/README.md) as a six-situation, one-click decision index.
+- [x] Reworked the [Collector hub](../collector/README.md) as a seven-situation, one-click decision index.
 - [x] Added [Interim Scene Triage & Photography](../collector/scene-documentation.md) **only** for departments without CSU or urgent documentation ahead of delayed CSU. Covers safety/perimeter, entry control, outside-in overall/midrange/close-up, original unmarked views, later visible ID markers and properly aligned scales, image integrity and specialist handoff.
+- [x] Added [Damaged & Hazardous Digital Devices](../collector/damaged-devices.md), grounded in SWGDE 14-F-004-1.1 (2016 mobile), 14-F-002-2.0 (2025 storage), 18-F-003-2.0 (2025), USFA/OSHA battery safety and PHMSA transport; clear stop conditions, wet-device scope distinctions and specialist handoff.
 
 **Next potential refinements—not automatically new pages:**
 
@@ -51,8 +52,10 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 - [ ] Have CSU/scene-trained personnel review the interim-photography guide against local SOP, scene safety and marker/scale contamination controls.
 - [ ] Review vendor-specific CCTV/cloud workflows **only** with current source documentation; leave uncertain capabilities out.
 - [ ] Periodically recheck mobile OS behavior, agency SOP fit and SWGDE guidance.
+- [ ] Have fire/hazmat and damaged-media recovery personnel review the hazardous-device handling article and local evidence-transport SOP.
+- [x] Add a **mandatory current published best-practice source ledger** and scope-conflict check to the [architecture quality gate](ARCHITECTURE.md).
 
-**Exit:** Six common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
+**Exit:** Seven common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
 
 ## Pass 2 — Windows Examiner: field-to-lab evidence
 

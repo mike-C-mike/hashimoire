@@ -8,6 +8,8 @@
 
 > **STOP / CONTACT AN EXAMINER:** An unlocked phone, a device at risk of remote wipe, or a damaged/swollen/wet device requires immediate attention. This page is a field preservation guide, **not** permission to search, extract, unlock, or alter a device. Follow your legal authority, agency SOP, training, and examiner directions.
 
+> **DAMAGE OVERRIDE:** The ordinary advice to preserve a phone's on/unlocked state applies only when it is **safe**. For a smoking, hissing, swollen, leaking, hot or liquid-damaged phone, stop routine handling and use the [damaged-device safety guide](damaged-devices.md). Do not charge a potentially unsafe battery to preserve access. This distinction follows SWGDE 14-F-004-1.1 (2016), SWGDE 18-F-003-2.0 (2025), and current USFA battery-safety guidance.
+
 ## First 60 seconds — do this before deciding anything else
 
 - [ ] Confirm that seizure/preservation is **authorized**, and account for any urgent safety concerns.
@@ -26,9 +28,9 @@
 | **ON and UNLOCKED** | **Urgent examiner contact.** Preserve current access state with examiner-directed power and isolation planning; document any changes. | Powering off, rebooting, deliberately locking, casual touching or exploration. |
 | **ON and LOCKED** | Preserve power and condition; contact examiner for approved isolation and transport. | Guessing codes, forcing a restart, manipulating notifications. |
 | **State UNKNOWN / screen dark** | Photograph and document indicators; consult trained personnel before trying to wake it. | Treating a dark screen as confirmation that the phone is off. |
-| **DAMAGED / WET / HOT** | Prioritize safety and trace/biological evidence coordination; notify specialist promptly. | Applying power, cleaning, charging, trying to dry or power-cycle it. |
+| **DAMAGED / WET / HOT** | **Safety first**; use the [damaged-device guide](damaged-devices.md) and qualified safety/forensic direction. | Applying power, cleaning, charging, drying or routine bagging of unsafe batteries. |
 
-**The practical rule:** Keep a truly *off* phone off. For a phone that is *on*, avoid loss of power or an unnecessary restart. For an **unlocked** phone, preserve the access opportunity and involve the examiner immediately. In all cases, follow the trained isolation and collection plan rather than improvising.
+**The practical rule (when safe):** Keep a truly *off* phone off. For a phone that is *on*, avoid loss of power or an unnecessary restart. For an **unlocked** phone, preserve the access opportunity and involve the examiner immediately. In all cases, follow the trained isolation and collection plan rather than improvising.
 
 ## When ON and UNLOCKED
 
@@ -107,6 +109,7 @@ Stop and escalate for an **unlocked screen**, suspected remote wipe, a time-sens
 ## References and related guides
 
 - [SWGDE 18-F-003-2.0 — Mobile Device Evidence Collection & Preservation, Handling and Acquisition](https://www.swgde.org/documents/published-complete-listing/18-f-003-2/) (version 2.0, 2025).
+- [Damaged devices: safety and specialized collection](damaged-devices.md).
 - [Collector: digital evidence packaging and handoff](evidence-handoff.md).
 - [Collector home](README.md).
 
