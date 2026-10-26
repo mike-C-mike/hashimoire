@@ -14,6 +14,8 @@ Each command reference includes the command, an **invented example output**, and
 
 > **Example outputs are illustrative, not real forensic evidence.** Layout, available fields and administrative permissions vary by Windows version and configuration.
 
+**After collection:** [Windows Examiner — execution artifacts and a worked intrusion timeline](../../docs/windows/README.md). Move from live command snapshots to validated offline EVTX, Prefetch, Amcache, process identity and defensible reporting. The live commands below are **not** full historical forensic analysis.
+
 ## 1. Preserve access before powering down
 
 | Priority | Command reference | Why it matters |
