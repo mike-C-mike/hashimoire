@@ -8,6 +8,8 @@
 
 > **Laboratory workflow, not a live collector checklist.** Confirm scope and authority, preserve the original acquisition, verify its hash, record collection circumstances and analyze an approved **working copy**. Use validated tool builds and log exact versions/options. SWGDE [18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) calls for examination objectives, controlled workstations, preservation, documentation, and defensible interpretations.
 
+> **Interpretation convention:** A collected laptop or acquired dataset is an **Evidence** item for our records; Prefetch, Amcache and event-log entries are **artifacts** discovered within it. Examining and correlating those artifacts can develop **evidence** for or against narrowly stated hypotheses. An artifact can itself have legal evidentiary value, but its presence is **not automatically proof of a crime**. [Terminology and alternatives](../../planning/TERMINOLOGY.md).
+
 ## What does each artifact support?
 
 | Source | Typical location or log | Good for | Does **not** establish alone |

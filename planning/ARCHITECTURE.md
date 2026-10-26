@@ -68,6 +68,19 @@ Content *format* can differ within a subject:
 
 Avoid separate navigation categories for each format. Keep crosslinks to the relevant tool/snippet/playbook from the subject hub.
 
+## Editorial terminology and investigative mindset
+
+[**Hashimoire terminology and artifact-to-finding guidance**](TERMINOLOGY.md) is the house writing standard for examiner material:
+
+- **Evidence** (capital E): the formally collected/submitted item or dataset (specify physical original, forensic acquisition and derivatives).
+- **artifacts**: the specific recovered traces, records and metadata identified through examination.
+- **evidence** (lowercase e): the support **for or against** a narrowly stated proposition that emerges from those artifacts and other appropriately evaluated sources.
+- **finding/conclusion**: the examiner's supported, qualified determination after evaluating alternatives and limitations.
+
+**Mindset:** Start with the authorized investigative question, not a preconceived answer. Observed artifacts inform hypotheses; explicitly test alternative explanations, seek contradictions/exculpatory information, and be prepared to weaken or reject an initial theory. Avoid confirmation bias and unsupported statements of guilt, intent or attribution.
+
+This capitalization is **editorial shorthand, not a legal definition**: artifacts can themselves constitute legally probative digital evidence. Agency documentation and court terminology take precedence.
+
 ## Publish quality gate
 
 A page can be marked `published` in the registry only after:
@@ -77,6 +90,7 @@ A page can be marked `published` in the registry only after:
 - [ ] Commands or procedures reviewed for **actual support** on applicable OS/tool version.
 - [ ] Invented examples plainly labeled, with explanations of fields and investigative significance.
 - [ ] Explicit limits: what the artifact/result does *not* establish; relevant clock issues.
+- [ ] **Terminology and bias check:** follow [Evidence/artifact/evidence distinctions](TERMINOLOGY.md), document hypotheses and reasonable competing explanations, and include contrary or exculpatory observations instead of only artifacts supporting a preferred story.
 - [ ] Evidence integrity, handling or custody instructions where applicable.
 - [ ] **Published best-practice baseline:** for operational recommendations, consult relevant current published professional/standards-body or government guidance (e.g., SWGDE, ANSI/ASB, NIST, NIJ, USFA/OSHA/PHMSA where safety or transport matters). Attribute technical claims accurately; don't invent citations or imply a best practice is law.
 - [ ] **Source ledger on substantive field procedures:** include document title, **ID/version/date**, publisher, applicable device/task and link to the publisher. State any scope/edition limits and verify whether a newer edition supersedes it.

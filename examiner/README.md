@@ -6,6 +6,12 @@
 
 > **For trained and authorized examiners.** Choose the investigative objective, document authority and scope, and record any unavoidable changes to live evidence.
 
+## Our examination language
+
+**Evidence** identifies what was formally submitted; **artifacts** are the traces recovered during examination; **evidence** (lowercase e) is the support **for or against** a proposition those observations provide. This vocabulary helps prevent a log entry from turning prematurely into an assertion of intent or guilt. It does **not** deny that artifacts may be legally admissible digital evidence.
+
+**Investigative discipline:** define a question, look at artifacts, form a testable hypothesis, then search for **both corroborating and disconfirming** information. A finding may be limited, ambiguous or contrary to the initial allegation. [Full terminology and reporting examples](../planning/TERMINOLOGY.md).
+
 ## Start an examination
 
 <div class="hash-cards">
