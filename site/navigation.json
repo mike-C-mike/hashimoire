@@ -41,6 +41,11 @@
           "status": "published"
         },
         {
+          "label": "Damaged & hazardous devices",
+          "path": "/collector/damaged-devices.md",
+          "status": "published"
+        },
+        {
           "label": "Smartphone / tablet",
           "path": "/collector/mobile-device-collection.md",
           "status": "published"
@@ -69,11 +74,6 @@
           "label": "Evidence handoff",
           "path": "/collector/evidence-handoff.md",
           "status": "published"
-        },
-        {
-          "label": "Damaged device handling",
-          "path": "/collector/damaged-devices.md",
-          "status": "planned"
         },
         {
           "label": "Cloud and account preservation requests",
