@@ -61,14 +61,14 @@
           "status": "published"
         },
         {
-          "label": "Evidence handoff",
-          "path": "/collector/evidence-handoff.md",
+          "label": "Interim scene triage & photography",
+          "path": "/collector/scene-documentation.md",
           "status": "published"
         },
         {
-          "label": "Scene photography & documentation",
-          "path": "/collector/scene-documentation.md",
-          "status": "planned"
+          "label": "Evidence handoff",
+          "path": "/collector/evidence-handoff.md",
+          "status": "published"
         },
         {
           "label": "Damaged device handling",
