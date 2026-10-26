@@ -5,6 +5,7 @@
   - [Save to phone home screen](/docs/mobile-home-screen.md)
 - **FIELD COLLECTOR**
   - [Collector guide hub](/collector/README.md)
+  - [Damaged & hazardous devices](/collector/damaged-devices.md)
   - [Smartphone / tablet](/collector/mobile-device-collection.md)
   - [Computer / laptop](/collector/computer-collection.md)
   - [USB / SD / removable storage](/collector/removable-media.md)
