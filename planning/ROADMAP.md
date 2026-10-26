@@ -59,17 +59,25 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 
 **Exit:** Eight common collector situations lead directly to actionable field guidance, without empty clicks. New public articles require user value, current references and review.
 
-## Pass 2 — Windows Examiner: field-to-lab evidence
+## Pass 2 — Windows Examiner: field-to-lab evidence (active)
 
-- Live collection and order of volatility with a documented stop/shutdown decision.
-- BitLocker state, recovery protector handling, approved escrow and lab access checks.
-- Memory acquisition and Volatility 3 lab interpretation.
-- Disk layouts, image formats, hashing, write-blocker scope and handoff.
-- Registry, USB, PowerShell, event log, execution and browser artifacts.
-- Timelines and correlation: PID/PPID, creation events, network connections, user context.
-- Worked **synthetic investigation** demonstrating alternative explanations and confidence limits.
+**First depth pass — October 26, 2026:**
 
-**Exit:** One end-to-end Windows workflow, with meaningful collection and analysis links and validated example outputs. Then expose the **Windows Artifacts & Timelines** section.
+- [x] Published a complete [Windows Examiner execution-evidence hub](../docs/windows/README.md), linked to already-published collection and command references.
+- [x] Published [execution evidence: Prefetch, Amcache, Security 4688 and Sysmon](../docs/windows/execution.md) with tested-documented parser options, synthetic outputs, source coverage, provenance, and **what each artifact cannot prove**.
+- [x] Published a [worked PID-to-network intrusion timeline](../docs/windows/timelines.md), including hexadecimal PID conversion, XML-by-name field parsing, ProcessGuid event correlation, UTC normalization and constrained report wording.
+- [x] Exposed **Windows Artifacts & Timelines** in the sidebar only with these **three genuinely useful pages**. Registry, browser and filesystem topics stay **unpublished and hidden**.
+- [x] Linked deeper examiner pages from existing Windows snippets, Examiner hub and homepage.
+
+**Still to develop in this workstream:**
+
+- [ ] Windows registry and artifact examination beyond Amcache/ShimCache (UserAssist, USB, BAM, services, logon context).
+- [ ] Browser artifacts and user-activity correlation; validation of examiner tools on current Windows builds.
+- [ ] Filesystem/$MFT, USN and Volume Shadow Copy contextual timelines.
+- [ ] RAM acquisition/Volatility deeper examples; BitLocker/field-to-lab encryption continuity.
+- [ ] Field/lab reproduction on validated Windows images and peer review of exact parser outputs and timestamp semantics.
+
+**Publishing standard:** One investigated question, collection scope, tool commands, **synthetic output**, interpretations, limitations and relevant SWGDE/official references **before** the page appears publicly. Never publish empty registry/browser/MFT pages simply to fill the submenu.
 
 ## Pass 3 — Mobile Examiner: iOS and Android
 
