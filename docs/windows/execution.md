@@ -170,7 +170,7 @@ Examiner, review date and evidence outputs:
 
 | Reference | Edition / publisher | What it supports |
 | --- | --- | --- |
-| [SWGDE Best Practices for Computer Forensic Examinations](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) | **18-F-001-2.0**, Feb 28, 2025 (SWGDE) | Scope, validated tools, isolation, examination on copies, interpretation and documentation; **not an artifact-specific rulebook**. |
+| [SWGDE Best Practices for Computer Forensic Examinations](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) | **18-F-001-2.0**, July 28, 2025 (SWGDE) | Scope, validated tools, isolation, examination on copies, interpretation and documentation; **not an artifact-specific rulebook**. |
 | [Microsoft Security Event 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688) | Microsoft technical documentation, reviewed Oct 2026 | New process and creator IDs, command-line configuration, account/logon context, event versions. |
 | [Microsoft Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) | Microsoft Sysinternals, reviewed Oct 2026 | Event 1 process creation, Event 3 network telemetry and ProcessGuid correlation; configuration constraints. |
 | [PECmd](https://github.com/EricZimmerman/PECmd) | Maintainer CLI documentation, reviewed Oct 2026 | Valid parser options and outputs for Prefetch; not a normative standard. |
