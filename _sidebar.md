@@ -15,6 +15,7 @@
   - [Evidence handoff](/collector/evidence-handoff.md)
 - **FORENSIC EXAMINER**
   - [Examiner toolkit](/examiner/README.md)
+  - [Windows execution & timeline workflow](/docs/windows/README.md)
   - [Acquisition hub](/playbooks/acquisition/README.md)
   - [Rapid evidence collection](/playbooks/acquisition/0-rapid-evidence-collection.md)
   - [Collection bag checklist](/playbooks/acquisition/2-collection-bag-checklist.md)
@@ -32,6 +33,10 @@
   - [Windows event IDs](/snippets/powershell/windows-event-triage.md)
   - [Registry hive preservation](/snippets/powershell/registry-hive-preservation.md)
   - [SHA-256 evidence hashes](/snippets/powershell/sha256-evidence.md)
+- **WINDOWS ARTIFACTS & TIMELINES**
+  - [Windows examiner: start here](/docs/windows/README.md)
+  - [Execution artifacts (Prefetch, Amcache)](/docs/windows/execution.md)
+  - [Process & intrusion timeline](/docs/windows/timelines.md)
 - **TOOL REFERENCE**
   - [Tools index](/docs/tools/README.md)
   - [FTK Imager from USB](/docs/tools/ftk/ftk-imager-usb-runtime.md)
