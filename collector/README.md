@@ -12,6 +12,7 @@
 
 | You are facing… | First priority | Open the full field guide |
 | --- | --- | --- |
+| **A device is hot, swollen, smoking, wet or badly damaged** | **Safety stop:** keep people clear; call safety responder and qualified examiner; avoid power or routine packaging. | [Damaged & hazardous devices](damaged-devices.md) |
 | **An unlocked phone** | Photograph without navigating; urgently contact examiner to preserve its current access state. | [Smartphone / tablet](mobile-device-collection.md) |
 | **A laptop that's running** | Photograph connections and screen; **do not power down** before examiner-directed decision. | [Computer / laptop](computer-collection.md) |
 | **A found USB or SD card** | If loose, leave disconnected. If attached to live computer, document and **do not remove yet**. | [USB / SD / removable storage](removable-media.md) |
@@ -24,6 +25,7 @@
 ## Field guides
 
 <div class="hash-cards">
+  <a class="hash-card" href="#/collector/damaged-devices.md"><span class="hash-card-icon" aria-hidden="true">⚠</span><strong>Damaged &amp; Hazardous Devices</strong><span>Swollen batteries, wet phones, failed disks and fire exposure: safety-first field decisions, specialist handling and custody.</span><em>Open damaged device guide →</em></a>
   <a class="hash-card" href="#/collector/mobile-device-collection.md"><span class="hash-card-icon" aria-hidden="true">▣</span><strong>Smartphone &amp; Tablet</strong><span>Off, locked, unlocked, uncertain or damaged: preserve power and access state, plan isolation and document handling.</span><em>Open mobile guide →</em></a>
   <a class="hash-card" href="#/collector/computer-collection.md"><span class="hash-card-icon" aria-hidden="true">▤</span><strong>Computer &amp; Laptop</strong><span>Live versus off, encrypted volumes, connected drives, network state and controlled transfer to an examiner.</span><em>Open computer guide →</em></a>
   <a class="hash-card" href="#/collector/removable-media.md"><span class="hash-card-icon" aria-hidden="true">◇</span><strong>USB, SD &amp; Storage</strong><span>Loose versus connected media, why not to plug it in, physical condition and write-blocking limitations.</span><em>Open storage guide →</em></a>
@@ -34,9 +36,9 @@
 
 ## Universal first actions
 
-1. **Authority and safety.** Secure and control the scene; confirm what may be collected and whether hazardous batteries, biohazards or critical equipment require specialist response.
+1. **Authority and safety.** **If battery or chemical danger is suspected, stop and summon trained responders**; otherwise secure and control the scene, confirm what may be collected and whether hazardous batteries, biohazards or critical equipment require specialist response.
 2. **Photograph if appropriate for your role.** When CSU is absent or delayed and interim documentation is authorized, photograph the unaltered scene from outside toward evidence before handling or marker placement. Otherwise preserve the scene for CSU.
-3. **Preserve the state.** Don't explore files or apps, guess passwords, power up a device found off, or casually shut down a device found on.
+3. **Preserve the state when safe.** For an actively hazardous device, personnel safety overrides attempts to preserve power or unlocked access. Don't explore files or apps, guess passwords, power up a device found off, or casually shut down a device found on.
 4. **Document time.** Use an independent date/time/timezone, plus any observed difference from a device or camera-system clock.
 5. **Get help early.** Running encryption, an unlocked phone, live-attached storage, imminent video overwrite or damaged equipment are reasons to contact the relevant specialist.
 6. **Handoff completely.** Record which changes occurred, why, when, and who directed them.
