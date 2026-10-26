@@ -67,6 +67,10 @@
 
 **[Windows execution evidence and incident timeline](docs/windows/README.md):** Work from a validated acquisition through Prefetch, Amcache, process creation (Security 4688), Sysmon ProcessGuid and network correlation. Includes parser commands, fictional sample output, alternative explanations and careful reporting language.
 
+## Windows Examiner — new registry and removable-device workflows
+
+**[Offline Registry interpretation](docs/windows/registry.md)** explains UserAssist, BAM, ControlSets, transaction logs and unsupported execution claims. **[USB and profile correlation](docs/windows/usb-device-history.md)** traces the limits of device recognition, mount history, user context and alleged file copying—without presuming an allegation is true.
+
 ## In the field
 
 **Using a phone?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. This version still requires an internet connection.

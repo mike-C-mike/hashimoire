@@ -137,6 +137,8 @@ For exact process identifiers and comparison, use event XML **named fields**, no
 
 **Interpretation:** `0x17F0` converts to decimal **6128**. `0x0FB8` converts to **4024**. Where genuine provider/clock fields corroborate this, the records support a PowerShell process launched with Word reported as parent and a connection attributed to the same Sysmon process GUID. They **do not** on their own establish maliciousness, successful exfiltration or who caused the execution. The `203.0.113.44` address is reserved for documentation.
 
+**Further artifact context:** Compare [UserAssist and BAM from acquired registry hives](registry.md) when investigating user-associated execution, and use the [USB device examination guide](usb-device-history.md) before drawing conclusions about removable-storage activity. Both explain important absence, LastWrite and account-attribution limits.
+
 ## 5. Build a testable finding, not just an indicator list
 
 1. **Define the hypothesis**: e.g., “A document initiated a scripting process that made an outbound connection.”
@@ -168,7 +170,7 @@ Examiner, review date and evidence outputs:
 
 | Reference | Edition / publisher | What it supports |
 | --- | --- | --- |
-| [SWGDE Best Practices for Computer Forensic Examinations](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) | **18-F-001-2.0**, Feb 28, 2025 (SWGDE) | Scope, validated tools, isolation, examination on copies, interpretation and documentation; **not an artifact-specific rulebook**. |
+| [SWGDE Best Practices for Computer Forensic Examinations](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) | **18-F-001-2.0**, July 28, 2025 (SWGDE) | Scope, validated tools, isolation, examination on copies, interpretation and documentation; **not an artifact-specific rulebook**. |
 | [Microsoft Security Event 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688) | Microsoft technical documentation, reviewed Oct 2026 | New process and creator IDs, command-line configuration, account/logon context, event versions. |
 | [Microsoft Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) | Microsoft Sysinternals, reviewed Oct 2026 | Event 1 process creation, Event 3 network telemetry and ProcessGuid correlation; configuration constraints. |
 | [PECmd](https://github.com/EricZimmerman/PECmd) | Maintainer CLI documentation, reviewed Oct 2026 | Valid parser options and outputs for Prefetch; not a normative standard. |

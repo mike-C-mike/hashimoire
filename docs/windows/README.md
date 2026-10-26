@@ -1,12 +1,12 @@
-# Windows Examiner — Execution Evidence & Intrusion Timeline
+# Windows Examiner — Execution, Registry & Correlation
 
 **Audience:** trained examiners and DFIR analysts  
-**First workflow:** *Determine what ran on a Windows computer, how processes relate, and whether a recorded connection belongs to a specific execution.*  
-**Evidence types:** acquired Windows image, EVTX, Prefetch, Amcache, RAM/EDR where within scope  
+**Current workflows:** *Analyze program activity, registry/user context, USB history and process/network timelines without overstating what artifacts prove.*  
+**Evidence types:** acquired Windows image, registry hives/transaction files, setupapi logs, EVTX, Prefetch, Amcache and RAM/EDR where within scope  
 **Risk:** caution — sensitive data, clock assumptions, false attribution  
 **Guidance reviewed:** October 26, 2026
 
-> **Start with an investigative question, not a list of artifacts.** This Windows workstream begins with one complete problem: **process execution and network-event correlation**. Additional Windows subject areas (registry deep dives, browser, MFT and broad timelines) remain hidden until they have substantive content. All examples are synthetic; work on verified evidence copies under appropriate authority. [SWGDE 18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
+> **Start with an investigative question, not a list of artifacts.** This Windows workstream now supports **execution, offline Registry examination, removable storage correlation and process/network timelines**. Browser and filesystem/$MFT topics remain hidden until they have substantive content. All examples are synthetic; work on verified evidence copies under appropriate authority. [SWGDE 18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
 
 ## A disciplined artifact-first investigation
 
@@ -18,6 +18,8 @@ An allegation may set the **scope**, but it does not set the result. **Do not st
 
 | I need to know… | Open now | Outcome |
 | --- | --- | --- |
+| **What Registry artifacts describe a program or user profile?** | [Registry examination: UserAssist, BAM, hives](registry.md) | Offline hive acquisition and parsing, transaction logs, SID/profile context, supported claims and alternatives. |
+| **Was a USB device connected and was a file copied?** | [USB device-to-user correlation](usb-device-history.md) | USBSTOR/UASP, SetupAPI, volume mapping, MountPoints2, file-activity evidence and a worked unresolved case. |
 | **Did a program execute?** | [Execution artifacts — Prefetch, Amcache and logs](execution.md) | Evidence matrix; controlled PECmd/AmcacheParser workflow; accurate claims and limitations. |
 | **Did Word launch PowerShell, which then connected outward?** | [Worked intrusion timeline](timelines.md) | Security 4688 hex-to-decimal PIDs; Sysmon 1/3 ProcessGuid correlation; sample timeline and defensible reporting. |
 | **What is running right now?** | [Live process/PID commands](../../snippets/powershell/processes-services.md) | ProcessID/ParentProcessID tree, services, command line and current-state limitations. |
@@ -26,6 +28,10 @@ An allegation may set the **scope**, but it does not set the result. **Do not st
 | **Could a reboot lock the source drive?** | [BitLocker recovery readiness](../../snippets/powershell/bitlocker-recovery-readiness.md) | Volume/protector status and properly protected recovery-credential handling. |
 
 Each path leads directly to a working reference; we do **not** create empty intermediate categories simply to make navigation look complete.
+
+## How to extend the execution timeline using Registry artifacts
+
+For a utility suspected of accessing removable storage, begin with the **submitted Evidence item's acquisition and integrity**. Inspect [offline Registry hives](registry.md) to contextualize UserAssist/BAM, confirm the active ControlSet and check how a profile maps to a SID; then [reconstruct USB-device history](usb-device-history.md) using SetupAPI, volume, mount and user-activity artifacts. Test the hypothesis with logs, filesystem context and any acquired destination drive **rather than presuming a copy occurred**.
 
 ## A ten-step examination workflow
 
@@ -92,7 +98,7 @@ Working-copy analysis outputs, reviewer and report exhibits:
 
 ## Source ledger
 
-- **SWGDE [18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/), Best Practices for Computer Forensic Examinations (Feb 28, 2025):** exam scope, integrity, tool validation, documentation, working-copy examination and sound interpretation. This is a professional best-practice document, **not statute**.
+- **SWGDE [18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/), Best Practices for Computer Forensic Examinations (July 28, 2025):** exam scope, integrity, tool validation, documentation, working-copy examination and sound interpretation. This is a professional best-practice document, **not statute**.
 - **[Microsoft Event 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688):** process-start XML, PID representations and conditional command-line fields.
 - **[Microsoft Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon):** ProcessGuid correlation and configurable network telemetry.
 - **[PECmd](https://github.com/EricZimmerman/PECmd) and [AmcacheParser](https://github.com/EricZimmerman/AmcacheParser):** tool-specific CLI capabilities; confirm actual parser version with `--help`.
@@ -100,6 +106,6 @@ Working-copy analysis outputs, reviewer and report exhibits:
 
 ## Where Windows Examiner goes next
 
-The main Windows roadmap still includes **registry artifacts, browser/user activity, filesystem/$MFT, execution activity over longer windows, and volume-shadow-copy context**. We are deliberately not showing those future pages as clickable published links yet.
+The main Windows roadmap still includes **browser/user activity, filesystem/$MFT, richer registry persistence/logon investigation, execution activity over longer windows, and volume-shadow-copy context**. We are deliberately not showing those future pages as clickable published links yet.
 
 [← Examiner Toolkit](../../examiner/README.md) · [Windows Snippets](../../snippets/powershell/README.md) · [Collector → Computer handoff](../../collector/computer-collection.md) · [Hash verification](../hashing/README.md)

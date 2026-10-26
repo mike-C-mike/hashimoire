@@ -4,6 +4,8 @@
 **Environment:** windows  
 **Risk:** caution
 
+> **Before examining:** `reg.exe save` obtains a **live logical hive snapshot** and affects the source's live environment. It may omit per-user `NTUSER.DAT`, `UsrClass.dat` and associated transaction logs. Forensic offline hive/ControlSet interpretation, log replay, UserAssist and BAM, see the [Registry examination guide](../../docs/windows/registry.md).
+
 ## Why it matters
 
 Registry hives contain durable system configuration, services, known devices and other Windows artifacts that can be examined with specialist forensic parsers. This is a **logical live snapshot**, not an offline raw image.

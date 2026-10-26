@@ -4,6 +4,8 @@
 **Environment:** windows  
 **Risk:** safe
 
+> **This page is live inventory/triage**, not a complete historical file-transfer investigation. For offline USBSTOR/UASP, SetupAPI, `MountedDevices`, `MountPoints2`, user-profile correlations, and what a device record cannot prove, go to the [Windows USB examination workflow](../../docs/windows/usb-device-history.md).
+
 ## Why it matters
 
 Connected and previously enumerated devices can help scope a possible file transfer or removable-media event. Do not equate a device record with proof of a particular user copying files.

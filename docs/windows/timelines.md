@@ -6,7 +6,7 @@
 **Risk:** caution — timestamps, missing logs and PID reuse  
 **Sources reviewed:** October 26, 2026
 
-> **This is a fictional Windows workstation incident, not an actual case.** No source event or IP below comes from real evidence. All procedures are for an **authorized, isolated lab workstation analyzing an acquired working copy**, unless explicitly labeled as a historical live collection. Document applicable authority, image verification, clock context and tools under [SWGDE 18-F-001-2.0 (Feb 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
+> **This is a fictional Windows workstation incident, not an actual case.** No source event or IP below comes from real evidence. All procedures are for an **authorized, isolated lab workstation analyzing an acquired working copy**, unless explicitly labeled as a historical live collection. Document applicable authority, image verification, clock context and tools under [SWGDE 18-F-001-2.0 (July 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
 
 > **Analysis rule:** Don't start by assuming this is a malicious-document incident. The scenario is an **investigative question**, not the conclusion. Treat each process/log record as an **artifact**; assess its reliability and what **evidence** it provides for or against possible explanations. Actively test innocent automation, clock inconsistencies, process reuse, gaps and contrary records. See the [Evidence/artifact/evidence house convention](../../planning/TERMINOLOGY.md).
 
@@ -192,6 +192,8 @@ The second statement jumps over **person attribution, content, intent, transferr
 | Amcache | File/app inventory reference | Hash/file system provenance | Presence **is not timed execution** |
 | Login context | Logon session/account | Identity provider, host Security log | Account context **is not physical operator** |
 
+**Registry and device lead:** An apparent user-execution link can be evaluated against [UserAssist/BAM and offline Registry records](registry.md). If the timeline involves a removable drive, use [USB device and user-mount correlation](usb-device-history.md) to avoid equating device recognition with file copying.
+
 ## 7. Reporting / peer-review checklist
 
 - [ ] Scope, authority, source devices and acquisition dates recorded.
@@ -207,7 +209,7 @@ The second statement jumps over **person attribution, content, intent, transferr
 
 ## Published references
 
-- [SWGDE 18-F-001-2.0, Best Practices for Computer Forensic Examinations (Feb 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) — systematic examination, original protection, tool validation, documentation, defensible analysis.
+- [SWGDE 18-F-001-2.0, Best Practices for Computer Forensic Examinations (July 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/) — systematic examination, original protection, tool validation, documentation, defensible analysis.
 - [Microsoft Security Event 4688, process creation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688) — event XML, hexadecimal IDs, version-specific fields, audit configuration.
 - [Microsoft Sysmon documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) — Event 1/3, ProcessGuid, UTC and default telemetry gaps.
 - [Velociraptor, Evidence of Execution](https://docs.velociraptor.app/docs/forensic/evidence_of_execution/) — Prefetch and historic execution interpretation.

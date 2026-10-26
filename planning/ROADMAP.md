@@ -62,23 +62,27 @@ Every pass should produce **operationally coherent coverage**—not merely ten m
 
 ## Pass 2 — Windows Examiner: field-to-lab evidence (active)
 
-**First depth pass — October 26, 2026:**
+**Execution and registry depth passes — October 26, 2026:**
 
 - [x] Published a complete [Windows Examiner execution-evidence hub](../docs/windows/README.md), linked to already-published collection and command references.
 - [x] Published [execution evidence: Prefetch, Amcache, Security 4688 and Sysmon](../docs/windows/execution.md) with maintainer-documented parser options, synthetic outputs, source coverage, provenance, and **what each artifact cannot prove**.
 - [x] Published a [worked PID-to-network intrusion timeline](../docs/windows/timelines.md), including hexadecimal PID conversion, XML-by-name field parsing, ProcessGuid event correlation, UTC normalization and constrained report wording.
-- [x] Exposed **Windows Artifacts & Timelines** in the sidebar only with these **three genuinely useful pages**. Registry, browser and filesystem topics stay **unpublished and hidden**.
+- [x] Published the substantive Windows execution/timeline trio, followed by a complete [offline Registry guide](../docs/windows/registry.md) and [USB-to-user/device correlation guide](../docs/windows/usb-device-history.md). These **five pages** are the currently published Windows artifact section; Browser and Filesystem/$MFT remain hidden.
 - [x] Linked deeper examiner pages from existing Windows snippets, Examiner hub and homepage.
+
+- [x] Registry work includes UserAssist, BAM/DAM, ControlSet selection, transaction logs and AMcache/ShimCache limitations, with synthetic outputs and independent corroboration examples.
+- [x] USB work includes USBSTOR/USB/SCSI paths, SetupAPI, MountedDevices, MountPoints2, LNK/Jump Lists and evidence for/against file-transfer theories.
+- [x] Corrected SWGDE 18-F-001-2.0 reference to the **final published July 28, 2025** edition rather than the earlier draft date.
 
 **Still to develop in this workstream:**
 
-- [ ] Windows registry and artifact examination beyond Amcache/ShimCache (UserAssist, USB, BAM, services, logon context).
+- [ ] Further Windows registry depth: services/autoruns, authentication/logon context, user hive metadata and validation on differing OS builds.
 - [ ] Browser artifacts and user-activity correlation; validation of examiner tools on current Windows builds.
 - [ ] Filesystem/$MFT, USN and Volume Shadow Copy contextual timelines.
 - [ ] RAM acquisition/Volatility deeper examples; BitLocker/field-to-lab encryption continuity.
 - [ ] Field/lab reproduction on validated Windows images and peer review of exact parser outputs and timestamp semantics.
 
-**Publishing standard:** One investigated question, collection scope, tool commands, **synthetic output**, interpretations, limitations and relevant SWGDE/official references **before** the page appears publicly. Never publish empty registry/browser/MFT pages simply to fill the submenu.
+**Publishing standard:** One investigated question, collection scope, tool commands, **synthetic output**, interpretations, limitations and relevant SWGDE/official references **before** the page appears publicly. Never publish empty browser/MFT pages simply to fill the submenu.
 
 ## Pass 3 — Mobile Examiner: iOS and Android
 
