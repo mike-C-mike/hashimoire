@@ -8,9 +8,13 @@
 
 > **This is a fictional Windows workstation incident, not an actual case.** No source event or IP below comes from real evidence. All procedures are for an **authorized, isolated lab workstation analyzing an acquired working copy**, unless explicitly labeled as a historical live collection. Document applicable authority, image verification, clock context and tools under [SWGDE 18-F-001-2.0 (Feb 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
 
+> **Analysis rule:** Don't start by assuming this is a malicious-document incident. The scenario is an **investigative question**, not the conclusion. Treat each process/log record as an **artifact**; assess its reliability and what **evidence** it provides for or against possible explanations. Actively test innocent automation, clock inconsistencies, process reuse, gaps and contrary records. See the [Evidence/artifact/evidence house convention](../../planning/TERMINOLOGY.md).
+
 ## Case question and three independent questions
 
-**Hypothesis:** An Office document may have caused PowerShell to launch, and that PowerShell instance may have connected to an external address.
+**Initial question:** What caused the PowerShell process and network event, and are they even part of the same activity?
+
+**Working hypothesis to test (not presume):** An Office document may have caused PowerShell to launch, and that same instance may have made the network connection. **Alternative hypotheses:** approved automation; unrelated instances with reused PIDs; incomplete or inconsistent telemetry; differing host clocks.
 
 Do not collapse this into “Word malware exfiltrated data.” Work through the distinct claims:
 
@@ -152,6 +156,18 @@ On an **acquired and verified copy**, parse Prefetch and Amcache following [Exec
 - **Amcache inventory** can be useful for locating a candidate executable or attribute; do not turn a path/hive timestamp into an asserted process start.
 - **A network connection** can connect process activity to a destination, but without network content/provider records, it doesn't establish file transfer or exfiltration.
 - **A document-parent relationship** may arise from benign automation, scripts, macros or other causes. Its suspiciousness depends on command line, provenance, security controls and independent corroboration.
+
+## Record artifacts that challenge the story
+
+Even where the process tree and network records appear consistent, search for **disconfirmation**, not just support:
+
+- Is the Word document really connected to that process? Does the full command line suggest a legitimate, managed task?
+- Are Security and Sysmon times aligned to the same host clock? Could a process have exited and its PID been reused?
+- Was Sysmon network collection active and complete? Are there independent proxy, firewall or DNS observations that disagree?
+- Is there affirmative evidence that bytes were transferred—or only a TCP connection? Could the destination/service have a lawful explanation?
+- Does the acquired Evidence item's collection scope omit volatile, deleted or later-rotated sources?
+
+If the artifacts don't support the hypothesis, **say so**. If they contradict it, revise or reject it. An inconclusive examination is not a failure. Refer to the [artifact-to-finding worksheet](../../planning/TERMINOLOGY.md) for wording.
 
 ## 6. State the evidence in a defensible finding
 
