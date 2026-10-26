@@ -25,13 +25,15 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — Windows examiner execution evidence (October 26, 2026)
+### Current content focus — Windows Registry and USB examinations (October 26, 2026)
 
-The **Field Collector foundation remains complete** with eight useful scenario guides. This pass deepens forensic examination rather than adding more collector categories. [Windows Examiner — Execution & Intrusion Timeline](docs/windows/README.md) now provides a question-driven path from a verified acquired Windows image to defensible process/network findings.
+The **Field Collector foundation** remains eight field-ready scenarios. Windows Examiner now includes [Registry examination and interpretation](docs/windows/registry.md) and [USB/device-to-user correlation](docs/windows/usb-device-history.md) alongside the existing [execution evidence](docs/windows/execution.md) and [worked intrusion timeline](docs/windows/timelines.md).
 
-**New reviewed pages:** [Prefetch, Amcache and process-creation interpretation](docs/windows/execution.md) and [worked Security 4688 / Sysmon ProcessGuid timeline](docs/windows/timelines.md). These demonstrate **real supported tool commands** with labeled synthetic outputs; show how hexadecimal PIDs, timestamps and log coverage affect conclusions; and distinguish historical execution artifacts from proof of actor identity, malicious intent or exfiltration. The primary professional baseline is [SWGDE 18-F-001-2.0 (Feb 28, 2025)](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
+**What this pass delivers:** offline SYSTEM/SOFTWARE/SAM/NTUSER/UsrClass hive scope and transaction-log considerations; Registry Explorer, RECmd and AppCompatCacheParser commands; UserAssist's misleading run-count/last-run behavior; BAM/SID account limits; Windows ControlSet selection; USBSTOR/UASP, SetupAPI install timing, volume mapping, MountPoints2 and LNK/Jump List comparison. Each page includes explicitly **synthetic outputs, competing hypotheses, narrow findings and published-source references**.
 
-Only the completed Windows workflow is published in the **Windows Artifacts & Timelines** category. Registry, browser and filesystem pages remain hidden until substantive, source-reviewed material exists. Continue to test commands and tool versions on actual lab images before case use.
+**Best-practice baseline:** [SWGDE 18-F-001-2.0, final July 28, 2025](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/). Microsoft's published incident-response guidance informs specific UserAssist and Amcache interpretation pitfalls. Tool CLI options come from their maintainers. **No commands have been executed on a validated Windows test Evidence image in this authoring pass**; reproduce/test before case use.
+
+The completed **Registry** and **USB** pages are published in the collapsible Windows category. **Browser** and **filesystem/$MFT** remain hidden. Continue the discipline of recording both supporting and contradicting artifacts rather than starting with an assumed story.
 
 ### Completed Field Collector foundation — cloud and account preservation (October 26, 2026)
 
