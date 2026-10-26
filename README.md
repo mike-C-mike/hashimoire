@@ -8,6 +8,14 @@ The name is intentionally a little weird.
 
 A grimoire is a book of collected knowledge, formulas, instructions, and working notes. Hashimoire applies that idea to digital forensics and defensive security: hashes, artifacts, commands, triage notes, tool references, detections, templates, and field-tested reminders.
 
+## How we reason from artifacts
+
+Hashimoire uses a deliberately consistent **house vocabulary**: **Evidence** (capital E) for a collected/submitted item or dataset, **artifacts** for digital traces discovered in examination, and **evidence** (lowercase e) for the support that those traces and other sources provide for or against a proposed explanation. A **finding** states only what the available record can actually support.
+
+**Don't begin with a narrative and cherry-pick confirming artifacts.** Begin with a scoped investigative question; let artifacts generate and revise hypotheses, actively pursue contradictory or exculpatory information, and document when a theory remains unsupported.
+
+This is an **editorial convention, not a legal redefinition**. Individual artifacts may themselves constitute digital evidence. [Read the full terminology, examples and reporting guidance](planning/TERMINOLOGY.md). Contributors should follow it alongside the [published-best-practice standards](planning/ARCHITECTURE.md).
+
 ## The Live Reference
 
 **Website:** [Hashimoire on GitHub Pages](https://mike-C-mike.github.io/hashimoire/)
