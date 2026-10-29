@@ -121,6 +121,8 @@ Key LastWrite: 2026-10-21T15:03:40Z  (fictional)
 
 Correlate the SID to `SOFTWARE\...\ProfileList`, Windows logon events and source collection time. Account context is not human attribution.
 
+**New complementary workflows:** Inspect actual [browser visits and downloads](browser.md) and [LNK/Jump List/ShellBag traces](user-activity.md) before inferring access to a file. A shortcut referring to an external volume or a download database row is **not** a standalone file-transfer event.
+
 ## 5. File transfer requires file-activity evidence
 
 Suppose an investigator believes someone moved a report from a Windows laptop to a USB device. What independent artifacts might help **test**, not automatically prove, that claim?

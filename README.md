@@ -25,15 +25,15 @@ Hashimoire has two useful starting points backed by the same Markdown repository
 - **[Field Collector](collector/README.md):** mobile-first preservation, scene documentation and clean handoff. The [Smartphone & Tablet Field Preservation Guide](collector/mobile-device-collection.md) gives an immediate power-state decision path for officers without asking them to learn examiner tooling.
 - **[Forensic Examiner](examiner/README.md):** acquisition, Windows forensic snippets, expected command outputs, evidence integrity and lab examination.
 
-### Current content focus — Windows Registry and USB examinations (October 26, 2026)
+### Current content focus — Windows browser and user-activity forensics (October 29, 2026)
 
-The **Field Collector foundation** remains eight field-ready scenarios. Windows Examiner now includes [Registry examination and interpretation](docs/windows/registry.md) and [USB/device-to-user correlation](docs/windows/usb-device-history.md) alongside the existing [execution evidence](docs/windows/execution.md) and [worked intrusion timeline](docs/windows/timelines.md).
+The **Field Collector foundation** remains eight detailed field situations. The Windows Examiner track now has [browser history and download examination](docs/windows/browser.md) plus [LNK, Jump List and ShellBag user-activity analysis](docs/windows/user-activity.md), alongside existing [Registry](docs/windows/registry.md), [USB/device correlation](docs/windows/usb-device-history.md), [execution](docs/windows/execution.md) and [intrusion timeline](docs/windows/timelines.md) guides.
 
-**What this pass delivers:** offline SYSTEM/SOFTWARE/SAM/NTUSER/UsrClass hive scope and transaction-log considerations; Registry Explorer, RECmd and AppCompatCacheParser commands; UserAssist's misleading run-count/last-run behavior; BAM/SID account limits; Windows ControlSet selection; USBSTOR/UASP, SetupAPI install timing, volume mapping, MountPoints2 and LNK/Jump List comparison. Each page includes explicitly **synthetic outputs, competing hypotheses, narrow findings and published-source references**.
+**This pass:** a verified working-copy workflow for Chromium/Chrome/Edge `History` and Firefox `places.sqlite`, related WAL/SHM files, version-dependent schema checks, **1601-epoch Chromium vs 1970-epoch Firefox timestamps**, download states and file-existence correlation. Windows user-activity coverage includes current maintainer-documented **LECmd, JLECmd and SBECmd** syntax, profile-scoped LNK, Jump Lists and ShellBags, plus competing explanations and a synthetic “downloaded/opened/copied?” example.
 
-**Best-practice baseline:** [SWGDE 18-F-001-2.0, final July 28, 2025](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/). Microsoft's published incident-response guidance informs specific UserAssist and Amcache interpretation pitfalls. Tool CLI options come from their maintainers. **No commands have been executed on a validated Windows test Evidence image in this authoring pass**; reproduce/test before case use.
+**Interpretation policy:** URL visited ≠ file downloaded ≠ file opened ≠ file copied ≠ identification of a human actor. We test those as separate propositions, retaining contradictory and exculpatory artifacts.
 
-The completed **Registry** and **USB** pages are published in the collapsible Windows category. **Browser** and **filesystem/$MFT** remain hidden. Continue the discipline of recording both supporting and contradicting artifacts rather than starting with an assumed story.
+**Published standard:** [SWGDE 18-F-001-2.0, final July 28, 2025](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/); browser schema references from Chromium and Mozilla; parser flags from respective tool maintainers. Commands are **documented examples, not yet run on validated test Evidence**. Browser and user-activity pages are published because they are complete; **filesystem/$MFT remains hidden**.
 
 ### Completed Field Collector foundation — cloud and account preservation (October 26, 2026)
 

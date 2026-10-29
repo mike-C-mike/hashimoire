@@ -165,6 +165,8 @@ If Registry and event records disagree, record the discrepancy. Possible causes 
 
 **What to do next:** request legitimately available EDR or application logs, inspect Prefetch and other execution traces, verify clock normalization, and assess alternative benign use. Stop at an *unresolved* finding if that's what the artifacts support.
 
+**Profile-related corroboration:** [ShellBags from NTUSER.DAT/UsrClass.dat](user-activity.md) can record folder-view state while [browser profiles](browser.md) record visited URLs and downloads. The two artifact categories do not automatically identify a human actor or prove file opening/copying. Check other profiles and conflicting sources.
+
 ## 7. Reporting checklist
 
 - [ ] Evidence Item and forensic acquisition scope/hash documented.
