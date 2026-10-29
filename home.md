@@ -71,6 +71,10 @@
 
 **[Offline Registry interpretation](docs/windows/registry.md)** explains UserAssist, BAM, ControlSets, transaction logs and unsupported execution claims. **[USB and profile correlation](docs/windows/usb-device-history.md)** traces the limits of device recognition, mount history, user context and alleged file copying—without presuming an allegation is true.
 
+## Windows Examiner — browser and user-activity workflows
+
+**[Browser history and downloads](docs/windows/browser.md)** explains acquired Chromium/Edge and Firefox database examination, UTC conversions and download limitations. **[LNK, Jump Lists and ShellBags](docs/windows/user-activity.md)** explains application and folder references, parser commands, and how to test a suspected file transfer without assuming it occurred.
+
 ## In the field
 
 **Using a phone?** [Save Hashimoire to your home screen](docs/mobile-home-screen.md) for one-tap access. This version still requires an internet connection.
