@@ -237,9 +237,14 @@
           "status": "published"
         },
         {
-          "label": "Browser and user activity",
+          "label": "Browser visits & downloads",
           "path": "/docs/windows/browser.md",
-          "status": "planned"
+          "status": "published"
+        },
+        {
+          "label": "LNK, Jump Lists & ShellBags",
+          "path": "/docs/windows/user-activity.md",
+          "status": "published"
         },
         {
           "label": "Filesystem and $MFT",
