@@ -27,6 +27,8 @@
 ## Frequently used references
 
 - [Windows execution evidence and intrusion timeline hub](../docs/windows/README.md)
+- [Browser history and download evidence: Chrome, Edge, Firefox](../docs/windows/browser.md)
+- [Windows user-activity artifacts: LNK, Jump Lists and ShellBags](../docs/windows/user-activity.md)
 - [Offline Windows Registry forensics: UserAssist, BAM and ControlSets](../docs/windows/registry.md)
 - [Removable storage/USB timeline and user context](../docs/windows/usb-device-history.md)
 - [Prefetch / Amcache / execution interpretation](../docs/windows/execution.md)
