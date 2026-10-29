@@ -38,6 +38,8 @@
   - [Registry examination: UserAssist & BAM](/docs/windows/registry.md)
   - [USB devices, user profiles & files](/docs/windows/usb-device-history.md)
   - [Execution artifacts (Prefetch, Amcache)](/docs/windows/execution.md)
+  - [Browser visits & downloads](/docs/windows/browser.md)
+  - [LNK, Jump Lists & ShellBags](/docs/windows/user-activity.md)
   - [Process & intrusion timeline](/docs/windows/timelines.md)
 - **TOOL REFERENCE**
   - [Tools index](/docs/tools/README.md)
