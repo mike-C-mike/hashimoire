@@ -82,7 +82,7 @@ LIMIT 50;
 
 ```text
 visit_id,url,title,raw_chromium_time,interpreted_utc
-324,https://example.org/reports,"Reports",13405705000000000,2025-10-15 12:16:40
+324,https://example.org/reports,"Reports",13405004200000000,2025-10-15 12:16:40
 ```
 
 These figures are **fictional and illustrative**; do not use their exact numbers to validate a parser. A database URL/visit row alone does not establish whether the page was read, background-refreshed, synced, opened from an app, or navigated by the human whose Windows profile contains it. Inspect transition/source flags and corroborating artifacts where needed.
