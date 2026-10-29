@@ -1,12 +1,12 @@
-# Windows Examiner — Execution, Registry & Correlation
+# Windows Examiner — Browser, User Activity & Correlation
 
 **Audience:** trained examiners and DFIR analysts  
-**Current workflows:** *Analyze program activity, registry/user context, USB history and process/network timelines without overstating what artifacts prove.*  
-**Evidence types:** acquired Windows image, registry hives/transaction files, setupapi logs, EVTX, Prefetch, Amcache and RAM/EDR where within scope  
+**Current workflows:** *Analyze browser activity, document references, registry/user context, external devices and process/network timelines without overstating what artifacts prove.*  
+**Evidence types:** acquired Windows image, browser SQLite/history and journals, LNK/Jump Lists, user registry hives, USB/volume history, EVTX, Prefetch and RAM/EDR as available  
 **Risk:** caution — sensitive data, clock assumptions, false attribution  
 **Guidance reviewed:** October 26, 2026
 
-> **Start with an investigative question, not a list of artifacts.** This Windows workstream now supports **execution, offline Registry examination, removable storage correlation and process/network timelines**. Browser and filesystem/$MFT topics remain hidden until they have substantive content. All examples are synthetic; work on verified evidence copies under appropriate authority. [SWGDE 18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
+> **Start with an investigative question, not a list of artifacts.** This Windows workstream now supports **browser visits/downloads, LNK/Jump Lists/ShellBags, execution, offline Registry examination, removable storage correlation and process/network timelines**. Filesystem/$MFT remains hidden until it contains substantive content. All examples are synthetic; work on verified evidence copies under appropriate authority. [SWGDE 18-F-001-2.0](https://www.swgde.org/documents/published-complete-listing/18-f-001-2/).
 
 ## A disciplined artifact-first investigation
 
@@ -18,6 +18,8 @@ An allegation may set the **scope**, but it does not set the result. **Do not st
 
 | I need to know… | Open now | Outcome |
 | --- | --- | --- |
+| **Was a URL visited or a file downloaded?** | [Chrome/Edge and Firefox browser artifacts](browser.md) | Offline SQLite inspection, browser history and download states, timestamps, sync/coverage limits. |
+| **What document or folder did Windows reference?** | [LNK, Jump Lists and ShellBags](user-activity.md) | Tested-documentation parser commands, folder/application context, cautious file-copy interpretations. |
 | **What Registry artifacts describe a program or user profile?** | [Registry examination: UserAssist, BAM, hives](registry.md) | Offline hive acquisition and parsing, transaction logs, SID/profile context, supported claims and alternatives. |
 | **Was a USB device connected and was a file copied?** | [USB device-to-user correlation](usb-device-history.md) | USBSTOR/UASP, SetupAPI, volume mapping, MountPoints2, file-activity evidence and a worked unresolved case. |
 | **Did a program execute?** | [Execution artifacts — Prefetch, Amcache and logs](execution.md) | Evidence matrix; controlled PECmd/AmcacheParser workflow; accurate claims and limitations. |
@@ -28,6 +30,10 @@ An allegation may set the **scope**, but it does not set the result. **Do not st
 | **Could a reboot lock the source drive?** | [BitLocker recovery readiness](../../snippets/powershell/bitlocker-recovery-readiness.md) | Volume/protector status and properly protected recovery-credential handling. |
 
 Each path leads directly to a working reference; we do **not** create empty intermediate categories simply to make navigation look complete.
+
+## Link browser and Windows user activity without inventing a copy operation
+
+A browser [download record](browser.md), a Windows [LNK or Jump List](user-activity.md), and a [USB volume history](usb-device-history.md) may describe related events. They do **not** independently demonstrate that a specific person downloaded, opened, and transferred a document. Preserve source profile and original timestamps; verify file existence, source hashes and independent destination records before asserting direction or intent.
 
 ## How to extend the execution timeline using Registry artifacts
 
@@ -106,6 +112,6 @@ Working-copy analysis outputs, reviewer and report exhibits:
 
 ## Where Windows Examiner goes next
 
-The main Windows roadmap still includes **browser/user activity, filesystem/$MFT, richer registry persistence/logon investigation, execution activity over longer windows, and volume-shadow-copy context**. We are deliberately not showing those future pages as clickable published links yet.
+The main Windows roadmap still includes **filesystem/$MFT, richer registry persistence/logon investigation, execution activity over longer windows, and volume-shadow-copy context**. We are deliberately not showing those future pages as clickable published links yet.
 
 [← Examiner Toolkit](../../examiner/README.md) · [Windows Snippets](../../snippets/powershell/README.md) · [Collector → Computer handoff](../../collector/computer-collection.md) · [Hash verification](../hashing/README.md)
